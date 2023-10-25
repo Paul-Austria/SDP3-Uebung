@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "Hello HSD!\n";
+    std::cout << "Hello HSD! und so\n";
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
