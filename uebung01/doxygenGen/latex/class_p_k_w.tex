@@ -1,0 +1,94 @@
+\doxysection{PKW Class Reference}
+\hypertarget{class_p_k_w}{}\label{class_p_k_w}\index{PKW@{PKW}}
+
+
+\doxylink{class_p_k_w}{PKW} child of \doxylink{class_fahrzeug}{Fahrzeug}.  
+
+
+
+
+{\ttfamily \#include $<$PKW.\+hpp$>$}
+
+Inheritance diagram for PKW\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_k_w}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_k_w_a71ee5085b1f67cf7f1e23e14c52d5d91}{PKW}} (const std\+::string \&marke, const std\+::string \&kennzeichen, const std\+::string \&kraftstoffart)
+\begin{DoxyCompactList}\small\item\em Construktor. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_p_k_w_ada3c0424c4c63c2810f4739b4e9549a6}{Get\+Fahrzeugart}} () const override
+\begin{DoxyCompactList}\small\item\em \doxylink{class_p_k_w}{PKW} Specifc vehicle type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_fahrzeug}{Fahrzeug}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fahrzeug_a4570bd31436f2e363178749cf32e5f9b}{Fahrzeug}} (const std\+::string \&marke, const std\+::string \&kennzeichen, const std\+::string \&kraftstoffart)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_fahrzeug}{Fahrzeug} konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fahrzeug_a2a7f1fdf9c1ed49fe58e74b392facc87}{Add\+Eintrag}} (const std\+::string \&datum, int kilometer)
+\begin{DoxyCompactList}\small\item\em füge neuen EIntrag zu fahrtenbuch hinzu \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_ae8e3a1fcfd6043ced8dc6889d076a190}{Get\+Marke}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Marke. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_a955dcd8558861aac8b0aed400db4f1a0}{Get\+Kennzeichen}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Kennzeichen. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_ad011186123d6d581f6817107c5a34e1a}{Get\+Kraftstoffart}} () const
+\begin{DoxyCompactList}\small\item\em Get Kraftstoffart. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \& \mbox{\hyperlink{class_fahrzeug_ac53840ca59829e7b3d554137536e3fa9}{Get\+Fahrtenbuch}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Fahrtenbuch. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fahrzeug_afb56f842b7dc2288d8cfdd3194755d83}{Get\+Gesamtkilometer}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Gesamt\+Kilomter. \end{DoxyCompactList}\item 
+void {\bfseries Print} () const
+\begin{DoxyCompactList}\small\item\em Print the vehicle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_p_k_w}{PKW} child of \doxylink{class_fahrzeug}{Fahrzeug}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_k_w_a71ee5085b1f67cf7f1e23e14c52d5d91}\label{class_p_k_w_a71ee5085b1f67cf7f1e23e14c52d5d91} 
+\index{PKW@{PKW}!PKW@{PKW}}
+\index{PKW@{PKW}!PKW@{PKW}}
+\doxysubsubsection{\texorpdfstring{PKW()}{PKW()}}
+{\footnotesize\ttfamily PKW\+::\+PKW (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{marke,  }\item[{const std\+::string \&}]{kennzeichen,  }\item[{const std\+::string \&}]{kraftstoffart }\end{DoxyParamCaption})}
+
+
+
+Construktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em marke} & \\
+\hline
+{\em kennzeichen} & \\
+\hline
+{\em kraftstoffart} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_k_w_ada3c0424c4c63c2810f4739b4e9549a6}\label{class_p_k_w_ada3c0424c4c63c2810f4739b4e9549a6} 
+\index{PKW@{PKW}!GetFahrzeugart@{GetFahrzeugart}}
+\index{GetFahrzeugart@{GetFahrzeugart}!PKW@{PKW}}
+\doxysubsubsection{\texorpdfstring{GetFahrzeugart()}{GetFahrzeugart()}}
+{\footnotesize\ttfamily std\+::string PKW\+::\+Get\+Fahrzeugart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\doxylink{class_p_k_w}{PKW} Specifc vehicle type. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_fahrzeug_af5accb6462bdda8e97643b6ec9774307}{Fahrzeug}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+PKW.\+hpp\item 
+PKW.\+cpp\end{DoxyCompactItemize}

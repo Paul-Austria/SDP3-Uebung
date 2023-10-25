@@ -1,0 +1,172 @@
+\doxysection{Fahrzeug Class Reference}
+\hypertarget{class_fahrzeug}{}\label{class_fahrzeug}\index{Fahrzeug@{Fahrzeug}}
+
+
+\doxylink{class_fahrzeug}{Fahrzeug} klasse Basis klasse für alle Fahrzeuge.  
+
+
+
+
+{\ttfamily \#include $<$Fahrzeug.\+hpp$>$}
+
+Inheritance diagram for Fahrzeug\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fahrzeug}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fahrzeug_a4570bd31436f2e363178749cf32e5f9b}{Fahrzeug}} (const std\+::string \&marke, const std\+::string \&kennzeichen, const std\+::string \&kraftstoffart)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_fahrzeug}{Fahrzeug} konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fahrzeug_a2a7f1fdf9c1ed49fe58e74b392facc87}{Add\+Eintrag}} (const std\+::string \&datum, int kilometer)
+\begin{DoxyCompactList}\small\item\em füge neuen EIntrag zu fahrtenbuch hinzu \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_ae8e3a1fcfd6043ced8dc6889d076a190}{Get\+Marke}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Marke. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_a955dcd8558861aac8b0aed400db4f1a0}{Get\+Kennzeichen}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Kennzeichen. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_fahrzeug_ad011186123d6d581f6817107c5a34e1a}{Get\+Kraftstoffart}} () const
+\begin{DoxyCompactList}\small\item\em Get Kraftstoffart. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \& \mbox{\hyperlink{class_fahrzeug_ac53840ca59829e7b3d554137536e3fa9}{Get\+Fahrtenbuch}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Fahrtenbuch. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fahrzeug_afb56f842b7dc2288d8cfdd3194755d83}{Get\+Gesamtkilometer}} () const
+\begin{DoxyCompactList}\small\item\em Get\+Gesamt\+Kilomter. \end{DoxyCompactList}\item 
+\Hypertarget{class_fahrzeug_af7c2c43a91087abd26a5e1e2639b0727}\label{class_fahrzeug_af7c2c43a91087abd26a5e1e2639b0727} 
+void {\bfseries Print} () const
+\begin{DoxyCompactList}\small\item\em Print the vehicle. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_fahrzeug_af5accb6462bdda8e97643b6ec9774307}{Get\+Fahrzeugart}} () const
+\begin{DoxyCompactList}\small\item\em Get type of vehicle (override later) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_fahrzeug}{Fahrzeug} klasse Basis klasse für alle Fahrzeuge. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fahrzeug_a4570bd31436f2e363178749cf32e5f9b}\label{class_fahrzeug_a4570bd31436f2e363178749cf32e5f9b} 
+\index{Fahrzeug@{Fahrzeug}!Fahrzeug@{Fahrzeug}}
+\index{Fahrzeug@{Fahrzeug}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{Fahrzeug()}{Fahrzeug()}}
+{\footnotesize\ttfamily Fahrzeug\+::\+Fahrzeug (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{marke,  }\item[{const std\+::string \&}]{kennzeichen,  }\item[{const std\+::string \&}]{kraftstoffart }\end{DoxyParamCaption})}
+
+
+
+\doxylink{class_fahrzeug}{Fahrzeug} konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em marke} & \\
+\hline
+{\em kennzeichen} & \\
+\hline
+{\em kraftstoffart} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fahrzeug_a2a7f1fdf9c1ed49fe58e74b392facc87}\label{class_fahrzeug_a2a7f1fdf9c1ed49fe58e74b392facc87} 
+\index{Fahrzeug@{Fahrzeug}!AddEintrag@{AddEintrag}}
+\index{AddEintrag@{AddEintrag}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{AddEintrag()}{AddEintrag()}}
+{\footnotesize\ttfamily void Fahrzeug\+::\+Add\+Eintrag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{datum,  }\item[{int}]{kilometer }\end{DoxyParamCaption})}
+
+
+
+füge neuen EIntrag zu fahrtenbuch hinzu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datum} & \\
+\hline
+{\em kilometer} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fahrzeug_ac53840ca59829e7b3d554137536e3fa9}\label{class_fahrzeug_ac53840ca59829e7b3d554137536e3fa9} 
+\index{Fahrzeug@{Fahrzeug}!GetFahrtenbuch@{GetFahrtenbuch}}
+\index{GetFahrtenbuch@{GetFahrtenbuch}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetFahrtenbuch()}{GetFahrtenbuch()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::pair$<$ std\+::string, int $>$ $>$ \& Fahrzeug\+::\+Get\+Fahrtenbuch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get\+Fahrtenbuch. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_fahrzeug_af5accb6462bdda8e97643b6ec9774307}\label{class_fahrzeug_af5accb6462bdda8e97643b6ec9774307} 
+\index{Fahrzeug@{Fahrzeug}!GetFahrzeugart@{GetFahrzeugart}}
+\index{GetFahrzeugart@{GetFahrzeugart}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetFahrzeugart()}{GetFahrzeugart()}}
+{\footnotesize\ttfamily std\+::string Fahrzeug\+::\+Get\+Fahrzeugart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get type of vehicle (override later) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_l_k_w_a3d7e97e3576954deb9062729a92a048d}{LKW}}, \mbox{\hyperlink{class_motorrad_adc02588e0a72c1b5939d7873076ef3a6}{Motorrad}}, and \mbox{\hyperlink{class_p_k_w_ada3c0424c4c63c2810f4739b4e9549a6}{PKW}}.
+
+\Hypertarget{class_fahrzeug_afb56f842b7dc2288d8cfdd3194755d83}\label{class_fahrzeug_afb56f842b7dc2288d8cfdd3194755d83} 
+\index{Fahrzeug@{Fahrzeug}!GetGesamtkilometer@{GetGesamtkilometer}}
+\index{GetGesamtkilometer@{GetGesamtkilometer}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetGesamtkilometer()}{GetGesamtkilometer()}}
+{\footnotesize\ttfamily int Fahrzeug\+::\+Get\+Gesamtkilometer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get\+Gesamt\+Kilomter. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_fahrzeug_a955dcd8558861aac8b0aed400db4f1a0}\label{class_fahrzeug_a955dcd8558861aac8b0aed400db4f1a0} 
+\index{Fahrzeug@{Fahrzeug}!GetKennzeichen@{GetKennzeichen}}
+\index{GetKennzeichen@{GetKennzeichen}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetKennzeichen()}{GetKennzeichen()}}
+{\footnotesize\ttfamily const std\+::string \& Fahrzeug\+::\+Get\+Kennzeichen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get\+Kennzeichen. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_fahrzeug_ad011186123d6d581f6817107c5a34e1a}\label{class_fahrzeug_ad011186123d6d581f6817107c5a34e1a} 
+\index{Fahrzeug@{Fahrzeug}!GetKraftstoffart@{GetKraftstoffart}}
+\index{GetKraftstoffart@{GetKraftstoffart}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetKraftstoffart()}{GetKraftstoffart()}}
+{\footnotesize\ttfamily const std\+::string \& Fahrzeug\+::\+Get\+Kraftstoffart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Kraftstoffart. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_fahrzeug_ae8e3a1fcfd6043ced8dc6889d076a190}\label{class_fahrzeug_ae8e3a1fcfd6043ced8dc6889d076a190} 
+\index{Fahrzeug@{Fahrzeug}!GetMarke@{GetMarke}}
+\index{GetMarke@{GetMarke}!Fahrzeug@{Fahrzeug}}
+\doxysubsubsection{\texorpdfstring{GetMarke()}{GetMarke()}}
+{\footnotesize\ttfamily const std\+::string \& Fahrzeug\+::\+Get\+Marke (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get\+Marke. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Fahrzeug.\+hpp\item 
+Fahrzeug.\+cpp\end{DoxyCompactItemize}

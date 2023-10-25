@@ -1,0 +1,42 @@
+\doxysection{Fuhrpark.\+hpp}
+\hypertarget{_fuhrpark_8hpp_source}{}\label{_fuhrpark_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ Fuhrpark.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ \ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Fahrzeug.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}PKW.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}LKW.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Motorrad.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Fuhrpark.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fuhrpark}{Fuhrpark}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_fuhrpark}{Fuhrpark}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fuhrpark_abdf6bd6273d3247d30e42de18b9b4eea}{HinzufuegenFahrzeug}}(\mbox{\hyperlink{class_fahrzeug}{Fahrzeug}}*\ fahrzeug);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fuhrpark_aa53bb9c7eac1ddc7ebc844e354cf179b}{EntfernenFahrzeug}}(\textcolor{keyword}{const}\ std::string\&\ kennzeichen);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_fahrzeug}{Fahrzeug}}*\ \mbox{\hyperlink{class_fuhrpark_a0398406d760489cd0ac49d87b2745749}{SuchenFahrzeug}}(\textcolor{keyword}{const}\ std::string\&\ kennzeichen);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fuhrpark_a3c70fe149ec52f8c052b41b3212d442e}{AusgebenFahrzeuge}}(std::ostream\&\ os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fuhrpark_a0288f27ae55fd458f80a079394f4fddf}{AusgebenFahrzeugeInDatei}}(\textcolor{keyword}{const}\ std::string\&\ dateiName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fuhrpark_a283a0cd14bfddf4fcfcc4e48cd3e8122}{GesamtkilometerAllerFahrzeuge}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ std::vector<Fahrzeug*>\ fahrzeuge\_;}
+\DoxyCodeLine{00065\ \};}
+
+\end{DoxyCode}

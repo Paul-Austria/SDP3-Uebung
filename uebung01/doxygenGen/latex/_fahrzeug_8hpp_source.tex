@@ -1,0 +1,44 @@
+\doxysection{Fahrzeug.\+hpp}
+\hypertarget{_fahrzeug_8hpp_source}{}\label{_fahrzeug_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ Fahrzeug.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ \ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fahrzeug}{Fahrzeug}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_fahrzeug}{Fahrzeug}}(\textcolor{keyword}{const}\ std::string\&\ marke,\ \textcolor{keyword}{const}\ std::string\&\ kennzeichen,\ \textcolor{keyword}{const}\ std::string\&\ kraftstoffart);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fahrzeug_a2a7f1fdf9c1ed49fe58e74b392facc87}{AddEintrag}}(\textcolor{keyword}{const}\ std::string\&\ datum,\ \textcolor{keywordtype}{int}\ kilometer);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_fahrzeug_ae8e3a1fcfd6043ced8dc6889d076a190}{GetMarke}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_fahrzeug_a955dcd8558861aac8b0aed400db4f1a0}{GetKennzeichen}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_fahrzeug_ad011186123d6d581f6817107c5a34e1a}{GetKraftstoffart}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::pair<std::string,\ int>>\&\ \mbox{\hyperlink{class_fahrzeug_ac53840ca59829e7b3d554137536e3fa9}{GetFahrtenbuch}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fahrzeug_afb56f842b7dc2288d8cfdd3194755d83}{GetGesamtkilometer}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fahrzeug_af7c2c43a91087abd26a5e1e2639b0727}{Print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_fahrzeug_af5accb6462bdda8e97643b6ec9774307}{GetFahrzeugart}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00077\ \ \ \ \ std::string\ marke;}
+\DoxyCodeLine{00078\ \ \ \ \ std::string\ kennzeichen;}
+\DoxyCodeLine{00079\ \ \ \ \ std::string\ kraftstoffart;}
+\DoxyCodeLine{00080\ \ \ \ \ std::vector<std::pair<std::string,\ int>>\ fahrtenbuch;}
+\DoxyCodeLine{00081\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,129 @@
+\doxysection{Fuhrpark Class Reference}
+\hypertarget{class_fuhrpark}{}\label{class_fuhrpark}\index{Fuhrpark@{Fuhrpark}}
+
+
+\doxylink{class_fuhrpark}{Fuhrpark} klasse.  
+
+
+
+
+{\ttfamily \#include $<$Fuhrpark.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_fuhrpark_abdf6bd6273d3247d30e42de18b9b4eea}{Hinzufuegen\+Fahrzeug}} (\mbox{\hyperlink{class_fahrzeug}{Fahrzeug}} \texorpdfstring{$\ast$}{*}fahrzeug)
+\begin{DoxyCompactList}\small\item\em Füge ein neues \doxylink{class_fahrzeug}{Fahrzeug} hinzu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fuhrpark_aa53bb9c7eac1ddc7ebc844e354cf179b}{Entfernen\+Fahrzeug}} (const std\+::string \&kennzeichen)
+\begin{DoxyCompactList}\small\item\em Removes a vehicle by number plate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fahrzeug}{Fahrzeug}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_fuhrpark_a0398406d760489cd0ac49d87b2745749}{Suchen\+Fahrzeug}} (const std\+::string \&kennzeichen)
+\begin{DoxyCompactList}\small\item\em Search for vehicle by numberplate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fuhrpark_a3c70fe149ec52f8c052b41b3212d442e}{Ausgeben\+Fahrzeuge}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Print all vehicles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fuhrpark_a0288f27ae55fd458f80a079394f4fddf}{Ausgeben\+Fahrzeuge\+In\+Datei}} (const std\+::string \&datei\+Name) const
+\begin{DoxyCompactList}\small\item\em print all vehicles to file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fuhrpark_a283a0cd14bfddf4fcfcc4e48cd3e8122}{Gesamtkilometer\+Aller\+Fahrzeuge}} () const
+\begin{DoxyCompactList}\small\item\em Get total. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_fuhrpark}{Fuhrpark} klasse. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fuhrpark_a3c70fe149ec52f8c052b41b3212d442e}\label{class_fuhrpark_a3c70fe149ec52f8c052b41b3212d442e} 
+\index{Fuhrpark@{Fuhrpark}!AusgebenFahrzeuge@{AusgebenFahrzeuge}}
+\index{AusgebenFahrzeuge@{AusgebenFahrzeuge}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{AusgebenFahrzeuge()}{AusgebenFahrzeuge()}}
+{\footnotesize\ttfamily void Fuhrpark\+::\+Ausgeben\+Fahrzeuge (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Print all vehicles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fuhrpark_a0288f27ae55fd458f80a079394f4fddf}\label{class_fuhrpark_a0288f27ae55fd458f80a079394f4fddf} 
+\index{Fuhrpark@{Fuhrpark}!AusgebenFahrzeugeInDatei@{AusgebenFahrzeugeInDatei}}
+\index{AusgebenFahrzeugeInDatei@{AusgebenFahrzeugeInDatei}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{AusgebenFahrzeugeInDatei()}{AusgebenFahrzeugeInDatei()}}
+{\footnotesize\ttfamily void Fuhrpark\+::\+Ausgeben\+Fahrzeuge\+In\+Datei (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{datei\+Name }\end{DoxyParamCaption}) const}
+
+
+
+print all vehicles to file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datei\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fuhrpark_aa53bb9c7eac1ddc7ebc844e354cf179b}\label{class_fuhrpark_aa53bb9c7eac1ddc7ebc844e354cf179b} 
+\index{Fuhrpark@{Fuhrpark}!EntfernenFahrzeug@{EntfernenFahrzeug}}
+\index{EntfernenFahrzeug@{EntfernenFahrzeug}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{EntfernenFahrzeug()}{EntfernenFahrzeug()}}
+{\footnotesize\ttfamily void Fuhrpark\+::\+Entfernen\+Fahrzeug (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{kennzeichen }\end{DoxyParamCaption})}
+
+
+
+Removes a vehicle by number plate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kennzeichen} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fuhrpark_a283a0cd14bfddf4fcfcc4e48cd3e8122}\label{class_fuhrpark_a283a0cd14bfddf4fcfcc4e48cd3e8122} 
+\index{Fuhrpark@{Fuhrpark}!GesamtkilometerAllerFahrzeuge@{GesamtkilometerAllerFahrzeuge}}
+\index{GesamtkilometerAllerFahrzeuge@{GesamtkilometerAllerFahrzeuge}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{GesamtkilometerAllerFahrzeuge()}{GesamtkilometerAllerFahrzeuge()}}
+{\footnotesize\ttfamily int Fuhrpark\+::\+Gesamtkilometer\+Aller\+Fahrzeuge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get total. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_fuhrpark_abdf6bd6273d3247d30e42de18b9b4eea}\label{class_fuhrpark_abdf6bd6273d3247d30e42de18b9b4eea} 
+\index{Fuhrpark@{Fuhrpark}!HinzufuegenFahrzeug@{HinzufuegenFahrzeug}}
+\index{HinzufuegenFahrzeug@{HinzufuegenFahrzeug}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{HinzufuegenFahrzeug()}{HinzufuegenFahrzeug()}}
+{\footnotesize\ttfamily void Fuhrpark\+::\+Hinzufuegen\+Fahrzeug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fahrzeug}{Fahrzeug}} \texorpdfstring{$\ast$}{*}}]{fahrzeug }\end{DoxyParamCaption})}
+
+
+
+Füge ein neues \doxylink{class_fahrzeug}{Fahrzeug} hinzu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fahrzeug} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fuhrpark_a0398406d760489cd0ac49d87b2745749}\label{class_fuhrpark_a0398406d760489cd0ac49d87b2745749} 
+\index{Fuhrpark@{Fuhrpark}!SuchenFahrzeug@{SuchenFahrzeug}}
+\index{SuchenFahrzeug@{SuchenFahrzeug}!Fuhrpark@{Fuhrpark}}
+\doxysubsubsection{\texorpdfstring{SuchenFahrzeug()}{SuchenFahrzeug()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fahrzeug}{Fahrzeug}} \texorpdfstring{$\ast$}{*} Fuhrpark\+::\+Suchen\+Fahrzeug (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{kennzeichen }\end{DoxyParamCaption})}
+
+
+
+Search for vehicle by numberplate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kennzeichen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Fuhrpark.\+hpp\item 
+Fuhrpark.\+cpp\end{DoxyCompactItemize}
