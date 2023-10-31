@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>279</y>
+      <w>225</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_object: Class_
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>603</x>
+      <y>360</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>396</y>
+      <w>225</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+#mName:string
+#mSurname:string
+#mInitial:string
+#mInsuranceNumber:size_t
+#mEntryYear:size_t
+#mType:EnumEmployee
+--
++CalcSalary():float
++GetBirthYear():size_t
++GetInitial():string
++GetEntryYear():size_t
++Print():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>207</x>
+      <y>405</y>
+      <w>126</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>EnumEmployee
+--
++ComissionWorker
++HourlyWorker
++PieceWorker
++Boss</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>720</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>ComissionWorker
+--
+-mFixedSalary:float
+-mFixedAmount:size_t
+-mSoldPieces:size_t
+--
++CalcSalary():float
++GetSoldPieces():size_t
++Print():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>720</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>PieceWorker
+--
+-mProducedPieces:size_t
+-mPieceValue:float
+--
++CalcSalary():float
++GetProducedPieces():size_t
++Print():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>459</x>
+      <y>720</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>HourlyWorker
+--
+-mHourlyVage:float
+-mWorkedHours:int
+--
++CalcSalary():float
++Print():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>216</y>
+      <w>387</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>EmployeeManager
+--
+-mEmployeeMap&lt;string,Employee&gt;
+--
++AddEmployee(Name,Surname,InsuranceNumber,EntryYear):void
++Delete(InsuranceNumber):bool
++GetNumberOfEmployee():size_t
++GetNumberOfXEmployee(EnumEmployee):size_t
++GetProducedPieces():size_t
++GetSoldPieces():size_t
++GetEmployeeBornBefore1970():size_t
++GetSalaryOf(InsuranceNumber):float
++SearchEmployeeInitial(string):bool
++GetLongestWorkingEmployee():size_t
++PrintAll():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>720</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Boss
+--
+-mFixedSalary:float
+--
++CalcSalary:float
++Print():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>45</y>
+      <w>414</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>iClient &lt;&lt;Interface&gt;&gt;
+--
++virtual AddEmployee(Name,Surname,InsuranceNumber,EntryYear):void = 0
++virtual Delete(InsuranceNumber):bool = 0
++virtual GetNumberOfEmployee():size_t = 0
++virtual GetNumberOfXEmployee(EnumEmployee):size_t = 0
++virtual GetProducedPieces():size_t = 0
++virtual GetSoldPieces():size_t = 0
++virtual GetEmployeeBornBefore1970():size_t = 0
++virtual GetSalaryOf(InsuranceNumber):float = 0
++virtual SearchEmployeeInitial(string):bool = 0
++virtual GetLongestWorkingEmployee():size_t = 0
++virtual PrintAll():void = 0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>45</y>
+      <w>297</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Client
+--
++GetNumberOfEmployee():size_t
++GetNumberOfXEmployee(EnumEmployee):size_t
++GetProducedPieces():size_t
++GetSoldPieces():size_t
++GetEmployeeBornBefore1970():size_t
++GetSalaryOf(InsuranceNumber):float
++SearchEmployeeInitial(string):bool
++GetLongestWorkingEmployee():size_t
++PrintAll():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>468</y>
+      <w>198</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0;130.0;80.0;200.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>522</x>
+      <y>585</y>
+      <w>99</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;100.0;10.0;100.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>585</y>
+      <w>252</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>260.0;10.0;260.0;60.0;10.0;60.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>639</x>
+      <y>585</y>
+      <w>117</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;110.0;110.0;110.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>585</y>
+      <w>297</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;310.0;60.0;310.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>477</y>
+      <w>189</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>846</x>
+      <y>117</y>
+      <w>216</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0;220.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>108</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+</diagram>
