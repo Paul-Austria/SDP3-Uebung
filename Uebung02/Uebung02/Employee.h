@@ -30,6 +30,7 @@ public:
 	std::string GetInitial();
 	size_t GetEntryYear();
 	virtual void Print();
+	void PrintEnd();
 
 	EmployeeType GetType();
 	size_t GetProducedPieces();
@@ -54,28 +55,4 @@ protected:
 private:
 
 };
-
-std::ostream& Title(std::ostream& ost) {
-
-	ost << "*******************************************" << std::endl;
-	ost << "Hofer" << std::endl;
-	ost << "*******************************************" << std::endl;
-	ost << "Datenblatt" << std::endl;
-	ost << "---------------" << std::endl;
-	ost << std::endl;
-	return ost;
-
-}
-
-std::ostream& Version(std::ostream& ost) {
-
-	ost << "-------------------------------------------" << std::endl;
-	ost << "v1.0 Oktober 2023" << std::endl;
-	ost << "-------------------------------------------" << std::endl;
-	ost << std::endl;
-	return ost;
-
-}
-
-
 #endif

@@ -1,4 +1,5 @@
 #include "ComissionWorker.h"
+#include "PrintHelper.h"
 
 float ComissionWorker::GetProvision()
 {
@@ -23,7 +24,8 @@ void ComissionWorker::Print()
     std::cout << "Grundgehalt: " << GetBaseSalary() << " EUR" << std::endl;
     std::cout << "Provision: " << GetProvision() << " EUR" << std::endl;
     std::cout << "Gesamtgehalt: " << CalcSalary() << " EUR" << std::endl;
-    std::cout << Version;
+    Employee::PrintEnd();
+
 
 }
 

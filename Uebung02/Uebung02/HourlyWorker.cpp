@@ -18,7 +18,7 @@ void HourlyWorker::Print()
     std::cout << "Grundgehalt: " << GetBaseSalary() << " EUR" << std::endl;
     std::cout << "Provision: " << GetProvision() << " EUR" << std::endl;
     std::cout << "Gesamtgehalt: " << CalcSalary() << " EUR" << std::endl;
-    std::cout << Version;
+    Employee::PrintEnd();
 
 
 }
