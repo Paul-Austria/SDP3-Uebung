@@ -1,8 +1,17 @@
 #include "Client.h"
 #include "algorithm"
 
-void Client::ClientAsistent(EmployeeManager Help)
+#include "EmployeeManager.h"
+
+
+
+void Client::ManagerTest()
 {
+
+	//DO The tests here
+
+
+	/*
 	std::cout << Help.GetEmployeeBornBefore1970() << std::endl << std::endl;
 
 	//TVecHelp = Help.GetLongestWorkingEmployee();
@@ -11,7 +20,9 @@ void Client::ClientAsistent(EmployeeManager Help)
 
 		It->
 
-	};*/
+	};
+
+	
 
 	std::cout << Help.GetNumberOfEmployee() << std::endl << std::endl;
 
@@ -26,6 +37,9 @@ void Client::ClientAsistent(EmployeeManager Help)
 	std::cout << std::boolalpha << Help.SearchEmployeeInitial(mInitial) << std::endl << std::endl;
 
 	Help.PrintAll();
+
+	*/
+
 	/*size_t GetNumberOfEmployee();
 	size_t GetNumberOfXEmployee(EnumEmployee);
 	size_t GetProducedPieces();
@@ -34,7 +48,7 @@ void Client::ClientAsistent(EmployeeManager Help)
 	float GetSalaryOf(size_t InsuranceNumber);
 	bool SearchEmployeeInitial(std::string);
 	LongestWorkingEmployees GetLongestWorkingEmployee();
-	void PrintAll();*/
+	void PrintAll();
 	return;
-
+	*/
 }

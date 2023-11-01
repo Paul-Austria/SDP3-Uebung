@@ -1,38 +1,62 @@
-// Uebung02.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
-//
-
 #include <iostream>
+#include "Client.h"
+#include "EmployeeManager.h"
+#include "Employee.h"
+#include "Boss.h"
+#include "ComissionWorker.h"
+#include "HourlyWorker.h"
+#include "PieceWorker.h"
+#include <string>
 
-int main()
-{
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+using namespace std;
+
+int main() {
+		EmployeeManager Test;
+
+		Client ClientObj{ &Test };
+
+
+		/// All tests are inside this client ManagerTest
+		ClientObj.ManagerTest();
+
+//		
+		//iClient* ptr = nullptr;
+		//ptr = &Test;
+
+		/*Cat Minka{2};
+		Dog Rolfi{ 7 };
+
+		Cat* pCat = &Minka;
+		Dog* pDog = &Rolfi;
+		//pAnimal ist eine polymorphe variable -> stat/dyn Datentyp
+		Animal* pAnimal = nullptr;
+		pAnimal = &Minka;
+
+		//ComissionWorker(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float FixedSalary, size_t FixedAmount, size_t SoldPieces)
+		//ComissionWorker Employee1{ "Markus", "Leitner", 1324030673, 1999, 2035.96, 2, 222 };
+
+		//HourlyWorker Employee2{"Herold", "Leso", 1234041002, 2020, 22.34, 280};
+
+		//Boss Employee3{ "Lukas" , "Kaltenbacher", 2314020152, 1969, 3678.22 };
+
+		//PieceWorker Employee4{ "Aaron", "Luxemburger", 3142021251, 1969, 132.45, 15 };
+
+		//Employee* pEmployee = nullptr;
+
+		EmployeeManager EmpMan;
+		EmpMan.AddEmployee(1324030673,new ComissionWorker{ "Markus", "Leitner", 1324030673, 1999, 2035.96, 2, 222 });
+		EmpMan.AddEmployee(1234041002,new HourlyWorker{ "Herold", "Leso", 1234041002, 2020, 22.34, 280 });
+		EmpMan.AddEmployee(2314020152, new Boss{ "Lukas" , "Kaltenbacher", 2314020152, 1969, 3678.22 });
+		EmpMan.AddEmployee(3142021251, new PieceWorker{ "Aaron", "Luxemburger", 3142021251, 1969, 132.45, 15 });
+
+		//Client(EmployeeManager * Help, EmployeeType WhatType, size_t InsuranceNumber, std::string Initial)
+
+	//	
+
+
+
+
+		return 0;
+
+		*/
 }
-
-
-
-
-
-
-
-
-
-
-// Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
-// Programm debuggen: F5 oder "Debuggen" > Menü "Debuggen starten"
-
-// Tipps für den Einstieg: 
-//   1. Verwenden Sie das Projektmappen-Explorer-Fenster zum Hinzufügen/Verwalten von Dateien.
-//   2. Verwenden Sie das Team Explorer-Fenster zum Herstellen einer Verbindung mit der Quellcodeverwaltung.
-//   3. Verwenden Sie das Ausgabefenster, um die Buildausgabe und andere Nachrichten anzuzeigen.
-//   4. Verwenden Sie das Fenster "Fehlerliste", um Fehler anzuzeigen.
-//   5. Wechseln Sie zu "Projekt" > "Neues Element hinzufügen", um neue Codedateien zu erstellen, bzw. zu "Projekt" > "Vorhandenes Element hinzufügen", um dem Projekt vorhandene Codedateien hinzuzufügen.
-//   6. Um dieses Projekt später erneut zu öffnen, wechseln Sie zu "Datei" > "Öffnen" > "Projekt", und wählen Sie die SLN-Datei aus.

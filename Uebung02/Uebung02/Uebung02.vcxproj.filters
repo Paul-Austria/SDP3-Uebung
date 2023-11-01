@@ -36,9 +36,6 @@
     <ClCompile Include="EmployeeManager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="Client.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -69,6 +66,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Client.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintHelper.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

@@ -57,13 +57,27 @@ size_t Employee::GetEntryYear()
 
 void Employee::Print()
 {
-    std::cout << Title;
+    std::cout << "*******************************************" << std::endl;
+    std::cout << "Hofer" << std::endl;
+    std::cout << "*******************************************" << std::endl;
+    std::cout << "Datenblatt" << std::endl;
+    std::cout << "---------------" << std::endl;
+    std::cout << std::endl;
     std::cout << "Name: " << mName << std::endl;
     std::cout << "Kürzel: " << GetInitial() << std::endl;
     std::cout << "Sozialversicherungsnummer: " << mInsuranceNumber << std::endl;
     std::cout << "Einstiegsjahr: " << GetEntryYear() << std::endl;
     
 }
+
+void Employee::PrintEnd() {
+
+    std::cout << "-------------------------------------------" << std::endl;
+    std::cout << "v1.0 Oktober 2023" << std::endl;
+    std::cout << "-------------------------------------------" << std::endl;
+    std::cout << std::endl;
+}
+
 
 EnumEmployee Employee::GetType()
 {

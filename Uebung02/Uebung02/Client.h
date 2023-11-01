@@ -2,17 +2,22 @@
 #define CLIENT_H
 
 #include <iostream>
-#include "EmployeeManager.h"
 
+//#include "EmployeeManager.h"
+#include "Employee.h"
 //typedef std::vector<Employee*> LongestWorkingEmployees;
 
+
+class EmployeeManager;
 class Client{
 
 public:
 
-	Client(EmployeeManager Help, EmployeeType WhatType, size_t InsuranceNumber, std::string Initial) : mWhatType{ WhatType }, mInsuranceNumber{ InsuranceNumber }, mInitial{Initial} {};
+	Client(EmployeeManager* manager) : manager(manager) {};
 
-	void ClientAsistent(EmployeeManager Help);
+
+	
+	void ManagerTest();
 
 	/*size_t GetNumberOfEmployee();
 	size_t GetNumberOfXEmployee(EnumEmployee);
@@ -25,10 +30,8 @@ public:
 	void PrintAll();*/
 
 private:
+	EmployeeManager* manager;
 
-	EmployeeType mWhatType;
-	size_t mInsuranceNumber;
-	std::string mInitial;
 	//LongestWorkingEmployees TVecHelp;
 	//EM Test;
 	//iCptr ptr;
