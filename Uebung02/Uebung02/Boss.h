@@ -8,7 +8,7 @@ class Boss : public Employee {
 public:
 
 	Boss(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float FixedSalary)
-		: Employee{ Name, Surname, InsuranceNumber,EntryYear }, mFixedSalary{ FixedSalary } {};;
+		: Employee{ Name, Surname, InsuranceNumber,EntryYear }, mFixedSalary{ FixedSalary } {};
 
 	float GetProvision();
 	float GetBaseSalary();

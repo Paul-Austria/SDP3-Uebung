@@ -4,12 +4,12 @@
 #include "Employee.h"
 #include <map>
 #include <vector>
-#include "iClient.h"
+#include "Client.h"
 
 typedef std::map<size_t, Employee*> EmployeeMap;
 typedef std::vector<Employee*> LongestWorkingEmployees;
 
-class EmployeeManager : public iClient {
+class EmployeeManager {
 
 public:
 

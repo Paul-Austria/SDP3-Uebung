@@ -1,19 +1,18 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-#include "iClient.h"
 #include <iostream>
+#include "EmployeeManager.h"
 
-typedef EmployeeManager EM;
-typedef iClient* iCptr;
+//typedef std::vector<Employee*> LongestWorkingEmployees;
 
-class Client : public iClient {
+class Client{
 
 public:
 
-	Client(iCptr Help, EmployeeType WhatType, size_t InsuranceNumber, std::string Initial) : mWhatType{ WhatType }, mInsuranceNumber{ InsuranceNumber }, mInitial{Initial} {};
+	Client(EmployeeManager Help, EmployeeType WhatType, size_t InsuranceNumber, std::string Initial) : mWhatType{ WhatType }, mInsuranceNumber{ InsuranceNumber }, mInitial{Initial} {};
 
-	void ClientAsistent(iCptr Help);
+	void ClientAsistent(EmployeeManager Help);
 
 	/*size_t GetNumberOfEmployee();
 	size_t GetNumberOfXEmployee(EnumEmployee);
@@ -30,6 +29,7 @@ private:
 	EmployeeType mWhatType;
 	size_t mInsuranceNumber;
 	std::string mInitial;
+	//LongestWorkingEmployees TVecHelp;
 	//EM Test;
 	//iCptr ptr;
 

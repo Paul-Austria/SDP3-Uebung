@@ -1,4 +1,4 @@
-#ifndef ICLIENT_H
+/*#ifndef ICLIENT_H
 #define ICLIENT_H
 
 #include "EmployeeManager.h"
@@ -34,5 +34,5 @@ private:
 
 };
 
-#endif
+#endif*/
 
