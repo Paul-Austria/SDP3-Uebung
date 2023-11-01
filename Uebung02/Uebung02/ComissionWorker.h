@@ -7,9 +7,16 @@ class ComissionWorker : public Employee {
 
 public:
 
-	float CalcSalary() override; //const nicht vergessen
+	ComissionWorker(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float FixedSalary, size_t FixedAmount, size_t SoldPieces) 
+		: Employee{ Name, Surname, InsuranceNumber,EntryYear }, mFixedSalary{ FixedSalary }, mFixedAmount{ FixedAmount }, mSoldPieces{SoldPieces} {};
+
+	float GetProvision();
+	float GetBaseSalary(); //const nicht vergessen
+	float CalcSalary() { mSalary = GetProvision() + GetBaseSalary(); return GetProvision() + GetBaseSalary(); };
 	size_t GetSoldPieces();
 	void Print() override;
+	void SetType();
+	void SetSoldPieces();
 
 private:
 

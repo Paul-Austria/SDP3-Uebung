@@ -3,27 +3,33 @@
 
 #include "Employee.h"
 #include <map>
+#include <vector>
+#include "iClient.h"
 
-class EmployeeManager {
+typedef std::map<size_t, Employee*> EmployeeMap;
+typedef std::vector<Employee*> LongestWorkingEmployees;
+
+class EmployeeManager : public iClient {
 
 public:
 
-	void AddEmployee(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear);
+	void AddEmployee(size_t InsuranceNumber, Employee* Emp);
 	bool Delete(size_t InsuranceNumber);
 	size_t GetNumberOfEmployee();
-	size_t GetNumberOfXEmployee(EnumEmployee);
+	size_t GetNumberOfXEmployee(EnumEmployee Type);
 	size_t GetProducedPieces();
 	size_t GetSoldPieces();
 	size_t GetEmployeeBornBefore1970();
 	float GetSalaryOf(size_t InsuranceNumber);
-	bool SearchEmployeeInitial(std::string);
-	size_t GetLongestWorkingEmployee();
+	bool SearchEmployeeInitial(std::string InitialName);
+	LongestWorkingEmployees GetLongestWorkingEmployee();
 	void PrintAll();
 
 
 private:
 
-	std::map<std::string, Employee> mEmployeeMap;
+	EmployeeMap mEmployeeMap;
+	LongestWorkingEmployees mLongestWorkingEmployees;
 	
 };
 

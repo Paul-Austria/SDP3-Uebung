@@ -1,8 +1,13 @@
 #include "ComissionWorker.h"
 
-float ComissionWorker::CalcSalary()
+float ComissionWorker::GetProvision()
 {
-    return mFixedSalary + (mFixedAmount * mSoldPieces);
+    return mFixedAmount * mSoldPieces;
+}
+
+float ComissionWorker::GetBaseSalary()
+{
+    return mFixedSalary;
 }
 
 size_t ComissionWorker::GetSoldPieces()
@@ -12,6 +17,26 @@ size_t ComissionWorker::GetSoldPieces()
 
 void ComissionWorker::Print()
 {
+   
+    Employee::Print();
+    std::cout << "Mitarbeiterklasse: " << "ComissionWorker" << std::endl;
+    std::cout << "Grundgehalt: " << GetBaseSalary() << " EUR" << std::endl;
+    std::cout << "Provision: " << GetProvision() << " EUR" << std::endl;
+    std::cout << "Gesamtgehalt: " << CalcSalary() << " EUR" << std::endl;
+    std::cout << Version;
 
+}
+
+void ComissionWorker::SetType()
+{
+
+    mType = EnumEmployee::ComissionWorker;
+
+}
+
+void ComissionWorker::SetSoldPieces()
+{
+
+    mPiecesSold = mSoldPieces;
 
 }

@@ -129,14 +129,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="ComissionWorker.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeManager.cpp" />
     <ClCompile Include="HourlyWorker.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="PieceWorker.cpp" />
     <ClCompile Include="Uebung02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boss.h" />
+    <ClInclude Include="Client.h" />
     <ClInclude Include="ComissionWorker.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="EmployeeManager.h" />

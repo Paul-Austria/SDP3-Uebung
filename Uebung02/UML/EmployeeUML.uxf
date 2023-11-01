@@ -140,7 +140,7 @@
 +GetEmployeeBornBefore1970():size_t
 +GetSalaryOf(InsuranceNumber):float
 +SearchEmployeeInitial(string):bool
-+GetLongestWorkingEmployee():size_t
++GetLongestWorkingEmployee():string
 +PrintAll():void</panel_attributes>
     <additional_attributes/>
   </element>

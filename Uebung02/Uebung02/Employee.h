@@ -6,46 +6,59 @@
 #include <iomanip>
 #include <iostream>
 
+typedef enum class EnumEmployee {
+
+	ComissionWorker = 0,
+	HourlyWorker = 1,
+	PieceWorker = 2,
+	Boss = 3
+
+}EmployeeType;
+
 class Employee : public Object {
 
 public:
 		
-	Employee(std::string Name, std::string Surname, std::string Initial, size_t InsuranceNumber, size_t EntryYear, EnumEmployee Type, size_t BirthYear) : mName{ Name }, mSurname{ Surname }, 
-		mInitial{ Initial }, mInsuranceNumber{ InsuranceNumber }, mEntryYear{ EntryYear }, mType{ Type } {};
+	//Employee(std::string Name, std::string Surname, std::string Initial, size_t InsuranceNumber, size_t EntryYear , size_t BirthYear) : mName{ Name }, mSurname{ Surname }, 
+		//mInsuranceNumber{ InsuranceNumber }, mEntryYear{ EntryYear } {};
 
-	virtual float CalcSalary();
+	//virtual float GetProvision();
+	//virtual float GetBaseSalary();
+	
+	//virtual float CalcSalary() = 0;
 	size_t GetBirthYear();
 	std::string GetInitial();
 	size_t GetEntryYear();
 	virtual void Print();
 
+	EmployeeType GetType();
+	size_t GetProducedPieces();
+	size_t GetSoldPieces();
+	float GetSalary();
 
 protected:
 
+	Employee(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear) : mName{ Name }, mSurname{ Surname },
+	mInsuranceNumber{ InsuranceNumber }, mEntryYear{ EntryYear } {};
+	
 	std::string mName;
 	std::string mSurname;
-	std::string mInitial;
+	//std::string mInitial;
 	size_t mInsuranceNumber;
 	size_t mEntryYear;
-	EnumEmployee mType;
+	EmployeeType mType = EmployeeType::ComissionWorker;
+	size_t mPiecesProduced = 0;
+	size_t mPiecesSold = 0;
+	float mSalary = 0.0;
 
 private:
 
 };
 
-enum class EnumEmployee {
-	
-	ComissionWorker = 0, 
-	HourlyWorker = 1,
-	PieceWorker = 2,
-	Boss = 3
-
-};
-
-std::ostream& Titel(std::ostream& ost, std::string const Company) {
+std::ostream& Title(std::ostream& ost) {
 
 	ost << "*******************************************" << std::endl;
-	ost << Company << std::endl;
+	ost << "Hofer" << std::endl;
 	ost << "*******************************************" << std::endl;
 	ost << "Datenblatt" << std::endl;
 	ost << "---------------" << std::endl;

@@ -1,6 +1,11 @@
 #include "HourlyWorker.h"
 
-float HourlyWorker::CalcSalary()
+float HourlyWorker::GetProvision()
+{
+    return 0;
+}
+
+float HourlyWorker::GetBaseSalary()
 {
     return mHourlyVage * mWorkedHours;
 }
@@ -8,6 +13,20 @@ float HourlyWorker::CalcSalary()
 void HourlyWorker::Print()
 {
 
+    Employee::Print();
+    std::cout << "Mitarbeiterklasse: " << "PieceWorker" << std::endl;
+    std::cout << "Grundgehalt: " << GetBaseSalary() << " EUR" << std::endl;
+    std::cout << "Provision: " << GetProvision() << " EUR" << std::endl;
+    std::cout << "Gesamtgehalt: " << CalcSalary() << " EUR" << std::endl;
+    std::cout << Version;
 
 
 }
+
+void HourlyWorker::SetType()
+{
+
+    mType = EnumEmployee::HourlyWorker;
+
+}
+

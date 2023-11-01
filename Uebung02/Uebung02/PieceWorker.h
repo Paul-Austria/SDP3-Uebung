@@ -7,10 +7,16 @@ class PieceWorker : public Employee {
 
 public:
 
-	float CalcSalary();
-	size_t GetProducedPieces();
-	void Print();
+	PieceWorker(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float PieceValue, size_t ProducedPieces)
+		: Employee{ Name, Surname, InsuranceNumber,EntryYear }, mPieceValue{ PieceValue }, mProducedPieces{ ProducedPieces } {};
 
+	float GetProvision();
+	float GetBaseSalary();
+	float CalcSalary() { mSalary = GetProvision() + GetBaseSalary(); return GetProvision() + GetBaseSalary(); };
+	size_t GetProducedPieces();
+	void Print() override;
+	void SetType();
+	void SetPieces();
 
 private:
 
