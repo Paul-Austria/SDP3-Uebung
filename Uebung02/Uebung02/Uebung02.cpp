@@ -11,6 +11,7 @@
 using namespace std;
 
 int main() {
+		
 		EmployeeManager Test;
 
 		Client ClientObj{ &Test };
@@ -20,19 +21,8 @@ int main() {
 		ClientObj.ManagerTest();
 
 //		
-		//iClient* ptr = nullptr;
-		//ptr = &Test;
-
-		/*Cat Minka{2};
-		Dog Rolfi{ 7 };
-
-		Cat* pCat = &Minka;
-		Dog* pDog = &Rolfi;
-		//pAnimal ist eine polymorphe variable -> stat/dyn Datentyp
-		Animal* pAnimal = nullptr;
-		pAnimal = &Minka;
-
-		//ComissionWorker(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float FixedSalary, size_t FixedAmount, size_t SoldPieces)
+		
+		/*ComissionWorker(std::string Name, std::string Surname, size_t InsuranceNumber, size_t EntryYear, float FixedSalary, size_t FixedAmount, size_t SoldPieces)
 		//ComissionWorker Employee1{ "Markus", "Leitner", 1324030673, 1999, 2035.96, 2, 222 };
 
 		//HourlyWorker Employee2{"Herold", "Leso", 1234041002, 2020, 22.34, 280};
@@ -50,13 +40,13 @@ int main() {
 		EmpMan.AddEmployee(3142021251, new PieceWorker{ "Aaron", "Luxemburger", 3142021251, 1969, 132.45, 15 });
 
 		//Client(EmployeeManager * Help, EmployeeType WhatType, size_t InsuranceNumber, std::string Initial)
-
+	
 	//	
 
 
 
-
+		*/
 		return 0;
 
-		*/
+		
 }

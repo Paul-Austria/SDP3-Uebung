@@ -3,6 +3,10 @@
 #include <algorithm>
 #include <iterator>
 
+static const size_t Year2023 = 2023;
+static const std::string NoEmployeeFound = "No such Employee found.";
+static const std::string NoEmployeeWithMatchingInsurance = "No Employee with matching Insurance Number found.";
+
 void EmployeeManager::AddEmployee(size_t InsuranceNumber, Employee* Emp)
 {
 
@@ -18,7 +22,7 @@ bool EmployeeManager::Delete(size_t InsuranceNumber)
 	}
 	else {
 	
-		std::cout << "No such Employee found." << std::endl;
+		std::cout << NoEmployeeFound << std::endl;
 		return false;
 	}
 
@@ -111,7 +115,7 @@ float EmployeeManager::GetSalaryOf(size_t InsuranceNumber)
 	}
 	else {
 
-		std::cout << "No Employee with matching Insurance Number found." << std::endl;
+		std::cout << NoEmployeeWithMatchingInsurance << std::endl;
 
 		return 0.0;
 
@@ -136,7 +140,7 @@ bool EmployeeManager::SearchEmployeeInitial(std::string InitialName)
 
 LongestWorkingEmployees EmployeeManager::GetLongestWorkingEmployee()
 {
-	size_t LongestWorking = 2023;
+	size_t LongestWorking = Year2023;
 	
 	for (auto It1 = mEmployeeMap.cbegin(); It1 != mEmployeeMap.cend(); It1++) {
 
@@ -148,6 +152,7 @@ LongestWorkingEmployees EmployeeManager::GetLongestWorkingEmployee()
 
 	}
 
+	//Wollte hier die Employees in einem Vektor von Typ Employee* speichern und dann die Print funktion von Employee verwenden.
 	for (auto It2 = mEmployeeMap.cbegin(); It2 != mEmployeeMap.cend(); It2++) {
 
 		if (It2->second->GetBirthYear() == LongestWorking) {

@@ -1,6 +1,10 @@
 #include "Employee.h"
 #include <iostream>
 
+static const size_t  Year1 = 1900;
+static const size_t Year2 = 2000;
+static const std::string NoSurname = "No actual Surname";
+
 /*float Employee::CalcSalary()
 {
 
@@ -24,12 +28,12 @@ size_t Employee::GetBirthYear()
 
     if (Temp > 23) {
 
-        return 1900 + Temp;
+        return Year1 + Temp;
 
     }
     else {
 
-        return 2000 + Temp;
+        return Year2 + Temp;
 
     }
 
@@ -53,7 +57,7 @@ std::string Employee::GetInitial()
     else {
 
         //throw //exception
-        return "No actual Surname";
+        return NoSurname;
     }
 }
 
