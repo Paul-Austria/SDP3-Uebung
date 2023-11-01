@@ -1,0 +1,244 @@
+\doxysection{Employee Class Reference}
+\hypertarget{class_employee}{}\label{class_employee}\index{Employee@{Employee}}
+
+
+Base class representing an \doxylink{class_employee}{Employee}.  
+
+
+
+
+{\ttfamily \#include $<$Employee.\+h$>$}
+
+Inheritance diagram for Employee\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_employee}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}{Get\+Birth\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the birth year of the employee from the insurance number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}{Get\+Initial}} ()
+\begin{DoxyCompactList}\small\item\em Get the initials of the employee. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_a7d8715338e1d10275457837872e0e76f}{Get\+Entry\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the entry year of the employee. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Print information about the employee. \end{DoxyCompactList}\item 
+\Hypertarget{class_employee_ae63a6617cb3ca6cbff6a66228e52cac9}\label{class_employee_ae63a6617cb3ca6cbff6a66228e52cac9} 
+void {\bfseries Print\+End} ()
+\begin{DoxyCompactList}\small\item\em Print the end of employee information. \end{DoxyCompactList}\item 
+virtual Employee\+Type \mbox{\hyperlink{class_employee_a2c595864a9fe0d9779c602994f36d007}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the type of the employee. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}{Get\+Produced\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces produced by the employee. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a9b9c571a10071d398448cf60369d8296}{Get\+Sold\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces sold by the employee. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_employee_a766c81866a86f0a6975d56bedb2d52fd}{Calc\+Salary}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the salary of the employee. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_employee_a2083558fa6328469419dc082a914ba27}{Get\+Provision}} ()
+\begin{DoxyCompactList}\small\item\em Get the provision for the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_ab9b049611ad1cfae54fb6247c34e4194}{Employee}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_employee}{Employee}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_employee_abac73688486dc05021861c13905a2d5e}\label{class_employee_abac73688486dc05021861c13905a2d5e} 
+std\+::string {\bfseries m\+Name}
+\item 
+\Hypertarget{class_employee_a480471652b9f45651fd05ea852b3f8a7}\label{class_employee_a480471652b9f45651fd05ea852b3f8a7} 
+std\+::string {\bfseries m\+Surname}
+\item 
+\Hypertarget{class_employee_a2fc89f5db0c31424d4f2d79f76f40a20}\label{class_employee_a2fc89f5db0c31424d4f2d79f76f40a20} 
+size\+\_\+t {\bfseries m\+Insurance\+Number}
+\item 
+\Hypertarget{class_employee_aaad0db055052141817bd6931a66b2bad}\label{class_employee_aaad0db055052141817bd6931a66b2bad} 
+size\+\_\+t {\bfseries m\+Entry\+Year}
+\item 
+\Hypertarget{class_employee_a797a28996d8e532e420329b544e793f6}\label{class_employee_a797a28996d8e532e420329b544e793f6} 
+Employee\+Type {\bfseries m\+Type} = Employee\+Type\+::\+Nothing
+\item 
+\Hypertarget{class_employee_ae89ca8f7f28fc3626aa0c3c14ee61628}\label{class_employee_ae89ca8f7f28fc3626aa0c3c14ee61628} 
+size\+\_\+t {\bfseries m\+Pieces\+Produced} = 0
+\item 
+\Hypertarget{class_employee_a2fb5dbe1d1b0c3233d9c4c0c00257fab}\label{class_employee_a2fb5dbe1d1b0c3233d9c4c0c00257fab} 
+size\+\_\+t {\bfseries m\+Pieces\+Sold} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class representing an \doxylink{class_employee}{Employee}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_employee_ab9b049611ad1cfae54fb6247c34e4194}\label{class_employee_ab9b049611ad1cfae54fb6247c34e4194} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{std\+::string}]{Surname,  }\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{size\+\_\+t}]{Entry\+Year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor for \doxylink{class_employee}{Employee}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & The first name of the employee.\\
+\hline
+{\em Surname} & The last name of the employee.\\
+\hline
+{\em Insurance\+Number} & The social insurance number of the employee.\\
+\hline
+{\em Entry\+Year} & The year when the employee joined the company.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_employee_a766c81866a86f0a6975d56bedb2d52fd}\label{class_employee_a766c81866a86f0a6975d56bedb2d52fd} 
+\index{Employee@{Employee}!CalcSalary@{CalcSalary}}
+\index{CalcSalary@{CalcSalary}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{CalcSalary()}{CalcSalary()}}
+{\footnotesize\ttfamily float Employee\+::\+Calc\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculate the salary of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The calculated salary of the employee.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_boss_a2f287c28145fb510e3fdc0344805e620}{Boss}}, \mbox{\hyperlink{class_comission_worker_a29484fd05dfa2204934646554054d5ff}{Comission\+Worker}}, \mbox{\hyperlink{class_hourly_worker_adb7b56110a1dc17a44d37dfeeb10ac4e}{Hourly\+Worker}}, and \mbox{\hyperlink{class_piece_worker_ab9d53dc29706fb43e6c0498f8cc95eb7}{Piece\+Worker}}.
+
+\Hypertarget{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}\label{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d} 
+\index{Employee@{Employee}!GetBirthYear@{GetBirthYear}}
+\index{GetBirthYear@{GetBirthYear}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetBirthYear()}{GetBirthYear()}}
+{\footnotesize\ttfamily size\+\_\+t Employee\+::\+Get\+Birth\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the birth year of the employee from the insurance number. 
+
+\begin{DoxyReturn}{Returns}
+The birth year of the employee.
+\end{DoxyReturn}
+\Hypertarget{class_employee_a7d8715338e1d10275457837872e0e76f}\label{class_employee_a7d8715338e1d10275457837872e0e76f} 
+\index{Employee@{Employee}!GetEntryYear@{GetEntryYear}}
+\index{GetEntryYear@{GetEntryYear}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetEntryYear()}{GetEntryYear()}}
+{\footnotesize\ttfamily size\+\_\+t Employee\+::\+Get\+Entry\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entry year of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The entry year of the employee.
+\end{DoxyReturn}
+\Hypertarget{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}\label{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211} 
+\index{Employee@{Employee}!GetInitial@{GetInitial}}
+\index{GetInitial@{GetInitial}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetInitial()}{GetInitial()}}
+{\footnotesize\ttfamily std\+::string Employee\+::\+Get\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the initials of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The initials of the employee.
+\end{DoxyReturn}
+\Hypertarget{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}\label{class_employee_a0b11ea8e116c4610ed52270cc3bea78b} 
+\index{Employee@{Employee}!GetProducedPieces@{GetProducedPieces}}
+\index{GetProducedPieces@{GetProducedPieces}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetProducedPieces()}{GetProducedPieces()}}
+{\footnotesize\ttfamily size\+\_\+t Employee\+::\+Get\+Produced\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the number of pieces produced by the employee. 
+
+\begin{DoxyReturn}{Returns}
+The number of pieces produced.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_piece_worker_a6b80f7d2d6b9104e31cc3cefcd90241e}{Piece\+Worker}}.
+
+\Hypertarget{class_employee_a2083558fa6328469419dc082a914ba27}\label{class_employee_a2083558fa6328469419dc082a914ba27} 
+\index{Employee@{Employee}!GetProvision@{GetProvision}}
+\index{GetProvision@{GetProvision}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetProvision()}{GetProvision()}}
+{\footnotesize\ttfamily float Employee\+::\+Get\+Provision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the provision for the employee. 
+
+\begin{DoxyReturn}{Returns}
+The provision for the employee.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_boss_a8a5df26448f3dcc7ee1314a2964b0258}{Boss}}, \mbox{\hyperlink{class_piece_worker_aee91471d1a39547e297b959d363d9b4e}{Piece\+Worker}}, \mbox{\hyperlink{class_comission_worker_a954695c79e7a8b41d4b683130b2c2c22}{Comission\+Worker}}, and \mbox{\hyperlink{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202}{Hourly\+Worker}}.
+
+\Hypertarget{class_employee_a9b9c571a10071d398448cf60369d8296}\label{class_employee_a9b9c571a10071d398448cf60369d8296} 
+\index{Employee@{Employee}!GetSoldPieces@{GetSoldPieces}}
+\index{GetSoldPieces@{GetSoldPieces}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetSoldPieces()}{GetSoldPieces()}}
+{\footnotesize\ttfamily size\+\_\+t Employee\+::\+Get\+Sold\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the number of pieces sold by the employee. 
+
+\begin{DoxyReturn}{Returns}
+The number of pieces sold.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_comission_worker_aad27cb543c6dfd9e927eedf2cde90653}{Comission\+Worker}}.
+
+\Hypertarget{class_employee_a2c595864a9fe0d9779c602994f36d007}\label{class_employee_a2c595864a9fe0d9779c602994f36d007} 
+\index{Employee@{Employee}!GetType@{GetType}}
+\index{GetType@{GetType}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Enum\+Employee Employee\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the type of the employee. 
+
+\begin{DoxyReturn}{Returns}
+The type of the employee.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_boss_a00d30fdd134ae3bc857d12c8c612d278}{Boss}}, \mbox{\hyperlink{class_comission_worker_a62bfa5dafea791d227ec8b25be27f39a}{Comission\+Worker}}, \mbox{\hyperlink{class_hourly_worker_aa28c813685ef54a34e577c69d9c86087}{Hourly\+Worker}}, and \mbox{\hyperlink{class_piece_worker_a45fcb3bd0d2697e04cd74e7583207489}{Piece\+Worker}}.
+
+\Hypertarget{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}\label{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9} 
+\index{Employee@{Employee}!Print@{Print}}
+\index{Print@{Print}!Employee@{Employee}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Employee\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print information about the employee. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_boss_a64db089fbf6a2ab6d36068dedff882db}{Boss}}, \mbox{\hyperlink{class_comission_worker_aef4c32ea1dfcc0de54c21387b5dcd0bd}{Comission\+Worker}}, \mbox{\hyperlink{class_hourly_worker_a17bfd5b276b8722ad050dc196f8190d4}{Hourly\+Worker}}, and \mbox{\hyperlink{class_piece_worker_a58663f2c308993b048ba154d79af7b57}{Piece\+Worker}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung02/Employee.\+h\item 
+Uebung02/Employee.\+cpp\end{DoxyCompactItemize}

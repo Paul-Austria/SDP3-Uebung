@@ -1,3 +1,6 @@
+/* File: HourlyWorker.cpp
+* Creator: Harald Kiss
+*/
 #include "HourlyWorker.h"
 
 float HourlyWorker::GetProvision()
@@ -23,10 +26,7 @@ void HourlyWorker::Print()
 
 }
 
-void HourlyWorker::SetType()
+EmployeeType HourlyWorker::GetType()
 {
-
-    mType = EnumEmployee::HourlyWorker;
-
+    return EmployeeType::HourlyWorker;
 }
-

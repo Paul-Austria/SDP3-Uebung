@@ -1,3 +1,6 @@
+/* File: Client.cpp
+* Creator: Paul Engelhardt
+*/
 #include "Client.h"
 #include "algorithm"
 
@@ -8,28 +11,27 @@
 #include "HourlyWorker.h"
 #include "Employee.h"
 
-//Siehe EmployeeManager.h
-LongestWorkingEmployees TVecHelp;
 
 void Client::ManagerTest()
 {
 
 	//DO The tests here
 
-	mManager->AddEmployee(1324030673, new ComissionWorker{ "Markus", "Leitner", 1324030673, 1999, 2035.96, 2, 222 });
-	mManager->AddEmployee(1234041002, new HourlyWorker{ "Herold", "Leso", 1234041002, 2020, 22.34, 280 });
-	mManager->AddEmployee(2314020152, new Boss{ "Lukas" , "Kaltenbacher", 2314020152, 1969, 3678.22 });
-	mManager->AddEmployee(3142021251, new PieceWorker{ "Aaron", "Luxemburger", 3142021251, 1969, 132.45, 15 });
+	auto emp1 = ComissionWorker{ "Markus", "Leitner", 1324030673, 1999, 2035.96, 2, 222 };
+	auto emp2 = HourlyWorker{ "Herold", "Leso", 1234041002, 2020, 22.34, 280 };
+	auto emp3 = Boss{ "Lukas" , "Kaltenbacher", 2314020152, 1969, 3678.22 };
+	auto emp4 = PieceWorker{ "Aaron", "Luxemburger", 3142021251, 1969, 132.45, 15 };
+#
 
+	mManager->AddEmployee(1324030673, &emp1);
+	mManager->AddEmployee(1234041002, &emp2);
+	mManager->AddEmployee(2314020152, &emp3);
+	mManager->AddEmployee(3142021251, &emp4);
 	std::cout << "Get Employee born before 1970: " << std::endl << mManager->GetEmployeeBornBefore1970() << std::endl << std::endl;
 
-	TVecHelp = mManager->GetLongestWorkingEmployee();
-	//std::cout << Help->GetLongestWorkingEmployee() << std::endl << std::endl;
-	for (auto It = TVecHelp.cbegin(); It != TVecHelp.cend(); It++) {
-
-		It->Print();
-
-	};
+	auto longest  = mManager->GetLongestWorkingEmployee();
+	
+	longest->Print();
 
 	std::cout << "Get Number of Employees: " << std::endl << mManager->GetNumberOfEmployee() << std::endl << std::endl;
 
@@ -49,15 +51,4 @@ void Client::ManagerTest()
 
 	mManager->PrintAll();
 
-	/*size_t GetNumberOfEmployee();
-	size_t GetNumberOfXEmployee(EnumEmployee);
-	size_t GetProducedPieces();
-	size_t GetSoldPieces();
-	size_t GetEmployeeBornBefore1970();
-	float GetSalaryOf(size_t InsuranceNumber);
-	bool SearchEmployeeInitial(std::string);
-	LongestWorkingEmployees GetLongestWorkingEmployee();
-	void PrintAll();
-	return;
-	*/
 }

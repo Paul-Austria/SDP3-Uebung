@@ -1,0 +1,210 @@
+\doxysection{Comission\+Worker Class Reference}
+\hypertarget{class_comission_worker}{}\label{class_comission_worker}\index{ComissionWorker@{ComissionWorker}}
+
+
+Class representing a Commission Worker employee.  
+
+
+
+
+{\ttfamily \#include $<$Comission\+Worker.\+h$>$}
+
+Inheritance diagram for Comission\+Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_comission_worker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_comission_worker_a91233b1c98da3c3313c5cfd19941ff51}{Comission\+Worker}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year, float Fixed\+Salary, size\+\_\+t Fixed\+Amount, size\+\_\+t Sold\+Pieces)
+\begin{DoxyCompactList}\small\item\em Constructor for Commission Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_comission_worker_a954695c79e7a8b41d4b683130b2c2c22}{Get\+Provision}} () override
+\begin{DoxyCompactList}\small\item\em Get the provision for the Commission Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_comission_worker_a9481b5d269c0aa30a4119dedd87ba45e}{Get\+Base\+Salary}} ()
+\begin{DoxyCompactList}\small\item\em Get the base monthly salary for the Commission Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_comission_worker_a29484fd05dfa2204934646554054d5ff}{Calc\+Salary}} () override
+\begin{DoxyCompactList}\small\item\em Calculate the total monthly salary for the Commission Worker. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_comission_worker_aad27cb543c6dfd9e927eedf2cde90653}{Get\+Sold\+Pieces}} () override
+\begin{DoxyCompactList}\small\item\em Get the number of pieces sold by the Commission Worker. \end{DoxyCompactList}\item 
+\Hypertarget{class_comission_worker_a3927722bcb927ee771706fc0fb2c19d5}\label{class_comission_worker_a3927722bcb927ee771706fc0fb2c19d5} 
+void {\bfseries Set\+Sold\+Pieces} ()
+\begin{DoxyCompactList}\small\item\em Set the number of pieces sold by the Commission Worker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_comission_worker_aef4c32ea1dfcc0de54c21387b5dcd0bd}{Print}} () override
+\begin{DoxyCompactList}\small\item\em Print information about the employee. \end{DoxyCompactList}\item 
+Employee\+Type \mbox{\hyperlink{class_comission_worker_a62bfa5dafea791d227ec8b25be27f39a}{Get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the type of the employee (Commission Worker). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}{Get\+Birth\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the birth year of the employee from the insurance number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}{Get\+Initial}} ()
+\begin{DoxyCompactList}\small\item\em Get the initials of the employee. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_a7d8715338e1d10275457837872e0e76f}{Get\+Entry\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the entry year of the employee. \end{DoxyCompactList}\item 
+void {\bfseries Print\+End} ()
+\begin{DoxyCompactList}\small\item\em Print the end of employee information. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}{Get\+Produced\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces produced by the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_ab9b049611ad1cfae54fb6247c34e4194}{Employee}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_employee}{Employee}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries m\+Name}
+\item 
+std\+::string {\bfseries m\+Surname}
+\item 
+size\+\_\+t {\bfseries m\+Insurance\+Number}
+\item 
+size\+\_\+t {\bfseries m\+Entry\+Year}
+\item 
+Employee\+Type {\bfseries m\+Type} = Employee\+Type\+::\+Nothing
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Produced} = 0
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Sold} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a Commission Worker employee. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_comission_worker_a91233b1c98da3c3313c5cfd19941ff51}\label{class_comission_worker_a91233b1c98da3c3313c5cfd19941ff51} 
+\index{ComissionWorker@{ComissionWorker}!ComissionWorker@{ComissionWorker}}
+\index{ComissionWorker@{ComissionWorker}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{ComissionWorker()}{ComissionWorker()}}
+{\footnotesize\ttfamily Comission\+Worker\+::\+Comission\+Worker (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{std\+::string}]{Surname,  }\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{size\+\_\+t}]{Entry\+Year,  }\item[{float}]{Fixed\+Salary,  }\item[{size\+\_\+t}]{Fixed\+Amount,  }\item[{size\+\_\+t}]{Sold\+Pieces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for Commission Worker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & The first name of the Commission Worker.\\
+\hline
+{\em Surname} & The last name of the Commission Worker.\\
+\hline
+{\em Insurance\+Number} & The social insurance number of the Commission Worker.\\
+\hline
+{\em Entry\+Year} & The year when the Commission Worker joined the company.\\
+\hline
+{\em Fixed\+Salary} & The fixed monthly salary of the Commission Worker.\\
+\hline
+{\em Fixed\+Amount} & The fixed amount per sold piece.\\
+\hline
+{\em Sold\+Pieces} & The number of pieces sold by the Commission Worker.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_comission_worker_a29484fd05dfa2204934646554054d5ff}\label{class_comission_worker_a29484fd05dfa2204934646554054d5ff} 
+\index{ComissionWorker@{ComissionWorker}!CalcSalary@{CalcSalary}}
+\index{CalcSalary@{CalcSalary}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{CalcSalary()}{CalcSalary()}}
+{\footnotesize\ttfamily float Comission\+Worker\+::\+Calc\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculate the total monthly salary for the Commission Worker. 
+
+\begin{DoxyReturn}{Returns}
+The total monthly salary, including any additional provisions.
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a766c81866a86f0a6975d56bedb2d52fd}{Employee}}.
+
+\Hypertarget{class_comission_worker_a9481b5d269c0aa30a4119dedd87ba45e}\label{class_comission_worker_a9481b5d269c0aa30a4119dedd87ba45e} 
+\index{ComissionWorker@{ComissionWorker}!GetBaseSalary@{GetBaseSalary}}
+\index{GetBaseSalary@{GetBaseSalary}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{GetBaseSalary()}{GetBaseSalary()}}
+{\footnotesize\ttfamily float Comission\+Worker\+::\+Get\+Base\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the base monthly salary for the Commission Worker. 
+
+\begin{DoxyReturn}{Returns}
+The base monthly salary of the Commission Worker.
+\end{DoxyReturn}
+\Hypertarget{class_comission_worker_a954695c79e7a8b41d4b683130b2c2c22}\label{class_comission_worker_a954695c79e7a8b41d4b683130b2c2c22} 
+\index{ComissionWorker@{ComissionWorker}!GetProvision@{GetProvision}}
+\index{GetProvision@{GetProvision}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{GetProvision()}{GetProvision()}}
+{\footnotesize\ttfamily float Comission\+Worker\+::\+Get\+Provision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the provision for the Commission Worker. 
+
+\begin{DoxyReturn}{Returns}
+The provision for the Commission Worker.
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2083558fa6328469419dc082a914ba27}{Employee}}.
+
+\Hypertarget{class_comission_worker_aad27cb543c6dfd9e927eedf2cde90653}\label{class_comission_worker_aad27cb543c6dfd9e927eedf2cde90653} 
+\index{ComissionWorker@{ComissionWorker}!GetSoldPieces@{GetSoldPieces}}
+\index{GetSoldPieces@{GetSoldPieces}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{GetSoldPieces()}{GetSoldPieces()}}
+{\footnotesize\ttfamily size\+\_\+t Comission\+Worker\+::\+Get\+Sold\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the number of pieces sold by the Commission Worker. 
+
+\begin{DoxyReturn}{Returns}
+The number of pieces sold by the Commission Worker.
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a9b9c571a10071d398448cf60369d8296}{Employee}}.
+
+\Hypertarget{class_comission_worker_a62bfa5dafea791d227ec8b25be27f39a}\label{class_comission_worker_a62bfa5dafea791d227ec8b25be27f39a} 
+\index{ComissionWorker@{ComissionWorker}!GetType@{GetType}}
+\index{GetType@{GetType}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Employee\+Type Comission\+Worker\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the employee (Commission Worker). 
+
+\begin{DoxyReturn}{Returns}
+The type of the employee (Commission Worker).
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2c595864a9fe0d9779c602994f36d007}{Employee}}.
+
+\Hypertarget{class_comission_worker_aef4c32ea1dfcc0de54c21387b5dcd0bd}\label{class_comission_worker_aef4c32ea1dfcc0de54c21387b5dcd0bd} 
+\index{ComissionWorker@{ComissionWorker}!Print@{Print}}
+\index{Print@{Print}!ComissionWorker@{ComissionWorker}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Comission\+Worker\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print information about the employee. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung02/Comission\+Worker.\+h\item 
+Uebung02/Comission\+Worker.\+cpp\end{DoxyCompactItemize}

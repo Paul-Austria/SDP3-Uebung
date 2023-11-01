@@ -1,0 +1,186 @@
+\doxysection{Boss Class Reference}
+\hypertarget{class_boss}{}\label{class_boss}\index{Boss@{Boss}}
+
+
+Class representing a \doxylink{class_boss}{Boss} employee.  
+
+
+
+
+{\ttfamily \#include $<$Boss.\+h$>$}
+
+Inheritance diagram for Boss\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_boss}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boss_a990d6d515d85fb1dbe2e9015f7909a74}{Boss}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year, float Fixed\+Salary)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_adbbd01e4adfd2bb761df6351301661c8}{Get\+Base\+Salary}} ()
+\begin{DoxyCompactList}\small\item\em Get the \doxylink{class_boss}{Boss}\textquotesingle{}s fixed monthly salary. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_a8a5df26448f3dcc7ee1314a2964b0258}{Get\+Provision}} ()
+\begin{DoxyCompactList}\small\item\em Gets provisions. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_boss_a2f287c28145fb510e3fdc0344805e620}{Calc\+Salary}} () override
+\begin{DoxyCompactList}\small\item\em Calculate the total monthly salary for the \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a64db089fbf6a2ab6d36068dedff882db}{Print}} () override
+\begin{DoxyCompactList}\small\item\em Print information about the \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+Employee\+Type \mbox{\hyperlink{class_boss_a00d30fdd134ae3bc857d12c8c612d278}{Get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the type of the employee (\doxylink{class_boss}{Boss}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}{Get\+Birth\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the birth year of the employee from the insurance number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}{Get\+Initial}} ()
+\begin{DoxyCompactList}\small\item\em Get the initials of the employee. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_a7d8715338e1d10275457837872e0e76f}{Get\+Entry\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the entry year of the employee. \end{DoxyCompactList}\item 
+void {\bfseries Print\+End} ()
+\begin{DoxyCompactList}\small\item\em Print the end of employee information. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}{Get\+Produced\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces produced by the employee. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a9b9c571a10071d398448cf60369d8296}{Get\+Sold\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces sold by the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_ab9b049611ad1cfae54fb6247c34e4194}{Employee}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_employee}{Employee}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries m\+Name}
+\item 
+std\+::string {\bfseries m\+Surname}
+\item 
+size\+\_\+t {\bfseries m\+Insurance\+Number}
+\item 
+size\+\_\+t {\bfseries m\+Entry\+Year}
+\item 
+Employee\+Type {\bfseries m\+Type} = Employee\+Type\+::\+Nothing
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Produced} = 0
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Sold} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a \doxylink{class_boss}{Boss} employee. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_boss_a990d6d515d85fb1dbe2e9015f7909a74}\label{class_boss_a990d6d515d85fb1dbe2e9015f7909a74} 
+\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{Boss()}{Boss()}}
+{\footnotesize\ttfamily Boss\+::\+Boss (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{std\+::string}]{Surname,  }\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{size\+\_\+t}]{Entry\+Year,  }\item[{float}]{Fixed\+Salary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{class_boss}{Boss}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & The first name of the \doxylink{class_boss}{Boss}.\\
+\hline
+{\em Surname} & The last name of the \doxylink{class_boss}{Boss}.\\
+\hline
+{\em Insurance\+Number} & The social insurance number of the \doxylink{class_boss}{Boss}.\\
+\hline
+{\em Entry\+Year} & The year when the \doxylink{class_boss}{Boss} joined the company.\\
+\hline
+{\em Fixed\+Salary} & The fixed monthly salary of the \doxylink{class_boss}{Boss}.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_boss_a2f287c28145fb510e3fdc0344805e620}\label{class_boss_a2f287c28145fb510e3fdc0344805e620} 
+\index{Boss@{Boss}!CalcSalary@{CalcSalary}}
+\index{CalcSalary@{CalcSalary}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{CalcSalary()}{CalcSalary()}}
+{\footnotesize\ttfamily float Boss\+::\+Calc\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculate the total monthly salary for the \doxylink{class_boss}{Boss}. 
+
+\begin{DoxyReturn}{Returns}
+The total monthly salary, including any additional provisions.
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a766c81866a86f0a6975d56bedb2d52fd}{Employee}}.
+
+\Hypertarget{class_boss_adbbd01e4adfd2bb761df6351301661c8}\label{class_boss_adbbd01e4adfd2bb761df6351301661c8} 
+\index{Boss@{Boss}!GetBaseSalary@{GetBaseSalary}}
+\index{GetBaseSalary@{GetBaseSalary}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{GetBaseSalary()}{GetBaseSalary()}}
+{\footnotesize\ttfamily float Boss\+::\+Get\+Base\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \doxylink{class_boss}{Boss}\textquotesingle{}s fixed monthly salary. 
+
+\begin{DoxyReturn}{Returns}
+The fixed monthly salary of the \doxylink{class_boss}{Boss}.
+\end{DoxyReturn}
+\Hypertarget{class_boss_a8a5df26448f3dcc7ee1314a2964b0258}\label{class_boss_a8a5df26448f3dcc7ee1314a2964b0258} 
+\index{Boss@{Boss}!GetProvision@{GetProvision}}
+\index{GetProvision@{GetProvision}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{GetProvision()}{GetProvision()}}
+{\footnotesize\ttfamily float Boss\+::\+Get\+Provision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets provisions. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2083558fa6328469419dc082a914ba27}{Employee}}.
+
+\Hypertarget{class_boss_a00d30fdd134ae3bc857d12c8c612d278}\label{class_boss_a00d30fdd134ae3bc857d12c8c612d278} 
+\index{Boss@{Boss}!GetType@{GetType}}
+\index{GetType@{GetType}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Employee\+Type Boss\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the employee (\doxylink{class_boss}{Boss}). 
+
+\begin{DoxyReturn}{Returns}
+The type of the employee (\doxylink{class_boss}{Boss}).
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2c595864a9fe0d9779c602994f36d007}{Employee}}.
+
+\Hypertarget{class_boss_a64db089fbf6a2ab6d36068dedff882db}\label{class_boss_a64db089fbf6a2ab6d36068dedff882db} 
+\index{Boss@{Boss}!Print@{Print}}
+\index{Print@{Print}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Boss\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print information about the \doxylink{class_boss}{Boss}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung02/Boss.\+h\item 
+Uebung02/Boss.\+cpp\end{DoxyCompactItemize}

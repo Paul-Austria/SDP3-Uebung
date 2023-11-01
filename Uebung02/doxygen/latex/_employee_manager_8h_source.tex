@@ -1,0 +1,49 @@
+\doxysection{Employee\+Manager.\+h}
+\hypertarget{_employee_manager_8h_source}{}\label{_employee_manager_8h_source}\index{Uebung02/EmployeeManager.h@{Uebung02/EmployeeManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ EmployeeManager.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ EMPLOYEEMANAGER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ EMPLOYEEMANAGER\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Employee.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Client.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ std::map<size\_t,\ Employee*>\ EmployeeMap;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_employee_manager}{EmployeeManager}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_manager_a561d30bc1d18153fb64723b483b452a8}{AddEmployee}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber,\ \mbox{\hyperlink{class_employee}{Employee}}*\ Emp);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_employee_manager_acf0837428579fdcdf8a776130747fe31}{Delete}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_manager_a08a662334178ebfffed22c9ee83a865c}{GetNumberOfEmployee}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_manager_a2c7a8960154e688c80757b8e56fc5446}{GetNumberOfXEmployee}}(EnumEmployee\ Type);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_manager_a025a97c5d68fb9bfd2efca195fc7671d}{GetProducedPieces}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_manager_a463945670da54f2f6bba8795eddddd9b}{GetSoldPieces}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_manager_af4cbe4ed92f786271681943a65757dff}{GetEmployeeBornBefore1970}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_employee_manager_aa3c8eecb01c7c6e8c1d7dca25c49e9d3}{GetSalaryOf}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_employee_manager_a325f62d95ead55f950f7411a8807a7c1}{SearchEmployeeInitial}}(std::string\ InitialName);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_employee}{Employee}}*\ \mbox{\hyperlink{class_employee_manager_a880b70aee5718efc9405613fd70ad6d3}{GetLongestWorkingEmployee}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_manager_ae3785e29bb886c638097a1cdcd9c0bce}{PrintAll}}();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ EmployeeMap\ mEmployeeMap;\ }
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

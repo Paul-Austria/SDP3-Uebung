@@ -1,5 +1,7 @@
+/* File: CommsionWorker.cpp
+* Creator: Harald Kiss
+*/
 #include "ComissionWorker.h"
-#include "PrintHelper.h"
 
 float ComissionWorker::GetProvision()
 {
@@ -29,16 +31,15 @@ void ComissionWorker::Print()
 
 }
 
-void ComissionWorker::SetType()
-{
-
-    mType = EnumEmployee::ComissionWorker;
-
-}
 
 void ComissionWorker::SetSoldPieces()
 {
 
     mPiecesSold = mSoldPieces;
 
+}
+
+EmployeeType ComissionWorker::GetType()
+{
+    return EmployeeType::ComissionWorker;
 }

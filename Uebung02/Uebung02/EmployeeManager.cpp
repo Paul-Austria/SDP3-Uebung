@@ -1,3 +1,6 @@
+/* File: EmployeeManager.cpp
+* Creator: Paul Engelhardt
+*/
 #include "EmployeeManager.h"
 #include "Employee.h"
 #include <algorithm>
@@ -58,13 +61,13 @@ size_t EmployeeManager::GetProducedPieces()
 {
 	size_t PiecesProducedSum = 0;
 
-	for (auto It = mEmployeeMap.cbegin(); It != mEmployeeMap.cend(); It++) {
+	for(auto It : mEmployeeMap){
 
-		//if (It->second->GetType() == EnumEmployee::PieceWorker) {
+		if (It.second->GetType() == EnumEmployee::PieceWorker) {
 
-			PiecesProducedSum += It->second->GetProducedPieces();
+			PiecesProducedSum += It.second->GetProducedPieces();
 
-		//}
+		}
 
 	}
 
@@ -77,7 +80,7 @@ size_t EmployeeManager::GetSoldPieces()
 
 	for (auto It = mEmployeeMap.cbegin(); It != mEmployeeMap.cend(); It++) {
 
-		if (It->second->GetType() == EnumEmployee::PieceWorker) {
+		if (It->second->GetType() == EnumEmployee::ComissionWorker) {
 
 			PiecesSoldSum += It->second->GetSoldPieces();
 
@@ -110,7 +113,7 @@ float EmployeeManager::GetSalaryOf(size_t InsuranceNumber)
 {
 	if (mEmployeeMap.find(InsuranceNumber)->second) {
 
-		return mEmployeeMap.find(InsuranceNumber)->second->GetSalary();
+		return mEmployeeMap.find(InsuranceNumber)->second->CalcSalary();
 
 	}
 	else {
@@ -138,32 +141,21 @@ bool EmployeeManager::SearchEmployeeInitial(std::string InitialName)
 	return false;
 }
 
-LongestWorkingEmployees EmployeeManager::GetLongestWorkingEmployee()
+Employee* EmployeeManager::GetLongestWorkingEmployee()
 {
-	size_t LongestWorking = Year2023;
-	
-	for (auto It1 = mEmployeeMap.cbegin(); It1 != mEmployeeMap.cend(); It1++) {
 
-		if (It1->second->GetBirthYear() < LongestWorking) {
+	if (mEmployeeMap.size() == 0) return nullptr;
+	Employee* cur = mEmployeeMap.begin()->second;
 
-			 LongestWorking = It1->second->GetBirthYear();
-
+	for (auto emp : mEmployeeMap)
+	{
+		if (emp.second->GetEntryYear() < cur->GetEntryYear())
+		{
+			cur = emp.second;
 		}
-
 	}
 
-	//Wollte hier die Employees in einem Vektor von Typ Employee* speichern und dann die Print funktion von Employee verwenden.
-	for (auto It2 = mEmployeeMap.cbegin(); It2 != mEmployeeMap.cend(); It2++) {
-
-		if (It2->second->GetBirthYear() == LongestWorking) {
-
-			mLongestWorkingEmployees.push_back(It2->second);
-
-		}
-
-	}
-	
-	return mLongestWorkingEmployees;
+	return cur;
 }
 
 void EmployeeManager::PrintAll()

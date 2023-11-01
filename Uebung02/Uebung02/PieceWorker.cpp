@@ -1,5 +1,7 @@
+/* File: PieceWorker.cpp
+* Creator: Harald Kiss
+*/
 #include "PieceWorker.h"
-#include "PrintHelper.h"
 
 float PieceWorker::GetProvision()
 {
@@ -30,14 +32,14 @@ void PieceWorker::Print()
 
 }
 
-void PieceWorker::SetType()
-{
-    mType = EnumEmployee::PieceWorker;
-}
-
 void PieceWorker::SetPieces()
 {
 
     mPiecesProduced = mProducedPieces;
 
+}
+
+EmployeeType PieceWorker::GetType()
+{
+    return EmployeeType::PieceWorker;
 }

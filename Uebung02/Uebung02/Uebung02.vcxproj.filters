@@ -62,13 +62,7 @@
     <ClInclude Include="EmployeeManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="iClient.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Client.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="PrintHelper.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,3 +1,6 @@
+/* File: Boss.cpp
+* Creator: Harald Kiss
+*/
 #include "Boss.h"
 
 float Boss::GetProvision()
@@ -22,9 +25,8 @@ void Boss::Print()
 
 }
 
-void Boss::SetType()
+EmployeeType Boss::GetType()
 {
-
-    mType = EnumEmployee::Boss;
-
+    return EmployeeType::Boss;
 }
+

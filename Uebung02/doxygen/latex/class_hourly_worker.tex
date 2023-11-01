@@ -1,0 +1,188 @@
+\doxysection{Hourly\+Worker Class Reference}
+\hypertarget{class_hourly_worker}{}\label{class_hourly_worker}\index{HourlyWorker@{HourlyWorker}}
+
+
+Class representing an Hourly Worker employee.  
+
+
+
+
+{\ttfamily \#include $<$Hourly\+Worker.\+h$>$}
+
+Inheritance diagram for Hourly\+Worker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hourly_worker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hourly_worker_abb7080e4926956b5d1107580717f602f}{Hourly\+Worker}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year, float Hourly\+Vage, int Worked\+Hours)
+\begin{DoxyCompactList}\small\item\em Constructor for Hourly Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202}{Get\+Provision}} () override
+\begin{DoxyCompactList}\small\item\em Get the provision for the Hourly Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_hourly_worker_a8bd4d7d919646ad71293703032ee7225}{Get\+Base\+Salary}} ()
+\begin{DoxyCompactList}\small\item\em Get the base monthly salary for the Hourly Worker. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_hourly_worker_adb7b56110a1dc17a44d37dfeeb10ac4e}{Calc\+Salary}} () override
+\begin{DoxyCompactList}\small\item\em Calculate the total monthly salary for the Hourly Worker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hourly_worker_a17bfd5b276b8722ad050dc196f8190d4}{Print}} () override
+\begin{DoxyCompactList}\small\item\em Print information about the Hourly Worker. \end{DoxyCompactList}\item 
+Employee\+Type \mbox{\hyperlink{class_hourly_worker_aa28c813685ef54a34e577c69d9c86087}{Get\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Get the type of the employee (Hourly Worker). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}{Get\+Birth\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the birth year of the employee from the insurance number. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}{Get\+Initial}} ()
+\begin{DoxyCompactList}\small\item\em Get the initials of the employee. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_employee_a7d8715338e1d10275457837872e0e76f}{Get\+Entry\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Get the entry year of the employee. \end{DoxyCompactList}\item 
+void {\bfseries Print\+End} ()
+\begin{DoxyCompactList}\small\item\em Print the end of employee information. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}{Get\+Produced\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces produced by the employee. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_employee_a9b9c571a10071d398448cf60369d8296}{Get\+Sold\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of pieces sold by the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_employee_ab9b049611ad1cfae54fb6247c34e4194}{Employee}} (std\+::string Name, std\+::string Surname, size\+\_\+t Insurance\+Number, size\+\_\+t Entry\+Year)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_employee}{Employee}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries m\+Name}
+\item 
+std\+::string {\bfseries m\+Surname}
+\item 
+size\+\_\+t {\bfseries m\+Insurance\+Number}
+\item 
+size\+\_\+t {\bfseries m\+Entry\+Year}
+\item 
+Employee\+Type {\bfseries m\+Type} = Employee\+Type\+::\+Nothing
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Produced} = 0
+\item 
+size\+\_\+t {\bfseries m\+Pieces\+Sold} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing an Hourly Worker employee. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hourly_worker_abb7080e4926956b5d1107580717f602f}\label{class_hourly_worker_abb7080e4926956b5d1107580717f602f} 
+\index{HourlyWorker@{HourlyWorker}!HourlyWorker@{HourlyWorker}}
+\index{HourlyWorker@{HourlyWorker}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{HourlyWorker()}{HourlyWorker()}}
+{\footnotesize\ttfamily Hourly\+Worker\+::\+Hourly\+Worker (\begin{DoxyParamCaption}\item[{std\+::string}]{Name,  }\item[{std\+::string}]{Surname,  }\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{size\+\_\+t}]{Entry\+Year,  }\item[{float}]{Hourly\+Vage,  }\item[{int}]{Worked\+Hours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for Hourly Worker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & The first name of the Hourly Worker.\\
+\hline
+{\em Surname} & The last name of the Hourly Worker.\\
+\hline
+{\em Insurance\+Number} & The social insurance number of the Hourly Worker.\\
+\hline
+{\em Entry\+Year} & The year when the Hourly Worker joined the company.\\
+\hline
+{\em Hourly\+Vage} & The hourly wage of the Hourly Worker.\\
+\hline
+{\em Worked\+Hours} & The number of hours worked by the Hourly Worker.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hourly_worker_adb7b56110a1dc17a44d37dfeeb10ac4e}\label{class_hourly_worker_adb7b56110a1dc17a44d37dfeeb10ac4e} 
+\index{HourlyWorker@{HourlyWorker}!CalcSalary@{CalcSalary}}
+\index{CalcSalary@{CalcSalary}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{CalcSalary()}{CalcSalary()}}
+{\footnotesize\ttfamily float Hourly\+Worker\+::\+Calc\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculate the total monthly salary for the Hourly Worker. 
+
+\begin{DoxyReturn}{Returns}
+The total monthly salary, including any additional provisions.
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a766c81866a86f0a6975d56bedb2d52fd}{Employee}}.
+
+\Hypertarget{class_hourly_worker_a8bd4d7d919646ad71293703032ee7225}\label{class_hourly_worker_a8bd4d7d919646ad71293703032ee7225} 
+\index{HourlyWorker@{HourlyWorker}!GetBaseSalary@{GetBaseSalary}}
+\index{GetBaseSalary@{GetBaseSalary}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{GetBaseSalary()}{GetBaseSalary()}}
+{\footnotesize\ttfamily float Hourly\+Worker\+::\+Get\+Base\+Salary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the base monthly salary for the Hourly Worker. 
+
+\begin{DoxyReturn}{Returns}
+The base monthly salary based on hourly wage and worked hours.
+\end{DoxyReturn}
+\Hypertarget{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202}\label{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202} 
+\index{HourlyWorker@{HourlyWorker}!GetProvision@{GetProvision}}
+\index{GetProvision@{GetProvision}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{GetProvision()}{GetProvision()}}
+{\footnotesize\ttfamily float Hourly\+Worker\+::\+Get\+Provision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the provision for the Hourly Worker. 
+
+\begin{DoxyReturn}{Returns}
+The provision for the Hourly Worker (not applicable to Hourly Workers).
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2083558fa6328469419dc082a914ba27}{Employee}}.
+
+\Hypertarget{class_hourly_worker_aa28c813685ef54a34e577c69d9c86087}\label{class_hourly_worker_aa28c813685ef54a34e577c69d9c86087} 
+\index{HourlyWorker@{HourlyWorker}!GetType@{GetType}}
+\index{GetType@{GetType}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Employee\+Type Hourly\+Worker\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the employee (Hourly Worker). 
+
+\begin{DoxyReturn}{Returns}
+The type of the employee (Hourly Worker).
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a2c595864a9fe0d9779c602994f36d007}{Employee}}.
+
+\Hypertarget{class_hourly_worker_a17bfd5b276b8722ad050dc196f8190d4}\label{class_hourly_worker_a17bfd5b276b8722ad050dc196f8190d4} 
+\index{HourlyWorker@{HourlyWorker}!Print@{Print}}
+\index{Print@{Print}!HourlyWorker@{HourlyWorker}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Hourly\+Worker\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print information about the Hourly Worker. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}{Employee}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung02/Hourly\+Worker.\+h\item 
+Uebung02/Hourly\+Worker.\+cpp\end{DoxyCompactItemize}

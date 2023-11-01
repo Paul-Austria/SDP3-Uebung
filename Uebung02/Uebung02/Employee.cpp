@@ -1,3 +1,6 @@
+/* File: Employee.cpp
+* Creator: Harald Kiss
+*/
 #include "Employee.h"
 #include <iostream>
 
@@ -41,25 +44,25 @@ size_t Employee::GetBirthYear()
 
 std::string Employee::GetInitial()
 {
-    std::string str1 = "";
-    std::string str2 = "";
-    std::string str3 = "";
+    if (mSurname.size() > 0) {
+        std::string str1 = mName.substr(0, 1);
+        std::string str2 = mSurname.substr(0, 1);
+        std::string str3;
 
-    if (mSurname.size() > 1) {
+        if (mSurname.size() > 1) {
+            str3 = mSurname.substr(1, 1);
+        }
 
-        str1 = mName[0];
-        str2 = mSurname[0];
-        str3 = mSurname[1];
-
-        return str1 + str2 + str3;
-
+        std::string out = str1 + str2 + str3;
+        return out;
     }
     else {
-
-        //throw //exception
-        return NoSurname;
+        // Handle the case where there is no surname (you can throw an exception or return an appropriate value)
+        // For now, let's return an empty string.
+        return "";
     }
 }
+
 
 size_t Employee::GetEntryYear()
 {
@@ -75,7 +78,7 @@ void Employee::Print()
     std::cout << "---------------" << std::endl;
     //std::cout << std::endl;
     std::cout << "Name: " << mName << " " << mSurname << std::endl;
-    std::cout << "Kuerzel: " << std::tolower << GetInitial() << std::endl;
+    std::cout << "Kuerzel: " << GetInitial() << std::endl;
     std::cout << "Sozialversicherungsnummer: " << mInsuranceNumber << std::endl;
     std::cout << "Einstiegsjahr: " << GetEntryYear() << std::endl;
     
@@ -105,8 +108,13 @@ size_t Employee::GetSoldPieces()
     return mPiecesSold;
 }
 
-float Employee::GetSalary()
+float Employee::CalcSalary()
 {
-    return mSalary;
+    return 0.0f;
+}
+
+float Employee::GetProvision()
+{
+    return 0.0f;
 }
 

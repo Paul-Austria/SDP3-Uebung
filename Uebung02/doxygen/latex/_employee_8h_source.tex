@@ -1,0 +1,61 @@
+\doxysection{Employee.\+h}
+\hypertarget{_employee_8h_source}{}\label{_employee_8h_source}\index{Uebung02/Employee.h@{Uebung02/Employee.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ Employee.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ Creator:\ Harald\ Kiss}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ EMPLOYEE\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ EMPLOYEE\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Object.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum\ class}\ EnumEmployee\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_comission_worker}{ComissionWorker}}\ =\ 0,}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_hourly_worker}{HourlyWorker}}\ =\ 1,}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_piece_worker}{PieceWorker}}\ =\ 2,}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_boss}{Boss}}\ =\ 3,}
+\DoxyCodeLine{00020\ \ \ \ \ Nothing\ =\ 4}
+\DoxyCodeLine{00021\ \}\ EmployeeType;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_employee}{Employee}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_add3550c6a321c5b33dd0b7ad1f15c25d}{GetBirthYear}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ std::string\ \mbox{\hyperlink{class_employee_a61c8f24d2816bfcb3aad4db4c98fb211}{GetInitial}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_a7d8715338e1d10275457837872e0e76f}{GetEntryYear}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_a067852142dcc0ab3cd5c90e49e47b7f9}{Print}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_employee_ae63a6617cb3ca6cbff6a66228e52cac9}{PrintEnd}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ EmployeeType\ \mbox{\hyperlink{class_employee_a2c595864a9fe0d9779c602994f36d007}{GetType}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_a0b11ea8e116c4610ed52270cc3bea78b}{GetProducedPieces}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_employee_a9b9c571a10071d398448cf60369d8296}{GetSoldPieces}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_employee_a766c81866a86f0a6975d56bedb2d52fd}{CalcSalary}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_employee_a2083558fa6328469419dc082a914ba27}{GetProvision}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{class_employee_ab9b049611ad1cfae54fb6247c34e4194}{Employee}}(std::string\ Name,\ std::string\ Surname,\ \textcolor{keywordtype}{size\_t}\ InsuranceNumber,\ \textcolor{keywordtype}{size\_t}\ EntryYear)}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ :\ mName\{\ Name\ \},\ mSurname\{\ Surname\ \},\ mInsuranceNumber\{\ InsuranceNumber\ \},\ mEntryYear\{\ EntryYear\ \}\ \{\};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ std::string\ mName;}
+\DoxyCodeLine{00098\ \ \ \ \ std::string\ mSurname;}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mInsuranceNumber;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mEntryYear;}
+\DoxyCodeLine{00101\ \ \ \ \ EmployeeType\ mType\ =\ EmployeeType::Nothing;}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mPiecesProduced\ =\ 0;}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mPiecesSold\ =\ 0;}
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

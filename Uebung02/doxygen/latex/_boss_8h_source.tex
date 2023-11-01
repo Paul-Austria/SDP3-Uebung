@@ -1,0 +1,34 @@
+\doxysection{Boss.\+h}
+\hypertarget{_boss_8h_source}{}\label{_boss_8h_source}\index{Uebung02/Boss.h@{Uebung02/Boss.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ Boss.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ Creator:\ Harald\ Kiss}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ BOSS\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ BOSS\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Employee.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_boss}{Boss}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_employee}{Employee}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_boss_a990d6d515d85fb1dbe2e9015f7909a74}{Boss}}(std::string\ Name,\ std::string\ Surname,\ \textcolor{keywordtype}{size\_t}\ InsuranceNumber,\ \textcolor{keywordtype}{size\_t}\ EntryYear,\ \textcolor{keywordtype}{float}\ FixedSalary)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_employee}{Employee}}\{\ Name,\ Surname,\ InsuranceNumber,\ EntryYear\ \},\ mFixedSalary\{\ FixedSalary\ \}\ \{\};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_boss_adbbd01e4adfd2bb761df6351301661c8}{GetBaseSalary}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_boss_a8a5df26448f3dcc7ee1314a2964b0258}{GetProvision}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_boss_a2f287c28145fb510e3fdc0344805e620}{CalcSalary}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_boss_a8a5df26448f3dcc7ee1314a2964b0258}{GetProvision}}()\ +\ \mbox{\hyperlink{class_boss_adbbd01e4adfd2bb761df6351301661c8}{GetBaseSalary}}();\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_a64db089fbf6a2ab6d36068dedff882db}{Print}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ EmployeeType\ \mbox{\hyperlink{class_boss_a00d30fdd134ae3bc857d12c8c612d278}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{float}\ mFixedSalary;\ }
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

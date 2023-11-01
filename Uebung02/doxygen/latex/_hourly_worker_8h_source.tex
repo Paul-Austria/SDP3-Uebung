@@ -1,0 +1,35 @@
+\doxysection{Hourly\+Worker.\+h}
+\hypertarget{_hourly_worker_8h_source}{}\label{_hourly_worker_8h_source}\index{Uebung02/HourlyWorker.h@{Uebung02/HourlyWorker.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ HourlyWorker.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ Creator:\ Harald\ Kiss}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ HOURLYWORKER\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ HOURLYWORKER\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Employee.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hourly_worker}{HourlyWorker}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_employee}{Employee}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_hourly_worker_abb7080e4926956b5d1107580717f602f}{HourlyWorker}}(std::string\ Name,\ std::string\ Surname,\ \textcolor{keywordtype}{size\_t}\ InsuranceNumber,\ \textcolor{keywordtype}{size\_t}\ EntryYear,\ \textcolor{keywordtype}{float}\ HourlyVage,\ \textcolor{keywordtype}{int}\ WorkedHours)}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_employee}{Employee}}\{\ Name,\ Surname,\ InsuranceNumber,\ EntryYear\ \},\ mHourlyVage\{\ HourlyVage\ \},\ mWorkedHours\{\ WorkedHours\ \}\ \{\};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202}{GetProvision}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_hourly_worker_a8bd4d7d919646ad71293703032ee7225}{GetBaseSalary}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_hourly_worker_adb7b56110a1dc17a44d37dfeeb10ac4e}{CalcSalary}}()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_hourly_worker_a5569a1c126e356f4fafb404f6b013202}{GetProvision}}()\ +\ \mbox{\hyperlink{class_hourly_worker_a8bd4d7d919646ad71293703032ee7225}{GetBaseSalary}}();\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_hourly_worker_a17bfd5b276b8722ad050dc196f8190d4}{Print}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ EmployeeType\ \mbox{\hyperlink{class_hourly_worker_aa28c813685ef54a34e577c69d9c86087}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{float}\ mHourlyVage;\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ mWorkedHours;\ }
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
