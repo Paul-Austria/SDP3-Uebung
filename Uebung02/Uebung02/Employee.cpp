@@ -37,10 +37,17 @@ size_t Employee::GetBirthYear()
 
 std::string Employee::GetInitial()
 {
-    
+    std::string str1 = "";
+    std::string str2 = "";
+    std::string str3 = "";
+
     if (mSurname.size() > 1) {
 
-        return "" + mName[0] + mSurname[0] + mSurname[1];
+        str1 = mName[0];
+        str2 = mSurname[0];
+        str3 = mSurname[1];
+
+        return str1 + str2 + str3;
 
     }
     else {
@@ -62,9 +69,9 @@ void Employee::Print()
     std::cout << "*******************************************" << std::endl;
     std::cout << "Datenblatt" << std::endl;
     std::cout << "---------------" << std::endl;
-    std::cout << std::endl;
-    std::cout << "Name: " << mName << std::endl;
-    std::cout << "Kürzel: " << GetInitial() << std::endl;
+    //std::cout << std::endl;
+    std::cout << "Name: " << mName << " " << mSurname << std::endl;
+    std::cout << "Kuerzel: " << std::tolower << GetInitial() << std::endl;
     std::cout << "Sozialversicherungsnummer: " << mInsuranceNumber << std::endl;
     std::cout << "Einstiegsjahr: " << GetEntryYear() << std::endl;
     

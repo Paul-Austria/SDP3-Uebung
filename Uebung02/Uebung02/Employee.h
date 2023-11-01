@@ -11,7 +11,8 @@ typedef enum class EnumEmployee {
 	ComissionWorker = 0,
 	HourlyWorker = 1,
 	PieceWorker = 2,
-	Boss = 3
+	Boss = 3,
+	Nothing = 4
 
 }EmployeeType;
 
@@ -47,7 +48,7 @@ protected:
 	//std::string mInitial;
 	size_t mInsuranceNumber;
 	size_t mEntryYear;
-	EmployeeType mType = EmployeeType::ComissionWorker;
+	EmployeeType mType = EmployeeType::Nothing;
 	size_t mPiecesProduced = 0;
 	size_t mPiecesSold = 0;
 	float mSalary = 0.0;

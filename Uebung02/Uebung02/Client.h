@@ -13,7 +13,7 @@ class Client{
 
 public:
 
-	Client(EmployeeManager* manager) : manager(manager) {};
+	Client(EmployeeManager* manager) : mManager(manager) {};
 
 
 	
@@ -30,7 +30,7 @@ public:
 	void PrintAll();*/
 
 private:
-	EmployeeManager* manager;
+	EmployeeManager* mManager;
 
 	//LongestWorkingEmployees TVecHelp;
 	//EM Test;

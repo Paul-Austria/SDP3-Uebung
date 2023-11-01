@@ -37,7 +37,9 @@ size_t EmployeeManager::GetNumberOfXEmployee(EnumEmployee Type)
 
 	for (auto It = mEmployeeMap.cbegin(); It != mEmployeeMap.cend(); It++) {
 
-		if (It->second->GetType() == Type) {
+		auto tmpo = It->second->GetType();
+
+		if (tmpo == Type) {
 
 			tmp++;
 
@@ -54,11 +56,11 @@ size_t EmployeeManager::GetProducedPieces()
 
 	for (auto It = mEmployeeMap.cbegin(); It != mEmployeeMap.cend(); It++) {
 
-		if (It->second->GetType() == EnumEmployee::PieceWorker) {
+		//if (It->second->GetType() == EnumEmployee::PieceWorker) {
 
 			PiecesProducedSum += It->second->GetProducedPieces();
 
-		}
+		//}
 
 	}
 
