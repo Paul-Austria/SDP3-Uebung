@@ -1,0 +1,5 @@
+﻿  VideoPlayerWrapper.cpp
+x64\Debug\MusicPlayerWrapper.obj : warning LNK4042: Objekt mehrmals angegeben; zusätzliche Objekte werden ignoriert.
+x64\Debug\Video.obj : warning LNK4042: Objekt mehrmals angegeben; zusätzliche Objekte werden ignoriert.
+x64\Debug\VideoPlayer.obj : warning LNK4042: Objekt mehrmals angegeben; zusätzliche Objekte werden ignoriert.
+  Uebung03.vcxproj -> C:\Uni\hsd\sdp\Git\Uebung03\Uebung03\x64\Debug\Uebung03.exe
