@@ -19,18 +19,18 @@
       <x>603</x>
       <y>360</y>
       <w>27</w>
-      <h>54</h>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>504</x>
-      <y>396</y>
+      <y>387</y>
       <w>225</w>
-      <h>198</h>
+      <h>243</h>
     </coordinates>
     <panel_attributes>Employee
 --
@@ -40,12 +40,16 @@
 #mInsuranceNumber:size_t
 #mEntryYear:size_t
 #mType:EnumEmployee
+#PiecesProduced:size_t
+#PiecesSold:size_t
+#mSalary:float
 --
-+CalcSalary():float
++GetSalary():float
 +GetBirthYear():size_t
-+GetInitial():string
 +GetEntryYear():size_t
-+Print():void</panel_attributes>
++virtual Print():void
++GetProducedPieces:size_t
++GetSoldPieces:size_t</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -61,7 +65,8 @@
 +ComissionWorker
 +HourlyWorker
 +PieceWorker
-+Boss</panel_attributes>
++Boss
++Nothing</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -78,9 +83,12 @@
 -mFixedAmount:size_t
 -mSoldPieces:size_t
 --
++GetProvision:float
++GetBaseSalary:float
 +CalcSalary():float
-+GetSoldPieces():size_t
-+Print():void</panel_attributes>
++SetSoldPieces():void
++Print():void
++SetType:void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -97,9 +105,11 @@
 -mPieceValue:float
 --
 +CalcSalary():float
-+GetProducedPieces():size_t
++SetProducedPieces():void
 +Print():void
-</panel_attributes>
++GetProvision:float
++GetBaseSalary:float
++SetType:void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -116,7 +126,10 @@
 -mWorkedHours:int
 --
 +CalcSalary():float
-+Print():void</panel_attributes>
++Print():void
++GetProvision:float
++GetBaseSalary:float
++SetType:void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -157,30 +170,10 @@
 -mFixedSalary:float
 --
 +CalcSalary:float
-+Print():void</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>441</x>
-      <y>45</y>
-      <w>414</w>
-      <h>189</h>
-    </coordinates>
-    <panel_attributes>iClient &lt;&lt;Interface&gt;&gt;
---
-+virtual AddEmployee(Name,Surname,InsuranceNumber,EntryYear):void = 0
-+virtual Delete(InsuranceNumber):bool = 0
-+virtual GetNumberOfEmployee():size_t = 0
-+virtual GetNumberOfXEmployee(EnumEmployee):size_t = 0
-+virtual GetProducedPieces():size_t = 0
-+virtual GetSoldPieces():size_t = 0
-+virtual GetEmployeeBornBefore1970():size_t = 0
-+virtual GetSalaryOf(InsuranceNumber):float = 0
-+virtual SearchEmployeeInitial(string):bool = 0
-+virtual GetLongestWorkingEmployee():size_t = 0
-+virtual PrintAll():void = 0</panel_attributes>
++Print():void
++GetProvision:float
++GetBaseSalary:float
++SetType:void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -193,15 +186,9 @@
     </coordinates>
     <panel_attributes>Client
 --
-+GetNumberOfEmployee():size_t
-+GetNumberOfXEmployee(EnumEmployee):size_t
-+GetProducedPieces():size_t
-+GetSoldPieces():size_t
-+GetEmployeeBornBefore1970():size_t
-+GetSalaryOf(InsuranceNumber):float
-+SearchEmployeeInitial(string):bool
-+GetLongestWorkingEmployee():size_t
-+PrintAll():void</panel_attributes>
++ManagerTest():void
+--
+-mManager:EmployeeManager*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -220,45 +207,45 @@
     <id>Relation</id>
     <coordinates>
       <x>522</x>
-      <y>585</y>
+      <y>621</y>
       <w>99</w>
-      <h>153</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>90.0;10.0;90.0;100.0;10.0;100.0;10.0;150.0</additional_attributes>
+    <additional_attributes>90.0;10.0;90.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>315</x>
-      <y>585</y>
+      <y>621</y>
       <w>252</w>
-      <h>153</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>260.0;10.0;260.0;60.0;10.0;60.0;10.0;150.0</additional_attributes>
+    <additional_attributes>260.0;10.0;260.0;20.0;10.0;20.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>639</x>
-      <y>585</y>
+      <y>621</y>
       <w>117</w>
-      <h>153</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0;110.0;110.0;110.0;150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;110.0;70.0;110.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>684</x>
-      <y>585</y>
+      <y>621</y>
       <w>297</w>
-      <h>153</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0;310.0;60.0;310.0;150.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0;310.0;20.0;310.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -274,24 +261,12 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>333</x>
       <y>117</y>
-      <w>216</w>
+      <w>729</w>
       <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;220.0;10.0;220.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>333</x>
-      <y>108</y>
-      <w>126</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.&gt;
-&lt;&lt;use&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+    <additional_attributes>10.0;10.0;790.0;10.0;790.0;110.0</additional_attributes>
   </element>
 </diagram>
