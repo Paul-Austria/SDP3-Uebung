@@ -188,7 +188,7 @@
 --
 +ManagerTest():void
 --
--mManager:EmployeeManager*</panel_attributes>
+-mManager:IEmployeeManager*</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -261,12 +261,47 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>333</x>
+      <x>837</x>
       <y>117</y>
-      <w>729</w>
+      <w>225</w>
       <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;790.0;10.0;790.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0;230.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>45</y>
+      <w>450</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>IEmployeeManager
+--
++virtual AddEmployee(Name,Surname,InsuranceNumber,EntryYear):void = 0
++virtual Delete(InsuranceNumber):bool = 0
++virtual GetNumberOfEmployee():size_t = 0
++virtual GetNumberOfXEmployee(EnumEmployee):size_t = 0
++virtual GetProducedPieces():size_t = 0
++virtual GetSoldPieces():size_t = 0
++virtual GetEmployeeBornBefore1970():size_t = 0
++virtual GetSalaryOf(InsuranceNumber):float = 0
++virtual SearchEmployeeInitial(string):bool = 0
++virtual GetLongestWorkingEmployee():string = 0
++virtual PrintAll():void = 0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>117</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
   </element>
 </diagram>
