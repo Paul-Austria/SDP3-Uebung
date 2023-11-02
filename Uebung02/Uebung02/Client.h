@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-class EmployeeManager; // Forward declaration to avoid circular dependencies
+class IEmployeeManager; // Forward declaration to avoid circular dependencies
 
 /// <summary>
 /// Class representing a client that tests the EmployeeManager.
@@ -17,7 +17,7 @@ public:
     /// Constructor for the Client class.
     /// </summary>
     /// <param name="manager">A pointer to the EmployeeManager used for testing.</param>
-    Client(EmployeeManager* manager) : mManager(manager) {};
+    Client(IEmployeeManager* manager) : mManager(manager) {};
 
     /// <summary>
     /// Perform testing on the EmployeeManager.
@@ -25,7 +25,7 @@ public:
     void ManagerTest();
 
 private:
-    EmployeeManager* mManager; ///< <summary> A pointer to the EmployeeManager for testing. </summary>
+    IEmployeeManager* mManager; ///< <summary> A pointer to the EmployeeManager for testing. </summary>
 };
 
 #endif

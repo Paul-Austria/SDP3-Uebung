@@ -9,31 +9,36 @@ Class responsible for managing employees.
 
 {\ttfamily \#include $<$Employee\+Manager.\+h$>$}
 
+Inheritance diagram for Employee\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_employee_manager}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_employee_manager_a561d30bc1d18153fb64723b483b452a8}{Add\+Employee}} (size\+\_\+t Insurance\+Number, \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}Emp)
+void \mbox{\hyperlink{class_employee_manager_a72f717846ca200315bf0fbae063a0b4d}{Add\+Employee}} (size\+\_\+t Insurance\+Number, \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}Emp) override
 \begin{DoxyCompactList}\small\item\em Add an employee to the manager. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_employee_manager_acf0837428579fdcdf8a776130747fe31}{Delete}} (size\+\_\+t Insurance\+Number)
+bool \mbox{\hyperlink{class_employee_manager_a740556d9a6c467fde5788e94182fba91}{Delete}} (size\+\_\+t Insurance\+Number) override
 \begin{DoxyCompactList}\small\item\em Delete an employee from the manager. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_employee_manager_a08a662334178ebfffed22c9ee83a865c}{Get\+Number\+Of\+Employee}} ()
+size\+\_\+t \mbox{\hyperlink{class_employee_manager_aabf5c0be38736af7c05d03d47643ea18}{Get\+Number\+Of\+Employee}} () override
 \begin{DoxyCompactList}\small\item\em Get the total number of employees in the manager. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_employee_manager_a2c7a8960154e688c80757b8e56fc5446}{Get\+Number\+Of\+XEmployee}} (Enum\+Employee Type)
+size\+\_\+t \mbox{\hyperlink{class_employee_manager_a1d64d82093262cbbc1c1e105f2d74538}{Get\+Number\+Of\+XEmployee}} (Enum\+Employee Type) override
 \begin{DoxyCompactList}\small\item\em Get the total number of employees of a specific type. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_employee_manager_a025a97c5d68fb9bfd2efca195fc7671d}{Get\+Produced\+Pieces}} ()
+size\+\_\+t \mbox{\hyperlink{class_employee_manager_a9e8d1aa1dcb5d0f8735455694fb5fa60}{Get\+Produced\+Pieces}} () override
 \begin{DoxyCompactList}\small\item\em Get the total number of pieces produced by all employees. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_employee_manager_a463945670da54f2f6bba8795eddddd9b}{Get\+Sold\+Pieces}} ()
+size\+\_\+t \mbox{\hyperlink{class_employee_manager_a9c0fdbf355c3de0caf851ee23363fc3f}{Get\+Sold\+Pieces}} () override
 \begin{DoxyCompactList}\small\item\em Get the total number of pieces sold by all employees. \end{DoxyCompactList}\item 
-size\+\_\+t \mbox{\hyperlink{class_employee_manager_af4cbe4ed92f786271681943a65757dff}{Get\+Employee\+Born\+Before1970}} ()
+size\+\_\+t \mbox{\hyperlink{class_employee_manager_a566988281650efeec765e57a4a5bd212}{Get\+Employee\+Born\+Before1970}} () override
 \begin{DoxyCompactList}\small\item\em Get the total number of employees born before the year 1970. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{class_employee_manager_aa3c8eecb01c7c6e8c1d7dca25c49e9d3}{Get\+Salary\+Of}} (size\+\_\+t Insurance\+Number)
+float \mbox{\hyperlink{class_employee_manager_a9537395c5fae37e6360f9be158332500}{Get\+Salary\+Of}} (size\+\_\+t Insurance\+Number) override
 \begin{DoxyCompactList}\small\item\em Get the monthly salary of an employee with a specific insurance number. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_employee_manager_a325f62d95ead55f950f7411a8807a7c1}{Search\+Employee\+Initial}} (std\+::string Initial\+Name)
+bool \mbox{\hyperlink{class_employee_manager_a5e0209f83d089ddd39cd39547c16766f}{Search\+Employee\+Initial}} (std\+::string Initial\+Name) override
 \begin{DoxyCompactList}\small\item\em Search for an employee by their initials. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_manager_a880b70aee5718efc9405613fd70ad6d3}{Get\+Longest\+Working\+Employee}} ()
+\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_employee_manager_ad501aa5e703fd1a8825d37187b815ce1}{Get\+Longest\+Working\+Employee}} () override
 \begin{DoxyCompactList}\small\item\em Get the employee with the longest tenure in the company. \end{DoxyCompactList}\item 
-\Hypertarget{class_employee_manager_ae3785e29bb886c638097a1cdcd9c0bce}\label{class_employee_manager_ae3785e29bb886c638097a1cdcd9c0bce} 
-void {\bfseries Print\+All} ()
+void \mbox{\hyperlink{class_employee_manager_aa937ff6df5cbb2369c9da0098de095db}{Print\+All}} () override
 \begin{DoxyCompactList}\small\item\em Print information about all employees. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -41,11 +46,11 @@ void {\bfseries Print\+All} ()
 Class responsible for managing employees. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_employee_manager_a561d30bc1d18153fb64723b483b452a8}\label{class_employee_manager_a561d30bc1d18153fb64723b483b452a8} 
+\Hypertarget{class_employee_manager_a72f717846ca200315bf0fbae063a0b4d}\label{class_employee_manager_a72f717846ca200315bf0fbae063a0b4d} 
 \index{EmployeeManager@{EmployeeManager}!AddEmployee@{AddEmployee}}
 \index{AddEmployee@{AddEmployee}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{AddEmployee()}{AddEmployee()}}
-{\footnotesize\ttfamily void Employee\+Manager\+::\+Add\+Employee (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}}]{Emp }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Employee\+Manager\+::\+Add\+Employee (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number,  }\item[{\mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*}}]{Emp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -58,11 +63,15 @@ Add an employee to the manager.
 {\em Emp} & A pointer to the employee to be added.\\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_employee_manager_acf0837428579fdcdf8a776130747fe31}\label{class_employee_manager_acf0837428579fdcdf8a776130747fe31} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a78a9c7ddffb5068b4eaf2273adb30323}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a740556d9a6c467fde5788e94182fba91}\label{class_employee_manager_a740556d9a6c467fde5788e94182fba91} 
 \index{EmployeeManager@{EmployeeManager}!Delete@{Delete}}
 \index{Delete@{Delete}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
-{\footnotesize\ttfamily bool Employee\+Manager\+::\+Delete (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Employee\+Manager\+::\+Delete (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -76,11 +85,15 @@ Delete an employee from the manager.
 \begin{DoxyReturn}{Returns}
 True if the employee was successfully deleted; false if the employee was not found.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_af4cbe4ed92f786271681943a65757dff}\label{class_employee_manager_af4cbe4ed92f786271681943a65757dff} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a85c810bbbf9a19a00e731b46dd52ebe1}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a566988281650efeec765e57a4a5bd212}\label{class_employee_manager_a566988281650efeec765e57a4a5bd212} 
 \index{EmployeeManager@{EmployeeManager}!GetEmployeeBornBefore1970@{GetEmployeeBornBefore1970}}
 \index{GetEmployeeBornBefore1970@{GetEmployeeBornBefore1970}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetEmployeeBornBefore1970()}{GetEmployeeBornBefore1970()}}
-{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Employee\+Born\+Before1970 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Employee\+Born\+Before1970 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -89,11 +102,15 @@ Get the total number of employees born before the year 1970.
 \begin{DoxyReturn}{Returns}
 The total number of employees born before 1970.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a880b70aee5718efc9405613fd70ad6d3}\label{class_employee_manager_a880b70aee5718efc9405613fd70ad6d3} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a173d94c10005923d04a277405feba0b5}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_ad501aa5e703fd1a8825d37187b815ce1}\label{class_employee_manager_ad501aa5e703fd1a8825d37187b815ce1} 
 \index{EmployeeManager@{EmployeeManager}!GetLongestWorkingEmployee@{GetLongestWorkingEmployee}}
 \index{GetLongestWorkingEmployee@{GetLongestWorkingEmployee}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetLongestWorkingEmployee()}{GetLongestWorkingEmployee()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} Employee\+Manager\+::\+Get\+Longest\+Working\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_employee}{Employee}} \texorpdfstring{$\ast$}{*} Employee\+Manager\+::\+Get\+Longest\+Working\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -102,11 +119,15 @@ Get the employee with the longest tenure in the company.
 \begin{DoxyReturn}{Returns}
 A pointer to the employee with the longest tenure.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a08a662334178ebfffed22c9ee83a865c}\label{class_employee_manager_a08a662334178ebfffed22c9ee83a865c} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a9b1a3bd0c02ace09b8058f2470ad205b}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_aabf5c0be38736af7c05d03d47643ea18}\label{class_employee_manager_aabf5c0be38736af7c05d03d47643ea18} 
 \index{EmployeeManager@{EmployeeManager}!GetNumberOfEmployee@{GetNumberOfEmployee}}
 \index{GetNumberOfEmployee@{GetNumberOfEmployee}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetNumberOfEmployee()}{GetNumberOfEmployee()}}
-{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Number\+Of\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Number\+Of\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -115,11 +136,15 @@ Get the total number of employees in the manager.
 \begin{DoxyReturn}{Returns}
 The total number of employees.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a2c7a8960154e688c80757b8e56fc5446}\label{class_employee_manager_a2c7a8960154e688c80757b8e56fc5446} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_ad04000d45ed82bf90d6fcaadb8e4362a}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a1d64d82093262cbbc1c1e105f2d74538}\label{class_employee_manager_a1d64d82093262cbbc1c1e105f2d74538} 
 \index{EmployeeManager@{EmployeeManager}!GetNumberOfXEmployee@{GetNumberOfXEmployee}}
 \index{GetNumberOfXEmployee@{GetNumberOfXEmployee}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetNumberOfXEmployee()}{GetNumberOfXEmployee()}}
-{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Number\+Of\+XEmployee (\begin{DoxyParamCaption}\item[{Enum\+Employee}]{Type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Number\+Of\+XEmployee (\begin{DoxyParamCaption}\item[{Enum\+Employee}]{Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -133,11 +158,15 @@ Get the total number of employees of a specific type.
 \begin{DoxyReturn}{Returns}
 The total number of employees of the specified type.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a025a97c5d68fb9bfd2efca195fc7671d}\label{class_employee_manager_a025a97c5d68fb9bfd2efca195fc7671d} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a394c669af40bd5aaaf84ce2946cdf10b}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a9e8d1aa1dcb5d0f8735455694fb5fa60}\label{class_employee_manager_a9e8d1aa1dcb5d0f8735455694fb5fa60} 
 \index{EmployeeManager@{EmployeeManager}!GetProducedPieces@{GetProducedPieces}}
 \index{GetProducedPieces@{GetProducedPieces}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetProducedPieces()}{GetProducedPieces()}}
-{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Produced\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Produced\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -146,11 +175,15 @@ Get the total number of pieces produced by all employees.
 \begin{DoxyReturn}{Returns}
 The total number of pieces produced.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_aa3c8eecb01c7c6e8c1d7dca25c49e9d3}\label{class_employee_manager_aa3c8eecb01c7c6e8c1d7dca25c49e9d3} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_ac277dec9f2fee113788efd8c50ff4bc7}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a9537395c5fae37e6360f9be158332500}\label{class_employee_manager_a9537395c5fae37e6360f9be158332500} 
 \index{EmployeeManager@{EmployeeManager}!GetSalaryOf@{GetSalaryOf}}
 \index{GetSalaryOf@{GetSalaryOf}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetSalaryOf()}{GetSalaryOf()}}
-{\footnotesize\ttfamily float Employee\+Manager\+::\+Get\+Salary\+Of (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Employee\+Manager\+::\+Get\+Salary\+Of (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Insurance\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -164,11 +197,15 @@ Get the monthly salary of an employee with a specific insurance number.
 \begin{DoxyReturn}{Returns}
 The monthly salary of the employee.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a463945670da54f2f6bba8795eddddd9b}\label{class_employee_manager_a463945670da54f2f6bba8795eddddd9b} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a05cc51ffe2ae59613b88ab2f798c18e8}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a9c0fdbf355c3de0caf851ee23363fc3f}\label{class_employee_manager_a9c0fdbf355c3de0caf851ee23363fc3f} 
 \index{EmployeeManager@{EmployeeManager}!GetSoldPieces@{GetSoldPieces}}
 \index{GetSoldPieces@{GetSoldPieces}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{GetSoldPieces()}{GetSoldPieces()}}
-{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Sold\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily size\+\_\+t Employee\+Manager\+::\+Get\+Sold\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -177,11 +214,29 @@ Get the total number of pieces sold by all employees.
 \begin{DoxyReturn}{Returns}
 The total number of pieces sold.
 \end{DoxyReturn}
-\Hypertarget{class_employee_manager_a325f62d95ead55f950f7411a8807a7c1}\label{class_employee_manager_a325f62d95ead55f950f7411a8807a7c1} 
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_ace07344ac6ef82049fcaa2a4ab7cee42}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_aa937ff6df5cbb2369c9da0098de095db}\label{class_employee_manager_aa937ff6df5cbb2369c9da0098de095db} 
+\index{EmployeeManager@{EmployeeManager}!PrintAll@{PrintAll}}
+\index{PrintAll@{PrintAll}!EmployeeManager@{EmployeeManager}}
+\doxysubsubsection{\texorpdfstring{PrintAll()}{PrintAll()}}
+{\footnotesize\ttfamily void Employee\+Manager\+::\+Print\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print information about all employees. 
+
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_a1ae0632d019a132c745b5969ea749533}{IEmployee\+Manager}}.
+
+\Hypertarget{class_employee_manager_a5e0209f83d089ddd39cd39547c16766f}\label{class_employee_manager_a5e0209f83d089ddd39cd39547c16766f} 
 \index{EmployeeManager@{EmployeeManager}!SearchEmployeeInitial@{SearchEmployeeInitial}}
 \index{SearchEmployeeInitial@{SearchEmployeeInitial}!EmployeeManager@{EmployeeManager}}
 \doxysubsubsection{\texorpdfstring{SearchEmployeeInitial()}{SearchEmployeeInitial()}}
-{\footnotesize\ttfamily bool Employee\+Manager\+::\+Search\+Employee\+Initial (\begin{DoxyParamCaption}\item[{std\+::string}]{Initial\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Employee\+Manager\+::\+Search\+Employee\+Initial (\begin{DoxyParamCaption}\item[{std\+::string}]{Initial\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -195,6 +250,10 @@ Search for an employee by their initials.
 \begin{DoxyReturn}{Returns}
 True if an employee with the specified initials is found; false otherwise.
 \end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_employee_manager_ab60f954dd8b533bd9d88691750f96858}{IEmployee\+Manager}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

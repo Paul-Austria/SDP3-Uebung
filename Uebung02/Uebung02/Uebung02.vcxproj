@@ -144,6 +144,7 @@
     <ClInclude Include="Employee.h" />
     <ClInclude Include="EmployeeManager.h" />
     <ClInclude Include="HourlyWorker.h" />
+    <ClInclude Include="IEmployeeManager.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PieceWorker.h" />
   </ItemGroup>

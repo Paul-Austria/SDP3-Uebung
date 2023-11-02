@@ -4,7 +4,7 @@
 #include "Client.h"
 #include "algorithm"
 
-#include "EmployeeManager.h"
+#include "IEmployeeManager.h"
 #include "Boss.h"
 #include "ComissionWorker.h"
 #include "PieceWorker.h"

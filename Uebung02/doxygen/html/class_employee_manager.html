@@ -81,52 +81,64 @@ $(function() {
  <a href="class_employee_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_employee_manager_8h_source.html">EmployeeManager.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for EmployeeManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_employee_manager.png" usemap="#EmployeeManager_map" alt=""/>
+  <map id="EmployeeManager_map" name="EmployeeManager_map">
+<area href="class_i_employee_manager.html" title="Interface responsible for managing employees." alt="IEmployeeManager" shape="rect" coords="0,0,121,24"/>
+<area href="class_object.html" alt="Object" shape="rect" coords="131,0,252,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a561d30bc1d18153fb64723b483b452a8" id="r_a561d30bc1d18153fb64723b483b452a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a561d30bc1d18153fb64723b483b452a8">AddEmployee</a> (size_t InsuranceNumber, <a class="el" href="class_employee.html">Employee</a> *Emp)</td></tr>
-<tr class="memdesc:a561d30bc1d18153fb64723b483b452a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an employee to the manager.  <br /></td></tr>
-<tr class="separator:a561d30bc1d18153fb64723b483b452a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0837428579fdcdf8a776130747fe31" id="r_acf0837428579fdcdf8a776130747fe31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#acf0837428579fdcdf8a776130747fe31">Delete</a> (size_t InsuranceNumber)</td></tr>
-<tr class="memdesc:acf0837428579fdcdf8a776130747fe31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an employee from the manager.  <br /></td></tr>
-<tr class="separator:acf0837428579fdcdf8a776130747fe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08a662334178ebfffed22c9ee83a865c" id="r_a08a662334178ebfffed22c9ee83a865c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a08a662334178ebfffed22c9ee83a865c">GetNumberOfEmployee</a> ()</td></tr>
-<tr class="memdesc:a08a662334178ebfffed22c9ee83a865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees in the manager.  <br /></td></tr>
-<tr class="separator:a08a662334178ebfffed22c9ee83a865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c7a8960154e688c80757b8e56fc5446" id="r_a2c7a8960154e688c80757b8e56fc5446"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a2c7a8960154e688c80757b8e56fc5446">GetNumberOfXEmployee</a> (EnumEmployee Type)</td></tr>
-<tr class="memdesc:a2c7a8960154e688c80757b8e56fc5446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees of a specific type.  <br /></td></tr>
-<tr class="separator:a2c7a8960154e688c80757b8e56fc5446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025a97c5d68fb9bfd2efca195fc7671d" id="r_a025a97c5d68fb9bfd2efca195fc7671d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a025a97c5d68fb9bfd2efca195fc7671d">GetProducedPieces</a> ()</td></tr>
-<tr class="memdesc:a025a97c5d68fb9bfd2efca195fc7671d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of pieces produced by all employees.  <br /></td></tr>
-<tr class="separator:a025a97c5d68fb9bfd2efca195fc7671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463945670da54f2f6bba8795eddddd9b" id="r_a463945670da54f2f6bba8795eddddd9b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a463945670da54f2f6bba8795eddddd9b">GetSoldPieces</a> ()</td></tr>
-<tr class="memdesc:a463945670da54f2f6bba8795eddddd9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of pieces sold by all employees.  <br /></td></tr>
-<tr class="separator:a463945670da54f2f6bba8795eddddd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4cbe4ed92f786271681943a65757dff" id="r_af4cbe4ed92f786271681943a65757dff"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#af4cbe4ed92f786271681943a65757dff">GetEmployeeBornBefore1970</a> ()</td></tr>
-<tr class="memdesc:af4cbe4ed92f786271681943a65757dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees born before the year 1970.  <br /></td></tr>
-<tr class="separator:af4cbe4ed92f786271681943a65757dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c8eecb01c7c6e8c1d7dca25c49e9d3" id="r_aa3c8eecb01c7c6e8c1d7dca25c49e9d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#aa3c8eecb01c7c6e8c1d7dca25c49e9d3">GetSalaryOf</a> (size_t InsuranceNumber)</td></tr>
-<tr class="memdesc:aa3c8eecb01c7c6e8c1d7dca25c49e9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the monthly salary of an employee with a specific insurance number.  <br /></td></tr>
-<tr class="separator:aa3c8eecb01c7c6e8c1d7dca25c49e9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325f62d95ead55f950f7411a8807a7c1" id="r_a325f62d95ead55f950f7411a8807a7c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a325f62d95ead55f950f7411a8807a7c1">SearchEmployeeInitial</a> (std::string InitialName)</td></tr>
-<tr class="memdesc:a325f62d95ead55f950f7411a8807a7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for an employee by their initials.  <br /></td></tr>
-<tr class="separator:a325f62d95ead55f950f7411a8807a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880b70aee5718efc9405613fd70ad6d3" id="r_a880b70aee5718efc9405613fd70ad6d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_employee.html">Employee</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a880b70aee5718efc9405613fd70ad6d3">GetLongestWorkingEmployee</a> ()</td></tr>
-<tr class="memdesc:a880b70aee5718efc9405613fd70ad6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the employee with the longest tenure in the company.  <br /></td></tr>
-<tr class="separator:a880b70aee5718efc9405613fd70ad6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3785e29bb886c638097a1cdcd9c0bce" id="r_ae3785e29bb886c638097a1cdcd9c0bce"><td class="memItemLeft" align="right" valign="top"><a id="ae3785e29bb886c638097a1cdcd9c0bce" name="ae3785e29bb886c638097a1cdcd9c0bce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td></tr>
-<tr class="memdesc:ae3785e29bb886c638097a1cdcd9c0bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information about all employees. <br /></td></tr>
-<tr class="separator:ae3785e29bb886c638097a1cdcd9c0bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f717846ca200315bf0fbae063a0b4d" id="r_a72f717846ca200315bf0fbae063a0b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a72f717846ca200315bf0fbae063a0b4d">AddEmployee</a> (size_t InsuranceNumber, <a class="el" href="class_employee.html">Employee</a> *Emp) override</td></tr>
+<tr class="memdesc:a72f717846ca200315bf0fbae063a0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an employee to the manager.  <br /></td></tr>
+<tr class="separator:a72f717846ca200315bf0fbae063a0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a740556d9a6c467fde5788e94182fba91" id="r_a740556d9a6c467fde5788e94182fba91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a740556d9a6c467fde5788e94182fba91">Delete</a> (size_t InsuranceNumber) override</td></tr>
+<tr class="memdesc:a740556d9a6c467fde5788e94182fba91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an employee from the manager.  <br /></td></tr>
+<tr class="separator:a740556d9a6c467fde5788e94182fba91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf5c0be38736af7c05d03d47643ea18" id="r_aabf5c0be38736af7c05d03d47643ea18"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#aabf5c0be38736af7c05d03d47643ea18">GetNumberOfEmployee</a> () override</td></tr>
+<tr class="memdesc:aabf5c0be38736af7c05d03d47643ea18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees in the manager.  <br /></td></tr>
+<tr class="separator:aabf5c0be38736af7c05d03d47643ea18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d64d82093262cbbc1c1e105f2d74538" id="r_a1d64d82093262cbbc1c1e105f2d74538"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a1d64d82093262cbbc1c1e105f2d74538">GetNumberOfXEmployee</a> (EnumEmployee Type) override</td></tr>
+<tr class="memdesc:a1d64d82093262cbbc1c1e105f2d74538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees of a specific type.  <br /></td></tr>
+<tr class="separator:a1d64d82093262cbbc1c1e105f2d74538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8d1aa1dcb5d0f8735455694fb5fa60" id="r_a9e8d1aa1dcb5d0f8735455694fb5fa60"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a9e8d1aa1dcb5d0f8735455694fb5fa60">GetProducedPieces</a> () override</td></tr>
+<tr class="memdesc:a9e8d1aa1dcb5d0f8735455694fb5fa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of pieces produced by all employees.  <br /></td></tr>
+<tr class="separator:a9e8d1aa1dcb5d0f8735455694fb5fa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0fdbf355c3de0caf851ee23363fc3f" id="r_a9c0fdbf355c3de0caf851ee23363fc3f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a9c0fdbf355c3de0caf851ee23363fc3f">GetSoldPieces</a> () override</td></tr>
+<tr class="memdesc:a9c0fdbf355c3de0caf851ee23363fc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of pieces sold by all employees.  <br /></td></tr>
+<tr class="separator:a9c0fdbf355c3de0caf851ee23363fc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566988281650efeec765e57a4a5bd212" id="r_a566988281650efeec765e57a4a5bd212"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a566988281650efeec765e57a4a5bd212">GetEmployeeBornBefore1970</a> () override</td></tr>
+<tr class="memdesc:a566988281650efeec765e57a4a5bd212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of employees born before the year 1970.  <br /></td></tr>
+<tr class="separator:a566988281650efeec765e57a4a5bd212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9537395c5fae37e6360f9be158332500" id="r_a9537395c5fae37e6360f9be158332500"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a9537395c5fae37e6360f9be158332500">GetSalaryOf</a> (size_t InsuranceNumber) override</td></tr>
+<tr class="memdesc:a9537395c5fae37e6360f9be158332500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the monthly salary of an employee with a specific insurance number.  <br /></td></tr>
+<tr class="separator:a9537395c5fae37e6360f9be158332500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0209f83d089ddd39cd39547c16766f" id="r_a5e0209f83d089ddd39cd39547c16766f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#a5e0209f83d089ddd39cd39547c16766f">SearchEmployeeInitial</a> (std::string InitialName) override</td></tr>
+<tr class="memdesc:a5e0209f83d089ddd39cd39547c16766f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for an employee by their initials.  <br /></td></tr>
+<tr class="separator:a5e0209f83d089ddd39cd39547c16766f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad501aa5e703fd1a8825d37187b815ce1" id="r_ad501aa5e703fd1a8825d37187b815ce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_employee.html">Employee</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#ad501aa5e703fd1a8825d37187b815ce1">GetLongestWorkingEmployee</a> () override</td></tr>
+<tr class="memdesc:ad501aa5e703fd1a8825d37187b815ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the employee with the longest tenure in the company.  <br /></td></tr>
+<tr class="separator:ad501aa5e703fd1a8825d37187b815ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa937ff6df5cbb2369c9da0098de095db" id="r_aa937ff6df5cbb2369c9da0098de095db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_employee_manager.html#aa937ff6df5cbb2369c9da0098de095db">PrintAll</a> () override</td></tr>
+<tr class="memdesc:aa937ff6df5cbb2369c9da0098de095db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information about all employees.  <br /></td></tr>
+<tr class="separator:aa937ff6df5cbb2369c9da0098de095db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class responsible for managing employees. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a561d30bc1d18153fb64723b483b452a8" name="a561d30bc1d18153fb64723b483b452a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a561d30bc1d18153fb64723b483b452a8">&#9670;&#160;</a></span>AddEmployee()</h2>
+<a id="a72f717846ca200315bf0fbae063a0b4d" name="a72f717846ca200315bf0fbae063a0b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f717846ca200315bf0fbae063a0b4d">&#9670;&#160;</a></span>AddEmployee()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void EmployeeManager::AddEmployee </td>
@@ -146,6 +158,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Add an employee to the manager. </p>
@@ -157,13 +174,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a78a9c7ddffb5068b4eaf2273adb30323">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="acf0837428579fdcdf8a776130747fe31" name="acf0837428579fdcdf8a776130747fe31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf0837428579fdcdf8a776130747fe31">&#9670;&#160;</a></span>Delete()</h2>
+<a id="a740556d9a6c467fde5788e94182fba91" name="a740556d9a6c467fde5788e94182fba91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a740556d9a6c467fde5788e94182fba91">&#9670;&#160;</a></span>Delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool EmployeeManager::Delete </td>
@@ -173,6 +195,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Delete an employee from the manager. </p>
@@ -184,13 +211,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the employee was successfully deleted; false if the employee was not found.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a85c810bbbf9a19a00e731b46dd52ebe1">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="af4cbe4ed92f786271681943a65757dff" name="af4cbe4ed92f786271681943a65757dff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4cbe4ed92f786271681943a65757dff">&#9670;&#160;</a></span>GetEmployeeBornBefore1970()</h2>
+<a id="a566988281650efeec765e57a4a5bd212" name="a566988281650efeec765e57a4a5bd212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566988281650efeec765e57a4a5bd212">&#9670;&#160;</a></span>GetEmployeeBornBefore1970()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t EmployeeManager::GetEmployeeBornBefore1970 </td>
@@ -199,18 +231,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the total number of employees born before the year 1970. </p>
 <dl class="section return"><dt>Returns</dt><dd>The total number of employees born before 1970.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a173d94c10005923d04a277405feba0b5">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a880b70aee5718efc9405613fd70ad6d3" name="a880b70aee5718efc9405613fd70ad6d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880b70aee5718efc9405613fd70ad6d3">&#9670;&#160;</a></span>GetLongestWorkingEmployee()</h2>
+<a id="ad501aa5e703fd1a8825d37187b815ce1" name="ad501aa5e703fd1a8825d37187b815ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad501aa5e703fd1a8825d37187b815ce1">&#9670;&#160;</a></span>GetLongestWorkingEmployee()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_employee.html">Employee</a> * EmployeeManager::GetLongestWorkingEmployee </td>
@@ -219,18 +261,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the employee with the longest tenure in the company. </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the employee with the longest tenure.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a9b1a3bd0c02ace09b8058f2470ad205b">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a08a662334178ebfffed22c9ee83a865c" name="a08a662334178ebfffed22c9ee83a865c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08a662334178ebfffed22c9ee83a865c">&#9670;&#160;</a></span>GetNumberOfEmployee()</h2>
+<a id="aabf5c0be38736af7c05d03d47643ea18" name="aabf5c0be38736af7c05d03d47643ea18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf5c0be38736af7c05d03d47643ea18">&#9670;&#160;</a></span>GetNumberOfEmployee()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t EmployeeManager::GetNumberOfEmployee </td>
@@ -239,18 +291,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the total number of employees in the manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>The total number of employees.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#ad04000d45ed82bf90d6fcaadb8e4362a">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a2c7a8960154e688c80757b8e56fc5446" name="a2c7a8960154e688c80757b8e56fc5446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c7a8960154e688c80757b8e56fc5446">&#9670;&#160;</a></span>GetNumberOfXEmployee()</h2>
+<a id="a1d64d82093262cbbc1c1e105f2d74538" name="a1d64d82093262cbbc1c1e105f2d74538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d64d82093262cbbc1c1e105f2d74538">&#9670;&#160;</a></span>GetNumberOfXEmployee()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t EmployeeManager::GetNumberOfXEmployee </td>
@@ -260,6 +322,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the total number of employees of a specific type. </p>
@@ -271,13 +338,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of employees of the specified type.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a394c669af40bd5aaaf84ce2946cdf10b">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a025a97c5d68fb9bfd2efca195fc7671d" name="a025a97c5d68fb9bfd2efca195fc7671d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a025a97c5d68fb9bfd2efca195fc7671d">&#9670;&#160;</a></span>GetProducedPieces()</h2>
+<a id="a9e8d1aa1dcb5d0f8735455694fb5fa60" name="a9e8d1aa1dcb5d0f8735455694fb5fa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8d1aa1dcb5d0f8735455694fb5fa60">&#9670;&#160;</a></span>GetProducedPieces()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t EmployeeManager::GetProducedPieces </td>
@@ -286,18 +358,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the total number of pieces produced by all employees. </p>
 <dl class="section return"><dt>Returns</dt><dd>The total number of pieces produced.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#ac277dec9f2fee113788efd8c50ff4bc7">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="aa3c8eecb01c7c6e8c1d7dca25c49e9d3" name="aa3c8eecb01c7c6e8c1d7dca25c49e9d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3c8eecb01c7c6e8c1d7dca25c49e9d3">&#9670;&#160;</a></span>GetSalaryOf()</h2>
+<a id="a9537395c5fae37e6360f9be158332500" name="a9537395c5fae37e6360f9be158332500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9537395c5fae37e6360f9be158332500">&#9670;&#160;</a></span>GetSalaryOf()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float EmployeeManager::GetSalaryOf </td>
@@ -307,6 +389,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the monthly salary of an employee with a specific insurance number. </p>
@@ -318,13 +405,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The monthly salary of the employee.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#a05cc51ffe2ae59613b88ab2f798c18e8">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a463945670da54f2f6bba8795eddddd9b" name="a463945670da54f2f6bba8795eddddd9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a463945670da54f2f6bba8795eddddd9b">&#9670;&#160;</a></span>GetSoldPieces()</h2>
+<a id="a9c0fdbf355c3de0caf851ee23363fc3f" name="a9c0fdbf355c3de0caf851ee23363fc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0fdbf355c3de0caf851ee23363fc3f">&#9670;&#160;</a></span>GetSoldPieces()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t EmployeeManager::GetSoldPieces </td>
@@ -333,18 +425,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the total number of pieces sold by all employees. </p>
 <dl class="section return"><dt>Returns</dt><dd>The total number of pieces sold.</dd></dl>
 
+<p>Implements <a class="el" href="class_i_employee_manager.html#ace07344ac6ef82049fcaa2a4ab7cee42">IEmployeeManager</a>.</p>
+
 </div>
 </div>
-<a id="a325f62d95ead55f950f7411a8807a7c1" name="a325f62d95ead55f950f7411a8807a7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a325f62d95ead55f950f7411a8807a7c1">&#9670;&#160;</a></span>SearchEmployeeInitial()</h2>
+<a id="aa937ff6df5cbb2369c9da0098de095db" name="aa937ff6df5cbb2369c9da0098de095db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa937ff6df5cbb2369c9da0098de095db">&#9670;&#160;</a></span>PrintAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmployeeManager::PrintAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print information about all employees. </p>
+
+<p>Implements <a class="el" href="class_i_employee_manager.html#a1ae0632d019a132c745b5969ea749533">IEmployeeManager</a>.</p>
+
+</div>
+</div>
+<a id="a5e0209f83d089ddd39cd39547c16766f" name="a5e0209f83d089ddd39cd39547c16766f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0209f83d089ddd39cd39547c16766f">&#9670;&#160;</a></span>SearchEmployeeInitial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool EmployeeManager::SearchEmployeeInitial </td>
@@ -354,6 +485,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Search for an employee by their initials. </p>
@@ -364,6 +500,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAll</b> ()</td><
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if an employee with the specified initials is found; false otherwise.</dd></dl>
+
+<p>Implements <a class="el" href="class_i_employee_manager.html#ab60f954dd8b533bd9d88691750f96858">IEmployeeManager</a>.</p>
 
 </div>
 </div>

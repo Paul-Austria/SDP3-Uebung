@@ -65,5 +65,8 @@
     <ClInclude Include="Client.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="IEmployeeManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

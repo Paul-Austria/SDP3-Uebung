@@ -90,25 +90,25 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="class_employee_manager.html">EmployeeManager</a>; <span class="comment">// Forward declaration to avoid circular dependencies</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="class_i_employee_manager.html">IEmployeeManager</a>; <span class="comment">// Forward declaration to avoid circular dependencies</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_client.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_client.html">Client</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_client.html#a17aac1778b8cb58ee7c2e4ebcc9ebd98">   20</a></span>    <a class="code hl_function" href="class_client.html#a17aac1778b8cb58ee7c2e4ebcc9ebd98">Client</a>(<a class="code hl_class" href="class_employee_manager.html">EmployeeManager</a>* manager) : mManager(manager) {};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_client.html#a75cf9f002fb9af06d3972ddc14966a78">   20</a></span>    <a class="code hl_function" href="class_client.html#a75cf9f002fb9af06d3972ddc14966a78">Client</a>(<a class="code hl_class" href="class_i_employee_manager.html">IEmployeeManager</a>* manager) : mManager(manager) {};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_client.html#a657d1911c38b8ac51dd8dd6c86b72efd">ManagerTest</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_employee_manager.html">EmployeeManager</a>* mManager; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_i_employee_manager.html">IEmployeeManager</a>* mManager; </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_client_html"><div class="ttname"><a href="class_client.html">Client</a></div><div class="ttdoc">Class representing a client that tests the EmployeeManager.</div><div class="ttdef"><b>Definition</b> Client.h:14</div></div>
-<div class="ttc" id="aclass_client_html_a17aac1778b8cb58ee7c2e4ebcc9ebd98"><div class="ttname"><a href="class_client.html#a17aac1778b8cb58ee7c2e4ebcc9ebd98">Client::Client</a></div><div class="ttdeci">Client(EmployeeManager *manager)</div><div class="ttdoc">Constructor for the Client class.</div><div class="ttdef"><b>Definition</b> Client.h:20</div></div>
 <div class="ttc" id="aclass_client_html_a657d1911c38b8ac51dd8dd6c86b72efd"><div class="ttname"><a href="class_client.html#a657d1911c38b8ac51dd8dd6c86b72efd">Client::ManagerTest</a></div><div class="ttdeci">void ManagerTest()</div><div class="ttdoc">Perform testing on the EmployeeManager.</div><div class="ttdef"><b>Definition</b> Client.cpp:15</div></div>
-<div class="ttc" id="aclass_employee_manager_html"><div class="ttname"><a href="class_employee_manager.html">EmployeeManager</a></div><div class="ttdoc">Class responsible for managing employees.</div><div class="ttdef"><b>Definition</b> EmployeeManager.h:18</div></div>
+<div class="ttc" id="aclass_client_html_a75cf9f002fb9af06d3972ddc14966a78"><div class="ttname"><a href="class_client.html#a75cf9f002fb9af06d3972ddc14966a78">Client::Client</a></div><div class="ttdeci">Client(IEmployeeManager *manager)</div><div class="ttdoc">Constructor for the Client class.</div><div class="ttdef"><b>Definition</b> Client.h:20</div></div>
+<div class="ttc" id="aclass_i_employee_manager_html"><div class="ttname"><a href="class_i_employee_manager.html">IEmployeeManager</a></div><div class="ttdoc">Interface responsible for managing employees.</div><div class="ttdef"><b>Definition</b> IEmployeeManager.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

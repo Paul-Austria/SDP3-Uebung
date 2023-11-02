@@ -1,0 +1,48 @@
+\doxysection{IEmployee\+Manager.\+h}
+\hypertarget{_i_employee_manager_8h_source}{}\label{_i_employee_manager_8h_source}\index{Uebung02/IEmployeeManager.h@{Uebung02/IEmployeeManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ EmployeeManager.h}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ IEMPLOYEEMANAGER\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ IEMPLOYEEMANAGER\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Employee.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Client.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ std::map<size\_t,\ Employee*>\ EmployeeMap;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_employee_manager}{IEmployeeManager}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_employee_manager_a78a9c7ddffb5068b4eaf2273adb30323}{AddEmployee}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber,\ \mbox{\hyperlink{class_employee}{Employee}}*\ Emp)\ \ =\ 0;\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_employee_manager_a85c810bbbf9a19a00e731b46dd52ebe1}{Delete}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber)\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_i_employee_manager_ad04000d45ed82bf90d6fcaadb8e4362a}{GetNumberOfEmployee}}()\ =\ 0;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_i_employee_manager_a394c669af40bd5aaaf84ce2946cdf10b}{GetNumberOfXEmployee}}(EnumEmployee\ Type)\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_i_employee_manager_ac277dec9f2fee113788efd8c50ff4bc7}{GetProducedPieces}}()\ =\ 0;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_i_employee_manager_ace07344ac6ef82049fcaa2a4ab7cee42}{GetSoldPieces}}()\ =\ 0;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_i_employee_manager_a173d94c10005923d04a277405feba0b5}{GetEmployeeBornBefore1970}}()\ =\ 0;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_i_employee_manager_a05cc51ffe2ae59613b88ab2f798c18e8}{GetSalaryOf}}(\textcolor{keywordtype}{size\_t}\ InsuranceNumber)\ =\ 0;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_employee_manager_ab60f954dd8b533bd9d88691750f96858}{SearchEmployeeInitial}}(std::string\ InitialName)\ =\ 0;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_employee}{Employee}}*\ \mbox{\hyperlink{class_i_employee_manager_a9b1a3bd0c02ace09b8058f2470ad205b}{GetLongestWorkingEmployee}}()\ =\ 0;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_employee_manager_a1ae0632d019a132c745b5969ea749533}{PrintAll}}()\ =\ 0;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
