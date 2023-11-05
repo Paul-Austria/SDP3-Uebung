@@ -7,7 +7,7 @@
 class VideoPlayerWrapper : IMediaWrapper
 {
 public:
-	VideoPlayerWrapper(std::shared_ptr<VideoPlayerWrapper> musicPlayer);
+	VideoPlayerWrapper(std::shared_ptr<VideoPlayerWrapper> videoPlayer);
 	~VideoPlayerWrapper();
 
 
@@ -20,5 +20,5 @@ public:
 	void Select(std::string const& name) override;
 
 private:
-	std::shared_ptr<VideoPlayer> musicPlayer;
+	std::shared_ptr<VideoPlayer> videoPlayer;
 };

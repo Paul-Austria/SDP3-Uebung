@@ -2,10 +2,24 @@
 
 #include "Object.hpp"
 #include <string>
+#include <vector>
 
 
+
+/// <summary>
+/// A Song construct
+/// </summary>
+struct Song {
+	std::string name;
+	size_t duration;
+};
+
+/// <summary>
+/// MusicPlayer
+/// </summary>
 class MusicPlayer : Object {
 public:
+	MusicPlayer() = default;
 	/// <summary>
 	/// starts playing with the current song in list
 	/// </summary>
@@ -51,4 +65,10 @@ public:
 	/// <param name="dur"></param>
 	void Add(std::string const& name, size_t const dur);
 private:
+	void SetCurIndex(size_t index);
+
+	size_t currentIndex = 0;
+	size_t volume = 15;
+
+	std::vector<Song> songs;
 };

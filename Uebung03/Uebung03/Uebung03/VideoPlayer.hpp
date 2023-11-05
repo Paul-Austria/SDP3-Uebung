@@ -5,6 +5,7 @@
 
 #include <string>
 #include "Object.hpp"
+#include <vector>
 
 
 /// <summary>
@@ -16,11 +17,22 @@ enum class VideoFormat {
     MKV
 };
 
+
+/// <summary>
+/// Video storage object
+/// </summary>
+struct Video {
+    std::string name;
+    size_t duration;
+    VideoFormat format;
+};
+
 /// <summary>
 /// VideoPlayer class for playing videos with various functionalities.
 /// </summary>
 class VideoPlayer : Object{
 public:
+    VideoPlayer() = default;
     /// <summary>
     /// Starts playing the current video in the playlist.
     /// </summary>
@@ -74,7 +86,11 @@ public:
     void Add(std::string const& name, size_t const dur, VideoFormat const& format);
 
 private:
-    // Define private members or methods as needed.
+    std::vector<Video> videos;  // Store the playlist of videos
+    size_t currentIndex = 0;        // Track the current video index
+    size_t volume = 0;              // Store the current volume level
+
+    bool IsPlaylistEmpty() const;
 };
 
 #endif // VIDEOPLAYER_H
