@@ -2,19 +2,22 @@
 
 Video::Video(float duration, std::string name, VideoFormat format)
 {
+	this->name = name;
+	this->duration = duration;
+	this->format = format;
 }
 
-float Video::GetDuration()
+float Video::GetDuration() const
 {
-	return 0.0f;
+	return duration;
 }
 
-std::string Video::GetName()
+std::string Video::GetName() const
 {
-	return std::string();
+	return name;
 }
 
-VideoFormat Video::GetVideoFormat()
+VideoFormat Video::GetVideoFormat() const
 {
-	return VideoFormat();
+	return format;
 }

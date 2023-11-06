@@ -5,27 +5,10 @@
 
 #include <string>
 #include "Object.hpp"
+#include "Video.hpp"
 #include <vector>
 
 
-/// <summary>
-/// Available VideoFormats
-/// </summary>
-enum class VideoFormat {
-    WMV,
-    AVI,
-    MKV
-};
-
-
-/// <summary>
-/// Video storage object
-/// </summary>
-struct Video {
-    std::string name;
-    size_t duration;
-    VideoFormat format;
-};
 
 /// <summary>
 /// VideoPlayer class for playing videos with various functionalities.

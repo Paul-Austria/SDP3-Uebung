@@ -4,9 +4,9 @@
 
 void VideoPlayer::Play() const {
     if (!IsPlaylistEmpty()) {
-        std::cout << "Playing video number " << currentIndex + 1 << ": " << videos[currentIndex].name
-            << " [duration -> " << videos[currentIndex].duration << " min], " << "Format: ";
-        switch (videos[currentIndex].format) {
+        std::cout << "Playing video number " << currentIndex + 1 << ": " << videos[currentIndex].GetName()
+            << " [duration -> " << videos[currentIndex].GetDuration() << " min], " << "Format: ";
+        switch (videos[currentIndex].GetVideoFormat()) {
         case VideoFormat::WMV:
             std::cout << "WMV";
             break;
@@ -28,9 +28,9 @@ void VideoPlayer::Play() const {
 
 void VideoPlayer::Stop() const {
     if (!IsPlaylistEmpty()) {
-        std::cout << "Stopped playing video: " << videos[currentIndex].name
-            << " [duration -> " << videos[currentIndex].duration << " min], " << "Format: ";
-        switch (videos[currentIndex].format) {
+        std::cout << "Stopped playing video: " << videos[currentIndex].GetName()
+            << " [duration -> " << videos[currentIndex].GetDuration() << " min], " << "Format: ";
+        switch (videos[currentIndex].GetVideoFormat()) {
         case VideoFormat::WMV:
             std::cout << "WMV";
             break;
@@ -86,7 +86,7 @@ size_t VideoPlayer::CurIndex() const {
 
 std::string const VideoPlayer::CurVideo() const {
     if (!IsPlaylistEmpty()) {
-        return videos[currentIndex].name;
+        return videos[currentIndex].GetName();
     }
     else {
         return "No video in playlist";
@@ -108,10 +108,7 @@ size_t const VideoPlayer::GetVolume() const {
 }
 
 void VideoPlayer::Add(std::string const& name, size_t const dur, VideoFormat const& format) {
-    Video newVideo;
-    newVideo.name = name;
-    newVideo.duration = dur;
-    newVideo.format = format;
+    Video newVideo(dur, name, format);
     videos.push_back(newVideo);
     std::cout << "Added a new video: " << name << " [duration -> " << dur << " min], Format: ";
     switch (format) {

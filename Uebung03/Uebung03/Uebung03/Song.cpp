@@ -2,14 +2,16 @@
 
 Song::Song(float duration, std::string name)
 {
+	this->duration = duration;
+	this->name = name;
 }
 
 float Song::GetDuration()
 {
-	return 0.0f;
+	return duration;
 }
 
 std::string Song::GetName()
 {
-	return std::string();
+	return name;
 }

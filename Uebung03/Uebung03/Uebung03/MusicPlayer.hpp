@@ -3,16 +3,7 @@
 #include "Object.hpp"
 #include <string>
 #include <vector>
-
-
-
-/// <summary>
-/// A Song construct
-/// </summary>
-struct Song {
-	std::string name;
-	size_t duration;
-};
+#include "Song.hpp"
 
 /// <summary>
 /// MusicPlayer

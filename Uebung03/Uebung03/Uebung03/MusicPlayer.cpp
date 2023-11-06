@@ -1,10 +1,8 @@
-#include "MusicPlayer.hpp" // Include the header file with the class definition
+#include "MusicPlayer.hpp"
 #include <iostream>
-// Implement the methods of the MusicPlayer class
-
 void MusicPlayer::Start() {
     if (!songs.empty()) {
-        std::cout << "Starting playback of the current song: " << songs[GetCurIndex()].name << " (" << songs[GetCurIndex()].duration << " sec)" << std::endl;
+        std::cout << "Starting playback of the current song: " << songs[GetCurIndex()].GetName() << " (" << songs[GetCurIndex()].GetDuration() << " sec)" << std::endl;
     }
     else {
         std::cout << "No song in playlist! Cannot start playback." << std::endl;
@@ -13,7 +11,7 @@ void MusicPlayer::Start() {
 
 void MusicPlayer::Stop() {
     if (!songs.empty()) {
-        std::cout << "Stopping playback of the current song: " << songs[GetCurIndex()].name << " (" << songs[GetCurIndex()].duration << " sec)" << std::endl;
+        std::cout << "Stopping playback of the current song: " << songs[GetCurIndex()].GetName() << " (" << songs[GetCurIndex()].GetDuration() << " sec)" << std::endl;
     }
     else {
         std::cout << "No song in playlist! Cannot stop playback." << std::endl;
@@ -25,11 +23,11 @@ void MusicPlayer::SwitchNext() {
         size_t currentIndex = GetCurIndex();
         if (currentIndex + 1 < songs.size()) {
             SetCurIndex(currentIndex + 1);
-            std::cout << "Switching to the next song: " << songs[GetCurIndex()].name << " (" << songs[GetCurIndex()].duration << " sec)" << std::endl;
+            std::cout << "Switching to the next song: " << songs[GetCurIndex()].GetName() << " (" << songs[GetCurIndex()].GetDuration() << " sec)" << std::endl;
         }
         else {
             SetCurIndex(0);
-            std::cout << "Switching to the first song: " << songs[GetCurIndex()].name << " (" << songs[GetCurIndex()].duration << " sec)" << std::endl;
+            std::cout << "Switching to the first song: " << songs[GetCurIndex()].GetName() << " (" << songs[GetCurIndex()].GetDuration() << " sec)" << std::endl;
         }
     }
     else {
@@ -44,9 +42,9 @@ size_t const MusicPlayer::GetCurIndex() const {
 
 bool MusicPlayer::Find(std::string const& name) {
     for (size_t i = 0; i < songs.size(); ++i) {
-        if (songs[i].name == name) {
+        if (songs[i].GetName() == name) {
             SetCurIndex(i);
-            std::cout << "Found and selected the song: " << songs[GetCurIndex()].name << " (" << songs[GetCurIndex()].duration << " sec)" << std::endl;
+            std::cout << "Found and selected the song: " << songs[GetCurIndex()].GetName() << " (" << songs[GetCurIndex()].GetDuration() << " sec)" << std::endl;
             return true;
         }
     }
@@ -74,9 +72,7 @@ void MusicPlayer::DecreaseVol(size_t const vol) {
 }
 
 void MusicPlayer::Add(std::string const& name, size_t const dur) {
-    Song newSong;
-    newSong.name = name;
-    newSong.duration = dur;
+    Song newSong(dur,name);
     songs.push_back(newSong);
     std::cout << "Added a new song: " << name << " (" << dur << " sec)" << std::endl;
 }

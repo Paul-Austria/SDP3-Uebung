@@ -7,7 +7,7 @@
 class VideoPlayerWrapper : IMediaWrapper
 {
 public:
-	VideoPlayerWrapper(std::shared_ptr<VideoPlayerWrapper> videoPlayer);
+	VideoPlayerWrapper(std::shared_ptr<VideoPlayer> videoPlayer);
 	~VideoPlayerWrapper();
 
 

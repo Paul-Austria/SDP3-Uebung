@@ -1,9 +1,9 @@
 #include "VideoPlayerWrapper.hpp"
 #include <iostream>
 
-VideoPlayerWrapper::VideoPlayerWrapper(std::shared_ptr<VideoPlayerWrapper> videoPlayer)
-    : videoPlayer(videoPlayer) {
-    // Initialize the videoPlayer with the provided shared_ptr.
+VideoPlayerWrapper::VideoPlayerWrapper(std::shared_ptr<VideoPlayer> videoPlayer)
+     {
+    this->videoPlayer = videoPlayer;
 }
 
 VideoPlayerWrapper::~VideoPlayerWrapper() {

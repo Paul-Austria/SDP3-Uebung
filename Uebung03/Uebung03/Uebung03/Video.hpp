@@ -1,13 +1,45 @@
 #pragma once
 #include <string>
-#include "VideoPlayer.hpp"
+
+
+/// <summary>
+/// Available VideoFormats
+/// </summary>
+enum class VideoFormat {
+	WMV,
+	AVI,
+	MKV
+};
+
+
+/// <summary>
+/// Video
+/// </summary>
 class Video {
 public:
+	/// <summary>
+	/// Video Consturtor
+	/// </summary>
+	/// <param name="duration"></param>
+	/// <param name="name"></param>
+	/// <param name="format"></param>
 	Video(float duration, std::string name, VideoFormat format);
 
-	float GetDuration();
-	std::string GetName();
-	VideoFormat GetVideoFormat();
+	/// <summary>
+	/// Get Duration
+	/// </summary>
+	/// <returns></returns>
+	float GetDuration() const;
+	/// <summary>
+	/// Get Name
+	/// </summary>
+	/// <returns></returns>
+	std::string GetName() const;
+	/// <summary>
+	/// Get Video Format
+	/// </summary>
+	/// <returns></returns>
+	VideoFormat GetVideoFormat() const;
 private:
 	float duration;
 	std::string name;
