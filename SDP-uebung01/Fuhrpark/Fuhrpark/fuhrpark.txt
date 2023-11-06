@@ -1,0 +1,17 @@
+Fahrzeugart: PKW
+Marke: Opel Astra
+Kennzeichen: LL-345UI
+04.07.2018: 51 km
+05.07.2018: 45 km
+Fahrzeugart: LKW
+Marke: Scania 1100
+Kennzeichen: PE-34MU
+04.08.2018: 512 km
+05.08.2018: 45 km
+07.08.2018: 678 km
+14.08.2018: 321 km
+Fahrzeugart: Motorrad
+Marke: Honda CBR
+Kennzeichen: FR-45AU
+04.04.2018: 52 km
+05.06.2018: 5 km
