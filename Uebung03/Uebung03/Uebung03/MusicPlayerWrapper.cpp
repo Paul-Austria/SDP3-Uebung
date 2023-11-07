@@ -1,3 +1,6 @@
+/* File MusicPlayerWrapper.cpp
+*  Creator: Paul Engelhardt
+*/
 #include "MusicPlayerWrapper.hpp"
 #include <iostream>
 

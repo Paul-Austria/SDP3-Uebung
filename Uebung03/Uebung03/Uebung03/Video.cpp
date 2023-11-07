@@ -1,13 +1,16 @@
+/* File Video.cpp
+*  Creator: Harald Kiss
+*/
 #include "Video.hpp"
 
-Video::Video(float duration, std::string name, VideoFormat format)
+Video::Video(size_t duration, std::string name, VideoFormat format)
 {
 	this->name = name;
 	this->duration = duration;
 	this->format = format;
 }
 
-float Video::GetDuration() const
+size_t Video::GetDuration() const
 {
 	return duration;
 }

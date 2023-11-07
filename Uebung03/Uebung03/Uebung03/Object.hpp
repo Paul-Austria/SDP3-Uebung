@@ -1,3 +1,6 @@
+/* File: Object.hpp
+* Creator: Harald Kiss
+*/
 #pragma once
 
 #ifndef OBJECT_H

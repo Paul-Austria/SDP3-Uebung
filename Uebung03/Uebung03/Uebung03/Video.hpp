@@ -1,6 +1,9 @@
+/* File: Video.hpp
+* Craetor: Harald Kiss
+*/
 #pragma once
 #include <string>
-
+#include "Object.hpp"
 
 /// <summary>
 /// Available VideoFormats
@@ -15,7 +18,7 @@ enum class VideoFormat {
 /// <summary>
 /// Video
 /// </summary>
-class Video {
+class Video : Object {
 public:
 	/// <summary>
 	/// Video Consturtor
@@ -23,13 +26,13 @@ public:
 	/// <param name="duration"></param>
 	/// <param name="name"></param>
 	/// <param name="format"></param>
-	Video(float duration, std::string name, VideoFormat format);
-
+	Video(size_t duration, std::string name, VideoFormat format);
+	~Video() = default;
 	/// <summary>
 	/// Get Duration
 	/// </summary>
 	/// <returns></returns>
-	float GetDuration() const;
+	size_t GetDuration() const;
 	/// <summary>
 	/// Get Name
 	/// </summary>
@@ -41,7 +44,7 @@ public:
 	/// <returns></returns>
 	VideoFormat GetVideoFormat() const;
 private:
-	float duration;
+	size_t duration;
 	std::string name;
 	VideoFormat format;
 };

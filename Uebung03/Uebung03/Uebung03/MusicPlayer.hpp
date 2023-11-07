@@ -1,3 +1,6 @@
+/* File: MusicPlayer.hpp
+* Creator: Paul Engelhardt
+*/
 #pragma once
 
 #include "Object.hpp"
@@ -11,6 +14,7 @@
 class MusicPlayer : Object {
 public:
 	MusicPlayer() = default;
+	~MusicPlayer() = default;
 	/// <summary>
 	/// starts playing with the current song in list
 	/// </summary>

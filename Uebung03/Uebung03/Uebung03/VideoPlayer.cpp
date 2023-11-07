@@ -1,3 +1,6 @@
+/* File VideoPlayer.cpp
+*  Creator: Harald Kiss
+*/
 #include "VideoPlayer.hpp"
 #include <iostream>
 

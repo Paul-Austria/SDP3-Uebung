@@ -51,6 +51,9 @@
     <ClCompile Include="VideoPlayerWrapper.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MusicPlayer.hpp">
@@ -60,6 +63,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Song.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.hpp">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

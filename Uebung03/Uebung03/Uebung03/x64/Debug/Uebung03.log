@@ -1,2 +1,15 @@
-﻿  Song.cpp
+﻿  Client.cpp
+  IMediaWrapper.hpp
+  MusicPlayer.cpp
+  MusicPlayerWrapper.cpp
+  MusicPlayerWrapper.hpp
+  Object.hpp
+  Song.cpp
+  Uebung03.cpp
+  Video.cpp
+  Video.hpp
+  VideoPlayer.cpp
+  VideoPlayer.hpp
+  VideoPlayerWrapper.cpp
+  Code wird generiert...
   Uebung03.vcxproj -> C:\Uni\hsd\sdp\Git\Uebung03\Uebung03\x64\Debug\Uebung03.exe

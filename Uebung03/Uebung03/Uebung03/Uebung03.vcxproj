@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="IMediaWrapper.hpp" />
     <ClCompile Include="MusicPlayer.cpp" />
     <ClCompile Include="MusicPlayerWrapper.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="VideoPlayerWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Client.hpp" />
     <ClInclude Include="MusicPlayer.hpp" />
     <ClInclude Include="Song.hpp" />
     <ClInclude Include="VideoPlayerWrapper.hpp" />

@@ -1,3 +1,6 @@
+/* File: VideoPlayer.hpp
+*  Creator: Paul Engelhardt
+*/
 #pragma once
 
 #ifndef VIDEOPLAYER_H
@@ -16,6 +19,7 @@
 class VideoPlayer : Object{
 public:
     VideoPlayer() = default;
+    ~VideoPlayer() = default;
     /// <summary>
     /// Starts playing the current video in the playlist.
     /// </summary>

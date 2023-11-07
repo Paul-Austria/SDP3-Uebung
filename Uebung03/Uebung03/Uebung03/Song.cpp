@@ -1,12 +1,15 @@
+/* File Song.cpp
+*  Creator: Paul Engelhardt
+*/
 #include "Song.hpp"
 
-Song::Song(float duration, std::string name)
+Song::Song(size_t duration, std::string name)
 {
 	this->duration = duration;
 	this->name = name;
 }
 
-float Song::GetDuration()
+size_t Song::GetDuration()
 {
 	return duration;
 }

@@ -1,3 +1,6 @@
+/* File MusicPlayer.cpp
+*  Creator: Paul Engelhardt
+*/
 #include "MusicPlayer.hpp"
 #include <iostream>
 void MusicPlayer::Start() {

@@ -1,3 +1,6 @@
+/* File VideoPlayerWrapper.cpp
+*  Creator: Paul Engelhardt
+*/
 #include "VideoPlayerWrapper.hpp"
 #include <iostream>
 
