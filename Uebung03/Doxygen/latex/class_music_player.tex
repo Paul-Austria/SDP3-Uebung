@@ -1,0 +1,144 @@
+\doxysection{Music\+Player Class Reference}
+\hypertarget{class_music_player}{}\label{class_music_player}\index{MusicPlayer@{MusicPlayer}}
+
+
+\doxylink{class_music_player}{Music\+Player}.  
+
+
+
+
+{\ttfamily \#include $<$Music\+Player.\+hpp$>$}
+
+Inheritance diagram for Music\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_music_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_music_player_a73e800c81fde41edcac80734844e6204}\label{class_music_player_a73e800c81fde41edcac80734844e6204} 
+void {\bfseries Start} ()
+\begin{DoxyCompactList}\small\item\em starts playing with the current song in list \end{DoxyCompactList}\item 
+\Hypertarget{class_music_player_a3f900f8b7035c59770d3f6fa9cd2173c}\label{class_music_player_a3f900f8b7035c59770d3f6fa9cd2173c} 
+void {\bfseries Stop} ()
+\begin{DoxyCompactList}\small\item\em Stops Playing. \end{DoxyCompactList}\item 
+\Hypertarget{class_music_player_a70b76a99045ef74c70ff94c92923581f}\label{class_music_player_a70b76a99045ef74c70ff94c92923581f} 
+void {\bfseries Switch\+Next} ()
+\begin{DoxyCompactList}\small\item\em Switches to Next. \end{DoxyCompactList}\item 
+size\+\_\+t const \mbox{\hyperlink{class_music_player_acb8265daab8ee1669b2d36d01a67a65a}{Get\+Cur\+Index}} () const
+\begin{DoxyCompactList}\small\item\em Gets Current song index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_music_player_a72916e3d4b89ce3765591f324f41c173}{Find}} (std\+::string const \&name)
+\begin{DoxyCompactList}\small\item\em Finds a \doxylink{class_song}{Song}. \end{DoxyCompactList}\item 
+size\+\_\+t const \mbox{\hyperlink{class_music_player_a9f1af67041e460e9f05da283d7df9202}{Get\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Counts number of songs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_af92f42737365bbbe930b8490c11ac687}{Increase\+Vol}} (size\+\_\+t const vol)
+\begin{DoxyCompactList}\small\item\em Increase volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_a1cc42e1740db17903cf93839d88f9713}{Decrease\+Vol}} (size\+\_\+t const vol)
+\begin{DoxyCompactList}\small\item\em Decrease Volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_aed8cdbc7bd8f9bc25d15cb3f36a5a43f}{Add}} (std\+::string const \&name, size\+\_\+t const dur)
+\begin{DoxyCompactList}\small\item\em Adds A new \doxylink{class_song}{Song}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_music_player}{Music\+Player}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_aed8cdbc7bd8f9bc25d15cb3f36a5a43f}\label{class_music_player_aed8cdbc7bd8f9bc25d15cb3f36a5a43f} 
+\index{MusicPlayer@{MusicPlayer}!Add@{Add}}
+\index{Add@{Add}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Music\+Player\+::\+Add (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name,  }\item[{size\+\_\+t const}]{dur }\end{DoxyParamCaption})}
+
+
+
+Adds A new \doxylink{class_song}{Song}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em dur} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_music_player_a1cc42e1740db17903cf93839d88f9713}\label{class_music_player_a1cc42e1740db17903cf93839d88f9713} 
+\index{MusicPlayer@{MusicPlayer}!DecreaseVol@{DecreaseVol}}
+\index{DecreaseVol@{DecreaseVol}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{DecreaseVol()}{DecreaseVol()}}
+{\footnotesize\ttfamily void Music\+Player\+::\+Decrease\+Vol (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{vol }\end{DoxyParamCaption})}
+
+
+
+Decrease Volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vol} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_music_player_a72916e3d4b89ce3765591f324f41c173}\label{class_music_player_a72916e3d4b89ce3765591f324f41c173} 
+\index{MusicPlayer@{MusicPlayer}!Find@{Find}}
+\index{Find@{Find}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily bool Music\+Player\+::\+Find (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Finds a \doxylink{class_song}{Song}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_music_player_a9f1af67041e460e9f05da283d7df9202}\label{class_music_player_a9f1af67041e460e9f05da283d7df9202} 
+\index{MusicPlayer@{MusicPlayer}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily size\+\_\+t const Music\+Player\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Counts number of songs. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_music_player_acb8265daab8ee1669b2d36d01a67a65a}\label{class_music_player_acb8265daab8ee1669b2d36d01a67a65a} 
+\index{MusicPlayer@{MusicPlayer}!GetCurIndex@{GetCurIndex}}
+\index{GetCurIndex@{GetCurIndex}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{GetCurIndex()}{GetCurIndex()}}
+{\footnotesize\ttfamily size\+\_\+t const Music\+Player\+::\+Get\+Cur\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets Current song index. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_music_player_af92f42737365bbbe930b8490c11ac687}\label{class_music_player_af92f42737365bbbe930b8490c11ac687} 
+\index{MusicPlayer@{MusicPlayer}!IncreaseVol@{IncreaseVol}}
+\index{IncreaseVol@{IncreaseVol}!MusicPlayer@{MusicPlayer}}
+\doxysubsubsection{\texorpdfstring{IncreaseVol()}{IncreaseVol()}}
+{\footnotesize\ttfamily void Music\+Player\+::\+Increase\+Vol (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{vol }\end{DoxyParamCaption})}
+
+
+
+Increase volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vol} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung03/Music\+Player.\+hpp\item 
+Uebung03/Music\+Player.\+cpp\end{DoxyCompactItemize}

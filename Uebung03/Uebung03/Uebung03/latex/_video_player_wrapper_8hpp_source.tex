@@ -1,0 +1,38 @@
+\doxysection{Video\+Player\+Wrapper.\+hpp}
+\hypertarget{_video_player_wrapper_8hpp_source}{}\label{_video_player_wrapper_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ VideoPlayerWrapper.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}IMediaWrapper.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}VideoPlayer.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_player_wrapper}{VideoPlayerWrapper}}\ :\ \mbox{\hyperlink{class_i_media_wrapper}{IMediaWrapper}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_video_player_wrapper}{VideoPlayerWrapper}}(std::shared\_ptr<VideoPlayer>\ videoPlayer);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_video_player_wrapper_acb5a45ef7947910186c06b30577df8ea}{\string~VideoPlayerWrapper}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_af699b398291102d34ca2de86612c12dc}{Play}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_a9315cc662b4fbcc0c17f6e76b14e1e31}{VolInc}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_a3ec3d19e648b60d2004ead89629ead4a}{VolDec}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_ab213746516b9eed2f7ab4651236a23d0}{Stop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_a554713f45156fbefb09ceead97df4bf3}{Next}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_a704f53499e1af79834daee3b2de0fea4}{Prev}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_wrapper_a9cfe61e36d6e2e653767996360a027e9}{Select}}(std::string\ \textcolor{keyword}{const}\&\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ std::shared\_ptr<VideoPlayer>\ videoPlayer;\ }
+\DoxyCodeLine{00065\ \};}
+
+\end{DoxyCode}

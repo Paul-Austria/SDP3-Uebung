@@ -1,0 +1,172 @@
+\doxysection{Music\+Player\+Wrapper Class Reference}
+\hypertarget{class_music_player_wrapper}{}\label{class_music_player_wrapper}\index{MusicPlayerWrapper@{MusicPlayerWrapper}}
+
+
+The \doxylink{class_music_player_wrapper}{Music\+Player\+Wrapper} class wraps a \doxylink{class_music_player}{Music\+Player} and provides a common interface for media operations.  
+
+
+
+
+{\ttfamily \#include $<$Music\+Player\+Wrapper.\+hpp$>$}
+
+Inheritance diagram for Music\+Player\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_music_player_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_music_player_wrapper_a68c7380eb5a56aea176b6d1e3aae7b98}{Music\+Player\+Wrapper}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_music_player}{Music\+Player}} $>$ music\+Player)
+\begin{DoxyCompactList}\small\item\em Constructor to create a \doxylink{class_music_player_wrapper}{Music\+Player\+Wrapper} with a shared \doxylink{class_music_player}{Music\+Player} instance. \end{DoxyCompactList}\item 
+\Hypertarget{class_music_player_wrapper_a8a72e55667c31aab73eae283a6e05241}\label{class_music_player_wrapper_a8a72e55667c31aab73eae283a6e05241} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Music\+Player\+Wrapper} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_music_player_wrapper}{Music\+Player\+Wrapper}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a2cda21e00f6cc936c41f018822a985c6}{Play}} () override
+\begin{DoxyCompactList}\small\item\em Play the current media. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a224756a0132c2b25b24449fa4f964c98}{Vol\+Inc}} () override
+\begin{DoxyCompactList}\small\item\em Increase the volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a573088ecddb60520144be24fa53fd08a}{Vol\+Dec}} () override
+\begin{DoxyCompactList}\small\item\em Decrease the volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a4f5d4ad5a9e1a8e2cacbe8d7c6503ee8}{Stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop playing the current media. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a8d4c0128843fd4c48a5add87611f5f60}{Next}} () override
+\begin{DoxyCompactList}\small\item\em Play the next media in the playlist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a340deba2b4c64a1f057dd7b8046e67f4}{Prev}} () override
+\begin{DoxyCompactList}\small\item\em Play the previous media in the playlist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_player_wrapper_a9edda244b9302945a54bb79eebc60134}{Select}} (std\+::string const \&name) override
+\begin{DoxyCompactList}\small\item\em Select a media by its name from the playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_music_player_wrapper}{Music\+Player\+Wrapper} class wraps a \doxylink{class_music_player}{Music\+Player} and provides a common interface for media operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_wrapper_a68c7380eb5a56aea176b6d1e3aae7b98}\label{class_music_player_wrapper_a68c7380eb5a56aea176b6d1e3aae7b98} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{MusicPlayerWrapper()}{MusicPlayerWrapper()}}
+{\footnotesize\ttfamily Music\+Player\+Wrapper\+::\+Music\+Player\+Wrapper (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_music_player}{Music\+Player}} $>$}]{music\+Player }\end{DoxyParamCaption})}
+
+
+
+Constructor to create a \doxylink{class_music_player_wrapper}{Music\+Player\+Wrapper} with a shared \doxylink{class_music_player}{Music\+Player} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Player} & A shared pointer to the \doxylink{class_music_player}{Music\+Player} instance to be wrapped.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_wrapper_a8d4c0128843fd4c48a5add87611f5f60}\label{class_music_player_wrapper_a8d4c0128843fd4c48a5add87611f5f60} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!Next@{Next}}
+\index{Next@{Next}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Play the next media in the playlist. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_a6b2855d7e5a81d1d0994547fe66c2a0b}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a2cda21e00f6cc936c41f018822a985c6}\label{class_music_player_wrapper_a2cda21e00f6cc936c41f018822a985c6} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!Play@{Play}}
+\index{Play@{Play}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Play the current media. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_a304fc6f11b6f5f6e9ff15bf70b64b266}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a340deba2b4c64a1f057dd7b8046e67f4}\label{class_music_player_wrapper_a340deba2b4c64a1f057dd7b8046e67f4} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!Prev@{Prev}}
+\index{Prev@{Prev}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Play the previous media in the playlist. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_add2278d8b6a06f04ea221b4b2d5250e3}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a9edda244b9302945a54bb79eebc60134}\label{class_music_player_wrapper_a9edda244b9302945a54bb79eebc60134} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!Select@{Select}}
+\index{Select@{Select}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Select (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Select a media by its name from the playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the media to select.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_a61a72195acc0989cbd75732e3c8b5531}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a4f5d4ad5a9e1a8e2cacbe8d7c6503ee8}\label{class_music_player_wrapper_a4f5d4ad5a9e1a8e2cacbe8d7c6503ee8} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!Stop@{Stop}}
+\index{Stop@{Stop}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop playing the current media. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_a6cf77b78bc5d3b6fa8b82b4ef68d6177}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a573088ecddb60520144be24fa53fd08a}\label{class_music_player_wrapper_a573088ecddb60520144be24fa53fd08a} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!VolDec@{VolDec}}
+\index{VolDec@{VolDec}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{VolDec()}{VolDec()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Vol\+Dec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decrease the volume. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_aee1649bbd374de5684016b392a85e6ac}{IMedia\+Wrapper}}.
+
+\Hypertarget{class_music_player_wrapper_a224756a0132c2b25b24449fa4f964c98}\label{class_music_player_wrapper_a224756a0132c2b25b24449fa4f964c98} 
+\index{MusicPlayerWrapper@{MusicPlayerWrapper}!VolInc@{VolInc}}
+\index{VolInc@{VolInc}!MusicPlayerWrapper@{MusicPlayerWrapper}}
+\doxysubsubsection{\texorpdfstring{VolInc()}{VolInc()}}
+{\footnotesize\ttfamily void Music\+Player\+Wrapper\+::\+Vol\+Inc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increase the volume. 
+
+
+
+Implements \mbox{\hyperlink{class_i_media_wrapper_ab396b7cc6f73e7e8b6e8fa2a4ec5d161}{IMedia\+Wrapper}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung03/Music\+Player\+Wrapper.\+hpp\item 
+Uebung03/Music\+Player\+Wrapper.\+cpp\end{DoxyCompactItemize}

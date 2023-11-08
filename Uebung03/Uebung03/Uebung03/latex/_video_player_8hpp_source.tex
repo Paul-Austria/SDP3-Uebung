@@ -1,0 +1,48 @@
+\doxysection{Video\+Player.\+hpp}
+\hypertarget{_video_player_8hpp_source}{}\label{_video_player_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ VideoPlayer.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ \ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Object.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Video.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_player}{VideoPlayer}}\ :\ \mbox{\hyperlink{class_object}{Object}}\{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_video_player}{VideoPlayer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_video_player}{\string~VideoPlayer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a18c39f0d65b9c3fc0f7943020126938e}{Play}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a84e1e66483126d070b127ca1e96be954}{Stop}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_a6c35430d348d4134067dfb86e5fcddc4}{First}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_af27c8ff39bbb0214293ce3ecef13f29d}{Next}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_video_player_a48fbc84bc65e973e927cd8beb578ef17}{CurIndex}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ std::string\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_video_player_a23af7a0a33fb72988050e91a8ea31529}{CurVideo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_abdd0e2b7d41aa7dec197ad2d8774fd64}{SetVolume}}(\textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ vol);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_video_player_af7a343871ec258028abf906f4c9a994d}{GetVolume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a66dbee09db0015378080d2563307673f}{Add}}(std::string\ \textcolor{keyword}{const}\&\ name,\ \textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ dur,\ VideoFormat\ \textcolor{keyword}{const}\&\ format);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ std::vector<Video>\ videos;\ \ \textcolor{comment}{//\ Store\ the\ playlist\ of\ videos}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ currentIndex\ =\ 0;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Track\ the\ current\ video\ index}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ volume\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Store\ the\ current\ volume\ level}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ IsPlaylistEmpty()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+
+\end{DoxyCode}

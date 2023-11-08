@@ -1,0 +1,127 @@
+\doxysection{Video\+Player Class Reference}
+\hypertarget{class_video_player}{}\label{class_video_player}\index{VideoPlayer@{VideoPlayer}}
+
+
+\doxylink{class_video_player}{Video\+Player} class for playing videos with various functionalities.  
+
+
+
+
+{\ttfamily \#include $<$Video\+Player.\+hpp$>$}
+
+Inheritance diagram for Video\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_video_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_video_player_a18c39f0d65b9c3fc0f7943020126938e}\label{class_video_player_a18c39f0d65b9c3fc0f7943020126938e} 
+void {\bfseries Play} () const
+\begin{DoxyCompactList}\small\item\em Starts playing the current video in the playlist. \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_a84e1e66483126d070b127ca1e96be954}\label{class_video_player_a84e1e66483126d070b127ca1e96be954} 
+void {\bfseries Stop} () const
+\begin{DoxyCompactList}\small\item\em Stops playing the current video. \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_a6c35430d348d4134067dfb86e5fcddc4}\label{class_video_player_a6c35430d348d4134067dfb86e5fcddc4} 
+bool {\bfseries First} ()
+\begin{DoxyCompactList}\small\item\em Switches to the first video in the playlist and returns true if successful, otherwise false if the list is empty. \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_af27c8ff39bbb0214293ce3ecef13f29d}\label{class_video_player_af27c8ff39bbb0214293ce3ecef13f29d} 
+bool {\bfseries Next} ()
+\begin{DoxyCompactList}\small\item\em Switches to the next video in the playlist and returns true if successful, otherwise false if the last video is reached. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_video_player_a48fbc84bc65e973e927cd8beb578ef17}{Cur\+Index}} () const
+\begin{DoxyCompactList}\small\item\em Returns the index of the current video in the playlist. \end{DoxyCompactList}\item 
+std\+::string const \mbox{\hyperlink{class_video_player_a23af7a0a33fb72988050e91a8ea31529}{Cur\+Video}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the current video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_abdd0e2b7d41aa7dec197ad2d8774fd64}{Set\+Volume}} (size\+\_\+t const vol)
+\begin{DoxyCompactList}\small\item\em Sets the volume level of the video player. \end{DoxyCompactList}\item 
+size\+\_\+t const \mbox{\hyperlink{class_video_player_af7a343871ec258028abf906f4c9a994d}{Get\+Volume}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current volume level of the video player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_a66dbee09db0015378080d2563307673f}{Add}} (std\+::string const \&name, size\+\_\+t const dur, Video\+Format const \&format)
+\begin{DoxyCompactList}\small\item\em Adds a video to the playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_video_player}{Video\+Player} class for playing videos with various functionalities. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_video_player_a66dbee09db0015378080d2563307673f}\label{class_video_player_a66dbee09db0015378080d2563307673f} 
+\index{VideoPlayer@{VideoPlayer}!Add@{Add}}
+\index{Add@{Add}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Video\+Player\+::\+Add (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name,  }\item[{size\+\_\+t const}]{dur,  }\item[{Video\+Format const \&}]{format }\end{DoxyParamCaption})}
+
+
+
+Adds a video to the playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the video to add.\\
+\hline
+{\em dur} & The duration of the video in seconds.\\
+\hline
+{\em format} & The format of the video (assumed to be of type Video\+Format).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_player_a48fbc84bc65e973e927cd8beb578ef17}\label{class_video_player_a48fbc84bc65e973e927cd8beb578ef17} 
+\index{VideoPlayer@{VideoPlayer}!CurIndex@{CurIndex}}
+\index{CurIndex@{CurIndex}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{CurIndex()}{CurIndex()}}
+{\footnotesize\ttfamily size\+\_\+t Video\+Player\+::\+Cur\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the index of the current video in the playlist. 
+
+\begin{DoxyReturn}{Returns}
+The index of the current video.
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a23af7a0a33fb72988050e91a8ea31529}\label{class_video_player_a23af7a0a33fb72988050e91a8ea31529} 
+\index{VideoPlayer@{VideoPlayer}!CurVideo@{CurVideo}}
+\index{CurVideo@{CurVideo}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{CurVideo()}{CurVideo()}}
+{\footnotesize\ttfamily std\+::string const Video\+Player\+::\+Cur\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the current video. 
+
+\begin{DoxyReturn}{Returns}
+The name of the current video.
+\end{DoxyReturn}
+\Hypertarget{class_video_player_af7a343871ec258028abf906f4c9a994d}\label{class_video_player_af7a343871ec258028abf906f4c9a994d} 
+\index{VideoPlayer@{VideoPlayer}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily size\+\_\+t const Video\+Player\+::\+Get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current volume level of the video player. 
+
+\begin{DoxyReturn}{Returns}
+The current volume level (0 to 50).
+\end{DoxyReturn}
+\Hypertarget{class_video_player_abdd0e2b7d41aa7dec197ad2d8774fd64}\label{class_video_player_abdd0e2b7d41aa7dec197ad2d8774fd64} 
+\index{VideoPlayer@{VideoPlayer}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily void Video\+Player\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{vol }\end{DoxyParamCaption})}
+
+
+
+Sets the volume level of the video player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vol} & The volume level to set (0 to 50, where 0 is mute and 50 is maximum volume).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung03/Video\+Player.\+hpp\item 
+Uebung03/Video\+Player.\+cpp\end{DoxyCompactItemize}

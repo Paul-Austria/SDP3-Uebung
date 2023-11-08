@@ -3,8 +3,6 @@
 */
 #pragma once
 
-#ifndef VIDEOPLAYER_H
-#define VIDEOPLAYER_H
 
 #include <string>
 #include "Object.hpp"
@@ -80,4 +78,3 @@ private:
     bool IsPlaylistEmpty() const;
 };
 
-#endif // VIDEOPLAYER_H

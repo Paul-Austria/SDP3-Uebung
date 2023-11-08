@@ -1,0 +1,154 @@
+\doxysection{IMedia\+Wrapper Class Reference}
+\hypertarget{class_i_media_wrapper}{}\label{class_i_media_wrapper}\index{IMediaWrapper@{IMediaWrapper}}
+
+
+The \doxylink{class_i_media_wrapper}{IMedia\+Wrapper} class serves as an interface for wrapping media players.  
+
+
+
+
+{\ttfamily \#include $<$IMedia\+Wrapper.\+hpp$>$}
+
+Inheritance diagram for IMedia\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_media_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_i_media_wrapper_a0623ba34c4ce09553d222f3b9d0edef3}\label{class_i_media_wrapper_a0623ba34c4ce09553d222f3b9d0edef3} 
+{\bfseries IMedia\+Wrapper} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_i_media_wrapper_a32161919f9d7e3fb3bfe93ef16399ac5}\label{class_i_media_wrapper_a32161919f9d7e3fb3bfe93ef16399ac5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+IMedia\+Wrapper} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_a304fc6f11b6f5f6e9ff15bf70b64b266}{Play}} ()=0
+\begin{DoxyCompactList}\small\item\em Play the current media. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_ab396b7cc6f73e7e8b6e8fa2a4ec5d161}{Vol\+Inc}} ()=0
+\begin{DoxyCompactList}\small\item\em Increase the volume. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_aee1649bbd374de5684016b392a85e6ac}{Vol\+Dec}} ()=0
+\begin{DoxyCompactList}\small\item\em Decrease the volume. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_a6cf77b78bc5d3b6fa8b82b4ef68d6177}{Stop}} ()=0
+\begin{DoxyCompactList}\small\item\em Stop playing the current media. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_a6b2855d7e5a81d1d0994547fe66c2a0b}{Next}} ()=0
+\begin{DoxyCompactList}\small\item\em Play the next media in the playlist. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_add2278d8b6a06f04ea221b4b2d5250e3}{Prev}} ()=0
+\begin{DoxyCompactList}\small\item\em Play the previous media in the playlist. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_media_wrapper_a61a72195acc0989cbd75732e3c8b5531}{Select}} (std\+::string const \&name)=0
+\begin{DoxyCompactList}\small\item\em Select a media by its name from the playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_i_media_wrapper}{IMedia\+Wrapper} class serves as an interface for wrapping media players. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_media_wrapper_a6b2855d7e5a81d1d0994547fe66c2a0b}\label{class_i_media_wrapper_a6b2855d7e5a81d1d0994547fe66c2a0b} 
+\index{IMediaWrapper@{IMediaWrapper}!Next@{Next}}
+\index{Next@{Next}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play the next media in the playlist. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a8d4c0128843fd4c48a5add87611f5f60}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_a554713f45156fbefb09ceead97df4bf3}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_a304fc6f11b6f5f6e9ff15bf70b64b266}\label{class_i_media_wrapper_a304fc6f11b6f5f6e9ff15bf70b64b266} 
+\index{IMediaWrapper@{IMediaWrapper}!Play@{Play}}
+\index{Play@{Play}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play the current media. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a2cda21e00f6cc936c41f018822a985c6}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_af699b398291102d34ca2de86612c12dc}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_add2278d8b6a06f04ea221b4b2d5250e3}\label{class_i_media_wrapper_add2278d8b6a06f04ea221b4b2d5250e3} 
+\index{IMediaWrapper@{IMediaWrapper}!Prev@{Prev}}
+\index{Prev@{Prev}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{Prev()}{Prev()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Play the previous media in the playlist. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a340deba2b4c64a1f057dd7b8046e67f4}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_a704f53499e1af79834daee3b2de0fea4}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_a61a72195acc0989cbd75732e3c8b5531}\label{class_i_media_wrapper_a61a72195acc0989cbd75732e3c8b5531} 
+\index{IMediaWrapper@{IMediaWrapper}!Select@{Select}}
+\index{Select@{Select}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{Select()}{Select()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Select (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Select a media by its name from the playlist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the media to select.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a9edda244b9302945a54bb79eebc60134}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_a9cfe61e36d6e2e653767996360a027e9}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_a6cf77b78bc5d3b6fa8b82b4ef68d6177}\label{class_i_media_wrapper_a6cf77b78bc5d3b6fa8b82b4ef68d6177} 
+\index{IMediaWrapper@{IMediaWrapper}!Stop@{Stop}}
+\index{Stop@{Stop}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stop playing the current media. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a4f5d4ad5a9e1a8e2cacbe8d7c6503ee8}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_ab213746516b9eed2f7ab4651236a23d0}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_aee1649bbd374de5684016b392a85e6ac}\label{class_i_media_wrapper_aee1649bbd374de5684016b392a85e6ac} 
+\index{IMediaWrapper@{IMediaWrapper}!VolDec@{VolDec}}
+\index{VolDec@{VolDec}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{VolDec()}{VolDec()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Vol\+Dec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Decrease the volume. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a573088ecddb60520144be24fa53fd08a}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_a3ec3d19e648b60d2004ead89629ead4a}{Video\+Player\+Wrapper}}.
+
+\Hypertarget{class_i_media_wrapper_ab396b7cc6f73e7e8b6e8fa2a4ec5d161}\label{class_i_media_wrapper_ab396b7cc6f73e7e8b6e8fa2a4ec5d161} 
+\index{IMediaWrapper@{IMediaWrapper}!VolInc@{VolInc}}
+\index{VolInc@{VolInc}!IMediaWrapper@{IMediaWrapper}}
+\doxysubsubsection{\texorpdfstring{VolInc()}{VolInc()}}
+{\footnotesize\ttfamily virtual void IMedia\+Wrapper\+::\+Vol\+Inc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Increase the volume. 
+
+
+
+Implemented in \mbox{\hyperlink{class_music_player_wrapper_a224756a0132c2b25b24449fa4f964c98}{Music\+Player\+Wrapper}}, and \mbox{\hyperlink{class_video_player_wrapper_a9315cc662b4fbcc0c17f6e76b14e1e31}{Video\+Player\+Wrapper}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+IMedia\+Wrapper.\+hpp\end{DoxyCompactItemize}

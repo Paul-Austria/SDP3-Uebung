@@ -1,0 +1,37 @@
+\doxysection{Music\+Player.\+hpp}
+\hypertarget{_music_player_8hpp_source}{}\label{_music_player_8hpp_source}\index{Uebung03/MusicPlayer.hpp@{Uebung03/MusicPlayer.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ MusicPlayer.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{*\ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Object.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Song.hpp"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_music_player}{MusicPlayer}}\ :\ \mbox{\hyperlink{class_object}{Object}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_music_player}{MusicPlayer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_music_player}{\string~MusicPlayer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_a73e800c81fde41edcac80734844e6204}{Start}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_a3f900f8b7035c59770d3f6fa9cd2173c}{Stop}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_a70b76a99045ef74c70ff94c92923581f}{SwitchNext}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_music_player_acb8265daab8ee1669b2d36d01a67a65a}{GetCurIndex}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_music_player_a72916e3d4b89ce3765591f324f41c173}{Find}}(std::string\ \textcolor{keyword}{const}\&\ name);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_music_player_a9f1af67041e460e9f05da283d7df9202}{GetCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_af92f42737365bbbe930b8490c11ac687}{IncreaseVol}}(\textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ vol);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_a1cc42e1740db17903cf93839d88f9713}{DecreaseVol}}(\textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ vol);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_aed8cdbc7bd8f9bc25d15cb3f36a5a43f}{Add}}(std::string\ \textcolor{keyword}{const}\&\ name,\ \textcolor{keywordtype}{size\_t}\ \textcolor{keyword}{const}\ dur);}
+\DoxyCodeLine{00062\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ SetCurIndex(\textcolor{keywordtype}{size\_t}\ index);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ currentIndex\ =\ 0;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ volume\ =\ 15;}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ std::vector<Song>\ songs;}
+\DoxyCodeLine{00069\ \};}
+
+\end{DoxyCode}

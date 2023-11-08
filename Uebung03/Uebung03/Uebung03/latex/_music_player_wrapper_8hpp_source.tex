@@ -1,0 +1,38 @@
+\doxysection{Music\+Player\+Wrapper.\+hpp}
+\hypertarget{_music_player_wrapper_8hpp_source}{}\label{_music_player_wrapper_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ File:\ MusicPlayerWrapper.hpp}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Creator:\ Paul\ Engelhardt}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}IMediaWrapper.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}MusicPlayer.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_music_player_wrapper}{MusicPlayerWrapper}}\ :\ \mbox{\hyperlink{class_i_media_wrapper}{IMediaWrapper}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_music_player_wrapper}{MusicPlayerWrapper}}(std::shared\_ptr<MusicPlayer>\ musicPlayer);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_music_player_wrapper_a8a72e55667c31aab73eae283a6e05241}{\string~MusicPlayerWrapper}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a2cda21e00f6cc936c41f018822a985c6}{Play}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a224756a0132c2b25b24449fa4f964c98}{VolInc}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a573088ecddb60520144be24fa53fd08a}{VolDec}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a4f5d4ad5a9e1a8e2cacbe8d7c6503ee8}{Stop}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a8d4c0128843fd4c48a5add87611f5f60}{Next}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a340deba2b4c64a1f057dd7b8046e67f4}{Prev}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_music_player_wrapper_a9edda244b9302945a54bb79eebc60134}{Select}}(std::string\ \textcolor{keyword}{const}\&\ name)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ std::shared\_ptr<MusicPlayer>\ musicPlayer;\ }
+\DoxyCodeLine{00065\ \};}
+
+\end{DoxyCode}

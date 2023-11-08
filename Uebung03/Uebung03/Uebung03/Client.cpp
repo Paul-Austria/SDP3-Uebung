@@ -1,5 +1,5 @@
 /* File: Client.cpp
-*  Creator: Harald Kiss
+*  Creator: Paul Engelhardt
 */
 #include "Client.hpp"
 
