@@ -27,7 +27,7 @@ private:
 
 	std::vector<std::shared_ptr<Var>> vars;
 	std::vector<std::shared_ptr<Type>> types;
-	
+	Factory* currentFact;
 	bool firstPass = true;
 };
 
