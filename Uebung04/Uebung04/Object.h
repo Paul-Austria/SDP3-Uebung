@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef OBJECT
+#define OBJECT
 
 
 class Object {

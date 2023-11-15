@@ -140,6 +140,19 @@
     <ClInclude Include="Type.h" />
     <ClInclude Include="Var.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="FactoryIEC.cpp" />
+    <ClCompile Include="FactoryJava.cpp" />
+    <ClCompile Include="IECType.cpp" />
+    <ClCompile Include="IECVar.cpp" />
+    <ClCompile Include="JavaType.cpp" />
+    <ClCompile Include="JavaVar.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SymbolParser.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClCompile Include="Var.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
