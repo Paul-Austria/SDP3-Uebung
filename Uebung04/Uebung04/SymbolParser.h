@@ -1,3 +1,8 @@
+
+
+#ifndef SYMBOLPARSER_H
+#define SYMBOLPARSER_H
+
 #include "Factory.h"
 #include <string>
 #include <vector>
@@ -5,25 +10,24 @@
 #include "Var.h"
 #include <memory>
 
-#ifndef SYMBOLPARSER_H
-#define SYMBOLPARSER_H
-
-
 class SymbolParser {
 
 public:
 
+	SymbolParser() = default;
+	~SymbolParser() = default;
 	void AddType(const std::string& typeName);
 	void AddVariable(const std::string& variableName, const std::string& typeName);
 	void SetFactory(Factory& factory);
-protected:
 
+
+private:
 	bool VariableAlreadyExists(const std::string& name);
 	std::shared_ptr<Type> FindType(const std::string& typeName);
-private:
+
 	std::vector<std::shared_ptr<Var>> vars;
 	std::vector<std::shared_ptr<Type>> types;
-	Factory& currentFact;
+	
 	bool firstPass = true;
 };
 
