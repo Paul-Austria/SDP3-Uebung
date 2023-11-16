@@ -13,6 +13,8 @@ public:
 	}
 
 
+	void Print() { std::cout << i++ << "\n"; };
+
 	std::shared_ptr<Var> CreateVar(std::string name, std::shared_ptr<Type> type);
 	std::shared_ptr<Type> CreateType(std::string name);
 
@@ -20,6 +22,14 @@ public:
 		mInstance.reset();
 	}
 
+
+
+	std::string GetVarFileName();
+	std::string GetTypeFileName();
+
+	std::vector<std::shared_ptr<Var>> ReadVars(const std::vector<std::shared_ptr<Type>>& types);
+
+	std::vector<std::shared_ptr<Type>> ReadTypes();
 
 protected:
 
@@ -31,6 +41,10 @@ private:
 	~FactoryIEC() = default;
 	FactoryIEC(const FactoryIEC&) = delete;
 	FactoryIEC& operator=(const FactoryIEC&) = delete;
+
+
+	std::string varFile = "IECVars.sym";
+	std::string typeFile = "IECTypes.sym";
 
 };
 

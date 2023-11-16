@@ -15,4 +15,24 @@ std::shared_ptr<Type> FactoryJava::CreateType(std::string name)
 	return   std::shared_ptr<Type>(std::make_shared<JavaType>(name));
 }
 
+std::string FactoryJava::GetVarFileName()
+{
+	return varFile;
+}
+
+std::string FactoryJava::GetTypeFileName()
+{
+	return typeFile;
+}
+
+std::vector<std::shared_ptr<Var>> FactoryJava::ReadVars(const std::vector<std::shared_ptr<Type>>& types)
+{
+	return std::vector<std::shared_ptr<Var>>();
+}
+
+std::vector<std::shared_ptr<Type>> FactoryJava::ReadTypes()
+{
+	return std::vector<std::shared_ptr<Type>>();
+}
+
 

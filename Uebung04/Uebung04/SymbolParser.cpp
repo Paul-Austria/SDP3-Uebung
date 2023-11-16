@@ -27,6 +27,12 @@ std::shared_ptr<Type> SymbolParser::FindType(const std::string& typeName)
 	return nullptr;
 }
 
+void SymbolParser::Save()
+{
+}
+void SymbolParser::ReadFromFile() {
+
+}
 void SymbolParser::AddVariable(const std::string& variableName, const std::string& typeName)
 {
 	if (VariableAlreadyExists(variableName))
@@ -45,8 +51,14 @@ void SymbolParser::SetFactory(Factory& factory)
 {
 	// save old Factory (only if not first pass);
 	//Clear old data
+	Save();
 	vars.clear();
+	this->currentFact = &factory;
+	
 	types.clear();
+	ReadFromFile();
+
+	currentFact->Print();
 
 	firstPass = false;
 	// read new factory
