@@ -33,6 +33,13 @@ public:
 	virtual std::string GetVarFileName() = 0;
 	virtual std::string GetTypeFileName() = 0;
 
+
+
+	/// <summary>
+	/// read vars, as vars need a reference to a type the list of types is passed to it (it needs to be read first therefore )
+	/// </summary>
+	/// <param name="types"></param>
+	/// <returns></returns>
 	virtual std::vector<std::shared_ptr<Var>> ReadVars(const std::vector<std::shared_ptr<Type>>& types) = 0;
 	virtual std::vector<std::shared_ptr<Type>> ReadTypes() = 0;
 
