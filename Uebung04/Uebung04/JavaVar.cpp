@@ -1,4 +1,6 @@
 #include "JavaVar.h"
+#include <sstream>
+
 
 JavaVar::JavaVar(std::string name, std::shared_ptr<Type> type) : Var(name, type)
 {
@@ -6,5 +8,9 @@ JavaVar::JavaVar(std::string name, std::shared_ptr<Type> type) : Var(name, type)
 
 std::string JavaVar::ToString()
 {
-	return std::string();
+	std::ostringstream ost;
+	ost << GetType() << " " << GetName() << ";";
+
+	return ost.str();
+
 }

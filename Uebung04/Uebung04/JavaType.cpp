@@ -1,4 +1,5 @@
 #include "JavaType.h"
+#include <sstream>
 
 JavaType::JavaType(std::string name) : Type(name)
 {
@@ -6,5 +7,8 @@ JavaType::JavaType(std::string name) : Type(name)
 
 std::string JavaType::ToString()
 {
-	return std::string();
+	std::ostringstream ost;
+	ost << "class" << " " << GetName();
+
+	return ost.str();
 }

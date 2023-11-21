@@ -27,11 +27,15 @@ std::string FactoryJava::GetTypeFileName()
 
 std::vector<std::shared_ptr<Var>> FactoryJava::ReadVars(const std::vector<std::shared_ptr<Type>>& types)
 {
+
+
 	return std::vector<std::shared_ptr<Var>>();
 }
 
 std::vector<std::shared_ptr<Type>> FactoryJava::ReadTypes()
 {
+
+
 	return std::vector<std::shared_ptr<Type>>();
 }
 

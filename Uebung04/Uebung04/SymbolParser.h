@@ -9,6 +9,7 @@
 #include "Type.h"
 #include "Var.h"
 #include <memory>
+#include <fstream>
 
 class SymbolParser {
 
@@ -38,6 +39,8 @@ private:
 	std::vector<std::shared_ptr<Var>> vars;
 	std::vector<std::shared_ptr<Type>> types;
 	Factory* currentFact;
+	Var* currentVar;
+	Type* currentType;
 	bool firstPass = true;
 };
 

@@ -12,6 +12,7 @@ public:
 	std::string ToString();
 
 	JavaVar() = default;
+
 protected:
 
 

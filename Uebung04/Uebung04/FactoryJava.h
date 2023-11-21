@@ -30,9 +30,6 @@ public:
 	}
 
 
-
-
-
 	std::string GetVarFileName();
 	std::string GetTypeFileName();
 

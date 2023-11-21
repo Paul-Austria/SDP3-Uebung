@@ -6,7 +6,7 @@
 #include "Type.h"
 #include <string>
 #include <vector>
-
+#include <fstream>
 
 #ifndef FACTORY_H
 #define FACTORY_H
