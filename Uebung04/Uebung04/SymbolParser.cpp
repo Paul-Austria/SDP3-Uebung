@@ -33,50 +33,44 @@ std::shared_ptr<Type> SymbolParser::FindType(const std::string& typeName)
 	return nullptr;
 }
 
+#include <iostream>
+
 void SymbolParser::Save()
 {
-	std::ofstream outFileType{this->currentFact->GetTypeFileName()};
-	std::ofstream outFileVar{this->currentFact->GetVarFileName()};
+	std::ofstream outFileType{ this->currentFact->GetTypeFileName() };
+	std::ofstream outFileVar{ this->currentFact->GetVarFileName() };
 
 	if (outFileType.fail() || outFileVar.fail()) {
-
-		//cerr << cErrWriteFile << endl;
+		// Handle the error
+		// cerr << cErrWriteFile << endl;
 		outFileType.close();
 		outFileVar.close();
 		return;
 	}
 
-	outFileType.open(this->currentFact->GetTypeFileName());
-	outFileVar.open(this->currentFact->GetVarFileName());
+	// Write to files directly without reopening
+	outFileType.seekp(0);
+	outFileVar.seekp(0);
 
-	if (outFileType.is_open() && outFileVar.is_open()) {
-
-		outFileType.seekp(0);
-		outFileVar.seekp(0);
-		for (auto type : types) {
-
-			outFileType << type->ToString() << std::endl;
-		
-		}
-		for (auto var : vars) {
-
-			outFileVar << var->ToString() << std::endl;
-
-		}
-
-		outFileType.close();
-		outFileVar.close();
-		//std::cout << std::endl;
+	for (auto type : types) {
+		outFileType << type->ToString() << std::endl;
 	}
 
-	else {
-
-		//cerr << cErrOpenFile << endl;
+	for (auto var : vars) {
+		outFileVar << var->ToString() << std::endl;
 	}
 
-	return;
+	// Check for write errors
+	if (outFileType.fail() || outFileVar.fail()) {
+		// Handle the error
+		// cerr << cErrWriteFile << endl;
+	}
 
+	// Close the files
+	outFileType.close();
+	outFileVar.close();
 }
+
 void SymbolParser::ReadFromFile() {
 
 	//std::ifstream inFileType{ this->currentFact->GetTypeFileName() };
