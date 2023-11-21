@@ -10,7 +10,6 @@ void SymbolParser::AddType(const std::string& typeName)
 		return;
 	}
 
-	//this->currentFact->CreateType(typeName);
 	types.push_back(this->currentFact->CreateType(typeName));
 
 	return;
@@ -54,14 +53,14 @@ void SymbolParser::Save()
 
 		outFileType.seekp(0);
 		outFileVar.seekp(0);
-		for (size_t i = 0; i < types.size(); i++) {
+		for (auto type : types) {
 
-			outFileType << this->currentType->ToString() << std::endl;
+			outFileType << type->ToString() << std::endl;
 		
 		}
-		for (size_t j = 0; j < vars.size(); j++) {
+		for (auto var : vars) {
 
-			outFileVar << this->currentType->ToString() << std::endl;
+			outFileVar << var->ToString() << std::endl;
 
 		}
 
@@ -83,7 +82,6 @@ void SymbolParser::ReadFromFile() {
 	//std::ifstream inFileType{ this->currentFact->GetTypeFileName() };
 	//std::ifstream inFileVar{ this->currentFact->GetVarFileName() };
 	//scanner notwendig?
-	
 
 	types = this->currentFact->ReadTypes();
 
@@ -111,8 +109,12 @@ void SymbolParser::SetFactory(Factory& factory)
 {
 	// save old Factory (only if not first pass);
 	//Clear old data
-	Save();
-	vars.clear();
+
+	if (firstPass != true) {
+
+		Save();
+		vars.clear();
+	}
 	this->currentFact = &factory;
 	
 	types.clear();

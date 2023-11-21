@@ -10,6 +10,8 @@ public:
 
 	JavaVar(std::string name, std::shared_ptr<Type> type);
 	std::string ToString();
+	//std::string FromString1();
+	//std::string FromString2();
 
 	JavaVar() = default;
 

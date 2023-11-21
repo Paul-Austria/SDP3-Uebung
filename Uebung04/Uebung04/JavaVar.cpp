@@ -14,3 +14,8 @@ std::string JavaVar::ToString()
 	return ost.str();
 
 }
+
+/*std::string JavaVar::FromStringVar()
+{
+	return "";
+}*/

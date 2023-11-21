@@ -43,8 +43,8 @@ private:
 	FactoryIEC& operator=(const FactoryIEC&) = delete;
 
 
-	std::string varFile = "IECVars.sym";
-	std::string typeFile = "IECTypes.sym";
+	std::string const varFile = "IECVars.sym";
+	std::string const typeFile = "IECTypes.sym";
 
 };
 
