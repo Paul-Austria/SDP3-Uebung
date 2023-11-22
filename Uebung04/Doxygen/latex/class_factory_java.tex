@@ -2,12 +2,12 @@
 \hypertarget{class_factory_java}{}\label{class_factory_java}\index{FactoryJava@{FactoryJava}}
 
 
-\doxylink{class_factory_java}{Factory\+Java} class that extends the abstract \doxylink{class_factory}{Factory} class for creating variables and types in Java.  
+\doxylink{class_factory_java}{Factory\+Java} class that extends the abstract \doxylink{class_factory}{Factory} class for creating variables and types based on Java standards.  
 
 
 
 
-{\ttfamily \#include $<$Factory\+IEC.\+h$>$}
+{\ttfamily \#include $<$Factory\+Java.\+h$>$}
 
 Inheritance diagram for Factory\+Java\+:\begin{figure}[H]
 \begin{center}
@@ -19,7 +19,7 @@ Inheritance diagram for Factory\+Java\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_factory_java_a6d61eb55dae9f844d32fce97e1b09ce8}{Print}} ()
-\begin{DoxyCompactList}\small\item\em For testing purposes, prints a message with a counter. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Test function (TODO\+: Remove) \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_var}{Var}} $>$ \mbox{\hyperlink{class_factory_java_a19aa58ef8d6baf131c11e71d8eab7357}{Create\+Var}} (std\+::string name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ type)
 \begin{DoxyCompactList}\small\item\em Creates a variable with the given name and type. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_factory_java_a0bc156264ffa819682a0fad8efecb721}{Create\+Type}} (std\+::string name)
@@ -47,7 +47,7 @@ std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_factory}{Factory}} \& \mbox{\hyperlink{class_factory_java_a6a86e817743cc2ec3e2c1e77d69caf7b}{Get\+Instance}} ()
-\begin{DoxyCompactList}\small\item\em Gets the singleton instance of \doxylink{class_factory_java}{Factory\+Java}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of \doxylink{class_factory_i_e_c}{Factory\+IEC}. \end{DoxyCompactList}\item 
 \Hypertarget{class_factory_java_aeaad3a25346304befd4a0c4a0a024b27}\label{class_factory_java_aeaad3a25346304befd4a0c4a0a024b27} 
 static void {\bfseries Delete} ()
 \begin{DoxyCompactList}\small\item\em Deletes the singleton instance of \doxylink{class_factory_java}{Factory\+Java}. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -60,7 +60,7 @@ static void {\bfseries Delete} ()
 
 
 \doxysubsection{Detailed Description}
-\doxylink{class_factory_java}{Factory\+Java} class that extends the abstract \doxylink{class_factory}{Factory} class for creating variables and types in Java. 
+\doxylink{class_factory_java}{Factory\+Java} class that extends the abstract \doxylink{class_factory}{Factory} class for creating variables and types based on Java standards. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_factory_java_a0bc156264ffa819682a0fad8efecb721}\label{class_factory_java_a0bc156264ffa819682a0fad8efecb721} 
@@ -72,8 +72,6 @@ static void {\bfseries Delete} ()
 
 
 Creates a type with the given name. 
-
-Creates a type with the given name for Java.
 
 
 \begin{DoxyParams}{Parameters}
@@ -97,8 +95,6 @@ Implements \mbox{\hyperlink{class_factory_a53429c5eb63afec786565eef1530bd95}{Fac
 
 Creates a variable with the given name and type. 
 
-Creates a variable with the given name and type for Java.
-
 
 \begin{DoxyParams}{Parameters}
 {\em name} & The name of the variable. \\
@@ -121,10 +117,10 @@ Implements \mbox{\hyperlink{class_factory_a993f399316f174ea04f0849d37fd18fe}{Fac
 
 
 
-Gets the singleton instance of \doxylink{class_factory_java}{Factory\+Java}. 
+Gets the singleton instance of \doxylink{class_factory_i_e_c}{Factory\+IEC}. 
 
 \begin{DoxyReturn}{Returns}
-The singleton instance of \doxylink{class_factory_java}{Factory\+Java}. 
+The singleton instance of \doxylink{class_factory_i_e_c}{Factory\+IEC}. 
 \end{DoxyReturn}
 \Hypertarget{class_factory_java_a6f47620dc55f0b62cf5ec6023a60d0bd}\label{class_factory_java_a6f47620dc55f0b62cf5ec6023a60d0bd} 
 \index{FactoryJava@{FactoryJava}!GetTypeFileName@{GetTypeFileName}}
@@ -135,8 +131,6 @@ The singleton instance of \doxylink{class_factory_java}{Factory\+Java}.
 
 
 Gets the file name for types. 
-
-Gets the file name for types for Java.
 
 \begin{DoxyReturn}{Returns}
 The file name for types. 
@@ -155,8 +149,6 @@ Implements \mbox{\hyperlink{class_factory_af78094b9ab9321ed4c08d46b714c6fb7}{Fac
 
 Gets the file name for variables. 
 
-Gets the file name for variables for Java.
-
 \begin{DoxyReturn}{Returns}
 The file name for variables. 
 \end{DoxyReturn}
@@ -172,7 +164,7 @@ Implements \mbox{\hyperlink{class_factory_a4176ab19eacfb45a8c22a88d6cf1d96e}{Fac
 
 
 
-For testing purposes, prints a message with a counter. 
+Test function (TODO\+: Remove) 
 
 
 
@@ -207,8 +199,6 @@ Implements \mbox{\hyperlink{class_factory_af2ec47ba116ad3abaab209d7677fbb6f}{Fac
 
 Reads variables from a file based on the provided types. 
 
-Reads variables from a file based on the provided types for Java.
-
 
 \begin{DoxyParams}{Parameters}
 {\em types} & The types used to create variables. \\
@@ -225,5 +215,5 @@ Implements \mbox{\hyperlink{class_factory_ae9e4ab266a2977edafaee429cdb5ae79}{Fac
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Uebung04/\mbox{\hyperlink{_factory_i_e_c_8h}{Factory\+IEC.\+h}}\item 
+Uebung04/\mbox{\hyperlink{_factory_java_8h}{Factory\+Java.\+h}}\item 
 Uebung04/\mbox{\hyperlink{_factory_java_8cpp}{Factory\+Java.\+cpp}}\end{DoxyCompactItemize}

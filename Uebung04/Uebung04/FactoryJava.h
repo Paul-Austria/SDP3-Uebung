@@ -1,6 +1,6 @@
 /** @file
-* @brief Declaration of the FactoryIEC class
-* @details Defines a FactoryIEC class that extends the abstract Factory class for creating variables and types based on IEC standards. Implements singleton pattern. Created by Paul Engelhart.
+* @brief Declaration of the FactoryJava class
+* @details Defines a FactoryJava class that extends the abstract Factory class for creating variables and types based on Java standards. Implements singleton pattern. Created by Paul Engelhart.
 */
 
 #include "Factory.h"
@@ -9,7 +9,7 @@
 #ifndef FACTORYIEC_H
 #define FACTORYIEC_H
 
-/** @brief FactoryIEC class that extends the abstract Factory class for creating variables and types based on IEC standards. */
+/** @brief FactoryJava class that extends the abstract Factory class for creating variables and types based on Java standards. */
 class FactoryJava : public Factory {
 public:
 
@@ -36,7 +36,7 @@ public:
     */
     std::shared_ptr<Type> CreateType(std::string name);
 
-    /** @brief Deletes the singleton instance of FactoryIEC. */
+    /** @brief Deletes the singleton instance of FactoryJava. */
     static void Delete() {
         mInstance.reset();
     }
@@ -64,12 +64,12 @@ public:
 
 protected:
 
-    /** @brief Default constructor for FactoryIEC. */
+    /** @brief Default constructor for FactoryJava. */
     FactoryJava() = default;
 
 private:
     int i = 0;
-    static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryIEC. */
+    static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryJava. */
     ~FactoryJava() = default;
     FactoryJava(const FactoryJava&) = delete;
     FactoryJava& operator=(const FactoryJava&) = delete;

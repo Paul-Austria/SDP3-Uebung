@@ -13,8 +13,8 @@ class FactoryIEC : public Factory {
 
 public:
 
-    /** @brief Gets the singleton instance of FactoryJava.
-    * @return The singleton instance of FactoryJava.
+    /** @brief Gets the singleton instance of FactoryIEC.
+    * @return The singleton instance of FactoryIEC.
     */
     static Factory& GetInstance() {
         if (mInstance == nullptr) mInstance = std::unique_ptr<Factory>{ new FactoryIEC };
@@ -38,7 +38,7 @@ public:
     */
     std::shared_ptr<Type> CreateType(std::string name);
 
-    /** @brief Deletes the singleton instance of FactoryJava. */
+    /** @brief Deletes the singleton instance of FactoryIEC. */
     static void Delete() {
         mInstance.reset();
     }
@@ -66,12 +66,12 @@ public:
 
 protected:
 
-    /** @brief Default constructor for FactoryJava. */
+    /** @brief Default constructor for FactoryIEC. */
     FactoryIEC() = default;
 
 private:
     int i = 0;
-    static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryJava. */
+    static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryIEC. */
     ~FactoryIEC() = default;
     FactoryIEC(const FactoryIEC&) = delete;
     FactoryIEC& operator=(const FactoryIEC&) = delete;
