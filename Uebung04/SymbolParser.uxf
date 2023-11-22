@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>0</y>
+      <w>180</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Object
+--
++virtual ~Object(): void = 0;
+--
+#Object():void = default</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>120</y>
+      <w>510</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>SymbolParser
+--
++AddType(const std::string&amp; typeName):void
++AddVariable(const std::string&amp; variableName, const std::string&amp; typeName):void
++SetFactory(Factory&amp; factory):void
+--
+-Save():void
+-ReadFromFile():void
+-VariableAlreadyExists(const std::string&amp; name):bool
+-FindType(const std::string&amp; typeName):std::shared_ptr&lt;Type&gt;
+-vars:std::vector&lt;std::shared_ptr&lt;Var&gt;&gt;
+-types:std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;
+-currentFact:Factory*
+-firstPass:bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>400</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Var
+--
++Var():void = default
++virtual ~Var():void = default
++virtual ToString():std::string = 0
++GetName():std::string
++GetType(): std::shared_ptr&lt;Type&gt;
+--
+#name:std::string
+#type:std::shared_ptr&lt;Type&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>990</x>
+      <y>420</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Type
+--
++Type(std::string name):void
++virtual ~Type():void = default
++virtual ToString():std::string = 0
++GetName():std::string
+--
+#name:std::string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>640</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>JavaVar
+--
++ToString():std::string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>640</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>IECVar
+--
++ToString():std::string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>980</x>
+      <y>630</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>JavaType
+--
++ToString():std::string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1150</x>
+      <y>630</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>IECType
+--
++ToString():std::string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1170</x>
+      <y>50</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>360</y>
+      <w>440</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt; Factory
+--
++virtual GetVarFileName():std::string = 0
++virtual GetTypeFileName():std::string = 0
++virtual ReadVars(const std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;&amp; types):std::vector&lt;std::shared_ptr&lt;Var&gt;&gt; = 0
++virtual ReadType():std::vector&lt;std::shared_ptr&lt;Type&gt;&gt; = 0
++virtual CreateVar(std::string name, std::shared_ptr&lt;Type&gt; type):virtual std::shared_ptr&lt;Var&gt; = 0
++virtual CreateType(std::string name):std::shared_ptr&lt;Type&gt; = 0
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>700</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>FactoryJava
+--
++GetInstance():static Factory&amp;
++CreateVar(std::string name, std::shared_ptr&lt;Type&gt; type):std::shared_ptr&lt;Var&gt;
++CreateType(std::string name):std::shared_ptr&lt;Type&gt;
++Delete():static void
+GetVarFileName():std::string
++GetTypeFileName():std::string
++ReadVars(const std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;&amp; types):std::vector&lt;std::shared_ptr&lt;Var&gt;&gt;
++ReadType():std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;
+--
+-mInstance:static std::unique_ptr&lt;Factory&gt;
+-varFile:const std::string
+-typeFile:const std::string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>700</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>FactoryIEC
+--
++GetInstance():static Factory&amp;
++CreateVar(std::string name, std::shared_ptr&lt;Type&gt; type):std::shared_ptr&lt;Var&gt;
++CreateType(std::string name):std::shared_ptr&lt;Type&gt;
++Delete():static void
+GetVarFileName():std::string
++GetTypeFileName():std::string
++ReadVars(const std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;&amp; types):std::vector&lt;std::shared_ptr&lt;Var&gt;&gt;
++ReadType():std::vector&lt;std::shared_ptr&lt;Type&gt;&gt;
+--
+-mInstance:static std::unique_ptr&lt;Factory&gt;
+-varFile:const std::string
+-typeFile:const std::string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1140</x>
+      <y>110</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1150</x>
+      <y>160</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>70</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>520</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>520</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>460</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>330</y>
+      <w>40</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>330</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1170</x>
+      <y>530</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>530</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>540</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>540</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>220</y>
+      <w>270</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>690</y>
+      <w>550</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>530.0;10.0;530.0;240.0;10.0;240.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>690</y>
+      <w>340</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>320.0;10.0;320.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>670</y>
+      <w>980</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>960.0;10.0;960.0;290.0;10.0;290.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>670</y>
+      <w>700</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;use&gt;&gt;</panel_attributes>
+    <additional_attributes>680.0;10.0;680.0;150.0;10.0;150.0</additional_attributes>
+  </element>
+</diagram>

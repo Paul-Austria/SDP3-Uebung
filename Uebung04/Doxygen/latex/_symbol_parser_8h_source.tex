@@ -1,0 +1,49 @@
+\doxysection{Symbol\+Parser.\+h}
+\hypertarget{_symbol_parser_8h_source}{}\label{_symbol_parser_8h_source}\index{Uebung04/SymbolParser.h@{Uebung04/SymbolParser.h}}
+\mbox{\hyperlink{_symbol_parser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SYMBOLPARSER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SYMBOLPARSER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_factory_8h}{Factory.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_type_8h}{Type.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_var_8h}{Var.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_symbol_parser}{SymbolParser}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_symbol_parser_a63482ab603388373ce9281bfe0db6812}{SymbolParser}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_symbol_parser_ab5b0d397df052b7cb3c61e5e953e768a}{\string~SymbolParser}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_symbol_parser_aee7e881771711c52568a9bda6b6d7110}{AddType}}(\textcolor{keyword}{const}\ std::string\&\ typeName);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_symbol_parser_a4402da67ac68f0a7e6eb5d9a716f9caa}{AddVariable}}(\textcolor{keyword}{const}\ std::string\&\ variableName,\ \textcolor{keyword}{const}\ std::string\&\ typeName);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_symbol_parser_a112f402d4e3f62477f723f2beed853b1}{SetFactory}}(\mbox{\hyperlink{class_factory}{Factory}}\&\ factory);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ Save();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ ReadFromFile();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ VariableAlreadyExists(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::shared\_ptr<Type>\ FindType(\textcolor{keyword}{const}\ std::string\&\ typeName);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ std::vector<std::shared\_ptr<Var>>\ vars;\ }
+\DoxyCodeLine{00063\ \ \ \ \ std::vector<std::shared\_ptr<Type>>\ types;\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_factory}{Factory}}*\ currentFact;\ }
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_var}{Var}}*\ currentVar;\ }
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_type}{Type}}*\ currentType;\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ firstPass\ =\ \textcolor{keyword}{true};\ }
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

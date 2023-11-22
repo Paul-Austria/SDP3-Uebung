@@ -1,0 +1,55 @@
+\doxysection{Factory\+IEC.\+h}
+\hypertarget{_factory_i_e_c_8h_source}{}\label{_factory_i_e_c_8h_source}\index{Uebung04/FactoryIEC.h@{Uebung04/FactoryIEC.h}}
+\mbox{\hyperlink{_factory_i_e_c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_factory_8h}{Factory.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ FACTORYJAVA\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ FACTORYJAVA\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_factory_java}{FactoryJava}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_factory}{Factory}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_factory}{Factory}}\&\ \mbox{\hyperlink{class_factory_java_a6a86e817743cc2ec3e2c1e77d69caf7b}{GetInstance}}()\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mInstance\ ==\ \textcolor{keyword}{nullptr})\ mInstance\ =\ std::unique\_ptr<Factory>\{\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_factory_java}{FactoryJava}}\ \};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *mInstance;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_factory_java_a6d61eb55dae9f844d32fce97e1b09ce8}{Print}}()\ \{\ std::cout\ <<\ i++\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::shared\_ptr<Var>\ \mbox{\hyperlink{class_factory_java_a19aa58ef8d6baf131c11e71d8eab7357}{CreateVar}}(std::string\ name,\ std::shared\_ptr<Type>\ type);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ std::shared\_ptr<Type>\ \mbox{\hyperlink{class_factory_java_a0bc156264ffa819682a0fad8efecb721}{CreateType}}(std::string\ name);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_factory_java_aeaad3a25346304befd4a0c4a0a024b27}{Delete}}()\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ mInstance.reset();}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::string\ \mbox{\hyperlink{class_factory_java_a1111ee1045306854e60fdcee117774bb}{GetVarFileName}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \ \ \ \ std::string\ \mbox{\hyperlink{class_factory_java_a6f47620dc55f0b62cf5ec6023a60d0bd}{GetTypeFileName}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<std::shared\_ptr<Var>>\ \mbox{\hyperlink{class_factory_java_a38340c4acf42b553ff608c5575624af9}{ReadVars}}(\textcolor{keyword}{const}\ std::vector<std::shared\_ptr<Type>>\&\ types);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::vector<std::shared\_ptr<Type>>\ \mbox{\hyperlink{class_factory_java_ac69908b7be3056f513cfd1fbdbd15e4b}{ReadTypes}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{class_factory_java_a30aa0845eac61fe7ebfb68e244638d3e}{FactoryJava}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{static}\ std::unique\_ptr<Factory>\ mInstance;\ }
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_factory_java}{\string~FactoryJava}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_factory_java_a30aa0845eac61fe7ebfb68e244638d3e}{FactoryJava}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_factory_java}{FactoryJava}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_factory_java}{FactoryJava}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_factory_java}{FactoryJava}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ std::string\ varFile\ =\ \textcolor{stringliteral}{"{}JavaVars.sym"{}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ typeFile\ =\ \textcolor{stringliteral}{"{}JavaTypes.sym"{}};\ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

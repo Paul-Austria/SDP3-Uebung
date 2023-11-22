@@ -1,0 +1,98 @@
+\doxysection{Java\+Var Class Reference}
+\hypertarget{class_java_var}{}\label{class_java_var}\index{JavaVar@{JavaVar}}
+
+
+\doxylink{class_java_var}{Java\+Var} class that inherits from the abstract \doxylink{class_var}{Var} class and uses \doxylink{class_java_type}{Java\+Type}.  
+
+
+
+
+{\ttfamily \#include $<$Java\+Var.\+h$>$}
+
+Inheritance diagram for Java\+Var\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_java_var}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_java_var_a0fc7f3d7d72845e56b4f193b31ab8660}{Java\+Var}} (std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_java_var}{Java\+Var}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_java_var_af1bfcf7754e56fbe2f5e872ca334487d}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{class_java_var}{Java\+Var} to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_var}{Var}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_aca569deb0c42f7addeb44a459681c2d0}{Var}} (std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+{\bfseries Var} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Var} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_ac4f7ae3057eca083356281eb894d88e6}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_var}{Var}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_java_var}{Java\+Var} class that inherits from the abstract \doxylink{class_var}{Var} class and uses \doxylink{class_java_type}{Java\+Type}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_java_var_a0fc7f3d7d72845e56b4f193b31ab8660}\label{class_java_var_a0fc7f3d7d72845e56b4f193b31ab8660} 
+\index{JavaVar@{JavaVar}!JavaVar@{JavaVar}}
+\index{JavaVar@{JavaVar}!JavaVar@{JavaVar}}
+\doxysubsubsection{\texorpdfstring{JavaVar()}{JavaVar()}}
+{\footnotesize\ttfamily Java\+Var\+::\+Java\+Var (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_java_var}{Java\+Var}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the \doxylink{class_java_var}{Java\+Var}. \\
+\hline
+{\em type} & The type of the \doxylink{class_java_var}{Java\+Var}, expected to be a \doxylink{class_java_type}{Java\+Type}.\\
+\hline
+{\em name} & The name of the Java variable. \\
+\hline
+{\em type} & A shared pointer to the type of the variable. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_java_var_af1bfcf7754e56fbe2f5e872ca334487d}\label{class_java_var_af1bfcf7754e56fbe2f5e872ca334487d} 
+\index{JavaVar@{JavaVar}!ToString@{ToString}}
+\index{ToString@{ToString}!JavaVar@{JavaVar}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily std\+::string Java\+Var\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Converts the \doxylink{class_java_var}{Java\+Var} to a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the \doxylink{class_java_var}{Java\+Var}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_var_a043aa64859166beb429016e9fa444513}{Var}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung04/\mbox{\hyperlink{_java_var_8h}{Java\+Var.\+h}}\item 
+Uebung04/\mbox{\hyperlink{_java_var_8cpp}{Java\+Var.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\doxysection{Factory Class Reference}
+\hypertarget{class_factory}{}\label{class_factory}\index{Factory@{Factory}}
+
+
+Abstract \doxylink{class_factory}{Factory} class for creating variables and types.  
+
+
+
+
+{\ttfamily \#include $<$Factory.\+h$>$}
+
+Inheritance diagram for Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_factory_a7701c413d42032e61d52618a8bdd8993}\label{class_factory_a7701c413d42032e61d52618a8bdd8993} 
+{\bfseries Factory} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_factory}{Factory}. \end{DoxyCompactList}\item 
+\Hypertarget{class_factory_a406c7316d855a790294b6ca1f3023745}\label{class_factory_a406c7316d855a790294b6ca1f3023745} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Factory} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor for \doxylink{class_factory}{Factory}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_factory_a7b300aa866232594602cbf6d9e5dc3cf}{Factory}} (\mbox{\hyperlink{class_factory}{Factory}} const \&)=default
+\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{class_factory}{Factory}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_factory}{Factory}} \& \mbox{\hyperlink{class_factory_adfb8b66a98822114844b90b3f0824a4a}{operator=}} (\mbox{\hyperlink{class_factory}{Factory}} const \&)=default
+\begin{DoxyCompactList}\small\item\em Copy assignment operator for \doxylink{class_factory}{Factory}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_factory_a4276436bf8da966ef9d38cb9e7e7831b}{Print}} ()=0
+\begin{DoxyCompactList}\small\item\em Test function (TODO\+: Remove) \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_factory_a4176ab19eacfb45a8c22a88d6cf1d96e}{Get\+Var\+File\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the file name for variables. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_factory_af78094b9ab9321ed4c08d46b714c6fb7}{Get\+Type\+File\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the file name for types. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_var}{Var}} $>$ $>$ \mbox{\hyperlink{class_factory_ae9e4ab266a2977edafaee429cdb5ae79}{Read\+Vars}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ $>$ \&types)=0
+\begin{DoxyCompactList}\small\item\em Reads variables from a file based on the provided types. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ $>$ \mbox{\hyperlink{class_factory_af2ec47ba116ad3abaab209d7677fbb6f}{Read\+Types}} ()=0
+\begin{DoxyCompactList}\small\item\em Reads types from a file. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_var}{Var}} $>$ \mbox{\hyperlink{class_factory_a993f399316f174ea04f0849d37fd18fe}{Create\+Var}} (std\+::string name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ type)=0
+\begin{DoxyCompactList}\small\item\em Creates a variable with the given name and type. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_factory_a53429c5eb63afec786565eef1530bd95}{Create\+Type}} (std\+::string name)=0
+\begin{DoxyCompactList}\small\item\em Creates a type with the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract \doxylink{class_factory}{Factory} class for creating variables and types. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_factory_a7b300aa866232594602cbf6d9e5dc3cf}\label{class_factory_a7b300aa866232594602cbf6d9e5dc3cf} 
+\index{Factory@{Factory}!Factory@{Factory}}
+\index{Factory@{Factory}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{Factory()}{Factory()}}
+{\footnotesize\ttfamily Factory\+::\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_factory}{Factory}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy constructor for \doxylink{class_factory}{Factory}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_factory}{Factory} object to copy. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_factory_a53429c5eb63afec786565eef1530bd95}\label{class_factory_a53429c5eb63afec786565eef1530bd95} 
+\index{Factory@{Factory}!CreateType@{CreateType}}
+\index{CreateType@{CreateType}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{CreateType()}{CreateType()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ Factory\+::\+Create\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a type with the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created type. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a0bc156264ffa819682a0fad8efecb721}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_a3c206a181f49671c9f690a9f2e575963}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_a993f399316f174ea04f0849d37fd18fe}\label{class_factory_a993f399316f174ea04f0849d37fd18fe} 
+\index{Factory@{Factory}!CreateVar@{CreateVar}}
+\index{CreateVar@{CreateVar}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{CreateVar()}{CreateVar()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_var}{Var}} $>$ Factory\+::\+Create\+Var (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a variable with the given name and type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the variable. \\
+\hline
+{\em type} & The type of the variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the created variable. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a19aa58ef8d6baf131c11e71d8eab7357}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_af82a3f67af28ac01f24ed208f2560d15}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_af78094b9ab9321ed4c08d46b714c6fb7}\label{class_factory_af78094b9ab9321ed4c08d46b714c6fb7} 
+\index{Factory@{Factory}!GetTypeFileName@{GetTypeFileName}}
+\index{GetTypeFileName@{GetTypeFileName}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{GetTypeFileName()}{GetTypeFileName()}}
+{\footnotesize\ttfamily virtual std\+::string Factory\+::\+Get\+Type\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the file name for types. 
+
+\begin{DoxyReturn}{Returns}
+The file name for types. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a6f47620dc55f0b62cf5ec6023a60d0bd}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_a2cf61e3fc13af110b0781a5dbf627e08}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_a4176ab19eacfb45a8c22a88d6cf1d96e}\label{class_factory_a4176ab19eacfb45a8c22a88d6cf1d96e} 
+\index{Factory@{Factory}!GetVarFileName@{GetVarFileName}}
+\index{GetVarFileName@{GetVarFileName}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{GetVarFileName()}{GetVarFileName()}}
+{\footnotesize\ttfamily virtual std\+::string Factory\+::\+Get\+Var\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the file name for variables. 
+
+\begin{DoxyReturn}{Returns}
+The file name for variables. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a1111ee1045306854e60fdcee117774bb}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_a3be83b57876159d7cb66d925e84837f6}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_adfb8b66a98822114844b90b3f0824a4a}\label{class_factory_adfb8b66a98822114844b90b3f0824a4a} 
+\index{Factory@{Factory}!operator=@{operator=}}
+\index{operator=@{operator=}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_factory}{Factory}} \& Factory\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_factory}{Factory}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy assignment operator for \doxylink{class_factory}{Factory}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_factory}{Factory} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned \doxylink{class_factory}{Factory} object. 
+\end{DoxyReturn}
+\Hypertarget{class_factory_a4276436bf8da966ef9d38cb9e7e7831b}\label{class_factory_a4276436bf8da966ef9d38cb9e7e7831b} 
+\index{Factory@{Factory}!Print@{Print}}
+\index{Print@{Print}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily virtual void Factory\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Test function (TODO\+: Remove) 
+
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a6d61eb55dae9f844d32fce97e1b09ce8}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_ae9dc98f692b1f184edb76b88264eee8d}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_af2ec47ba116ad3abaab209d7677fbb6f}\label{class_factory_af2ec47ba116ad3abaab209d7677fbb6f} 
+\index{Factory@{Factory}!ReadTypes@{ReadTypes}}
+\index{ReadTypes@{ReadTypes}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{ReadTypes()}{ReadTypes()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ $>$ Factory\+::\+Read\+Types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads types from a file. 
+
+\begin{DoxyReturn}{Returns}
+A vector of shared pointers to the created types. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_ac69908b7be3056f513cfd1fbdbd15e4b}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_a68b615307753b930af5fac8940681aa5}{Factory\+IEC}}.
+
+\Hypertarget{class_factory_ae9e4ab266a2977edafaee429cdb5ae79}\label{class_factory_ae9e4ab266a2977edafaee429cdb5ae79} 
+\index{Factory@{Factory}!ReadVars@{ReadVars}}
+\index{ReadVars@{ReadVars}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{ReadVars()}{ReadVars()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_var}{Var}} $>$ $>$ Factory\+::\+Read\+Vars (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ $>$ \&}]{types }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reads variables from a file based on the provided types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em types} & The types used to create variables. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of shared pointers to the created variables. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_factory_java_a38340c4acf42b553ff608c5575624af9}{Factory\+Java}}, and \mbox{\hyperlink{class_factory_i_e_c_a8084579899426754f244820b2fd0a67b}{Factory\+IEC}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Uebung04/\mbox{\hyperlink{_factory_8h}{Factory.\+h}}\end{DoxyCompactItemize}

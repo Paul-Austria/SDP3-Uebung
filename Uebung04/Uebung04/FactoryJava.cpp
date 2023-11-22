@@ -1,188 +1,224 @@
+/** @file
+* @brief Implementation of the FactoryJava class
+* @details Provides methods to create variables and types for Java. Created by Kiss Harald.
+*/
+
 #include "FactoryJava.h"
 #include "JavaVar.h"
 #include "JavaType.h"
+#include <sstream> 
+
+/** @brief The singleton instance of the FactoryJava class. */
 std::unique_ptr<Factory> FactoryJava::mInstance{ nullptr };
 
+/** @brief Creates a variable with the given name and type for Java.
+* @param name The name of the variable.
+* @param type The type of the variable.
+* @return A shared pointer to the created variable.
+*/
 std::shared_ptr<Var> FactoryJava::CreateVar(std::string name, std::shared_ptr<Type> type)
 {
-	auto var =  std::shared_ptr<Var>(std::make_shared<JavaVar>(name, type));
-
-	return var;
+    auto var = std::shared_ptr<Var>(std::make_shared<JavaVar>(name, type));
+    return var;
 }
 
+/** @brief Creates a type with the given name for Java.
+* @param name The name of the type.
+* @return A shared pointer to the created type.
+*/
 std::shared_ptr<Type> FactoryJava::CreateType(std::string name)
 {
-	return  std::shared_ptr<Type>(std::make_shared<JavaType>(name));
+    return std::shared_ptr<Type>(std::make_shared<JavaType>(name));
 }
 
+/** @brief Gets the file name for variables for Java.
+* @return The file name for variables.
+*/
 std::string FactoryJava::GetVarFileName()
 {
-	return varFile;
+    return varFile;
 }
 
+/** @brief Gets the file name for types for Java.
+* @return The file name for types.
+*/
 std::string FactoryJava::GetTypeFileName()
 {
-	return typeFile;
+    return typeFile;
 }
 
+/** @brief Reads variables from a file based on the provided types for Java.
+* @param types The types used to create variables.
+* @return A vector of shared pointers to the created variables.
+*/
 std::vector<std::shared_ptr<Var>> FactoryJava::ReadVars(const std::vector<std::shared_ptr<Type>>& types)
 {
-	std::ifstream inFileVar{ this->GetVarFileName() };
+    std::fstream new_file;
 
-	std::vector<std::shared_ptr<Var>> VVec;
+    std::vector<std::shared_ptr<Var>> VVec;
 
-	std::vector<std::shared_ptr<Var>> FalseVec;
+    std::vector<std::shared_ptr<Var>> FalseVec;
 
-	inFileVar.open(this->GetVarFileName());
-	if (inFileVar.is_open()) {
+    std::shared_ptr<Type> Helper;
 
-		bool Good = true;
+    new_file.open(this->GetVarFileName(), std::ios::in);
 
-		std::string inStr;
-		std::shared_ptr<Type> Helper;
-		//bei Lesefehler oder EOF liefert der >>-Operator false zurück
-		while (inFileVar >> inStr) { //Leerzeichen werden überlesen!
+    bool Good = true;
 
-			for (size_t i = 0; i < types.size(); i++) {
+    // Checking whether the file is open.
+    if (new_file.is_open()) {
+        std::string inStr;
 
-				std::size_t found = inStr.find(types.at(i)->GetName());
-				if (found != std::string::npos)
-				{
-					Helper = std::shared_ptr<Type>(std::make_shared<JavaType>(inStr));
-					//VVec.push_back(CreateVar(Helper, type));
-					Good = true;
-					break;
-				}
-				else {
+        // Read data from the file object and put it into a string.
+        while (getline(new_file, inStr)) {
 
-					Good = false;
-				}
-			}
+            std::vector<std::string> v;
 
-			if (Good == false) break;
+            std::stringstream ss(inStr);
 
-			//ueberspringt Lesezeichen
-			inFileVar >> inStr;
+            // Splitting the big string into strings 
+            while (ss.good()) {
+                std::string substr;
+                getline(ss, substr, ' ');
+                v.push_back(substr);
+            }
 
-			for (size_t i = 0; i < VVec.size(); i++) {
+            if (v.size() == 2) {
 
-				if (VVec.at(i)->GetName() == inStr)
-				{
-					//throw error
-					Good = false;
-					break;
-				}
+                for (size_t i = 0; i < VVec.size(); i++) {
 
-			}
+                    // Looking if the type exists
+                    if (types.at(i)->GetName() == v.at(0))
+                    {
 
-			if (Good == false) break;
-			
-			if (inStr[inStr.size() - 1] != ';') {
+                        Helper = types.at(i);
+                        Good = true;
+                        break;
+                    }
+                    else {
 
-				//throw error
-				Good = false;
-				break;
-			}
+                        Good = false;
 
-			if (Good == false) break;
+                    }
 
-			/*if (inStr[0] != 'm') {
+                }
 
-				//throw error
-				Good = false;
-				break;
+                if (Good == false) break;
 
-			}
+                // Deleting the Semikolon at the end
+                v.at(1).erase(v.at(1).size() - 1);
 
-			if (Good == false) break;*/
-			//letztes Zeichen loeschen da es ein semikolon sein sollte
-			inStr.erase(inStr.end() - 1);
+                for (size_t j = 0; j < VVec.size(); j++) {
 
-			VVec.push_back(CreateVar(inStr, Helper));
+                    if (VVec.at(j)->GetName() == v.at(1))
+                    {
+                        std::cout << "Variable already existing!" << std::endl;
+                        Good = false;
+                        break;
+                    }
 
-		}
+                }
 
-		inFileVar.close();
+                if (Good == false) break;
 
-		if (Good == false) {
+                VVec.push_back(CreateVar(v.at(1), Helper));
 
-			return FalseVec;
-		}
-	}
+            }
 
-	/*else {
+        }
 
-		cerr << cErrOpenFile << endl;
-	}*/
 
-	return VVec;
-	
+    }
+
+    // Close the file object.
+    new_file.close();
+
+    if (Good == false) {
+
+        return FalseVec;
+    }
+
+    return VVec;
 }
 
+/** @brief Reads types from a file for Java.
+* @return A vector of shared pointers to the created types.
+*/
 std::vector<std::shared_ptr<Type>> FactoryJava::ReadTypes()
 {
 
-	std::ifstream inFileType{ this->GetTypeFileName() };
+    std::fstream new_file;
 
-	//std::ifstream inFileType{ this->GetTypeFileName() };
+    std::vector<std::shared_ptr<Type>> TVec;
+    std::vector<std::shared_ptr<Type>> FalseVec;
 
-	std::vector<std::shared_ptr<Type>> TVec;
-	std::vector<std::shared_ptr<Type>> FalseVec;
+    new_file.open(this->GetTypeFileName(), std::ios::in);
 
-	inFileType.open(this->GetTypeFileName());
-	if (inFileType.is_open()) {
+    bool Good = true;
 
-		bool Good = true;
+    // Checking whether the file is open.
+    if (new_file.is_open()) {
+        std::string inStr;
 
-		std::string inStr;
-		//bei Lesefehler oder EOF liefert der >>-Operator false zurück
-		while (inFileType >> inStr) { //Leerzeichen werden überlesen!
+        // Read data from the file object and put it into a string.
+        while (getline(new_file, inStr)) {
 
-			if (inStr != "class") {
+            std::vector<std::string> v;
 
-				Good = false;
-				//throw Error
-				break;
-			}
+            std::stringstream ss(inStr);
 
-			if (Good == false) break;
+            // Splitting big string
+            while (ss.good()) {
+                std::string substr;
+                getline(ss, substr, ' ');
+                v.push_back(substr);
+            }
 
-			//ueberspringt Lesezeichen
-			inFileType >> inStr;
+            if (v.size() == 2) {
 
-			for (size_t i = 0; i < TVec.size(); i++) {
+                if (v.at(0) != "class") {
 
-				if (TVec.at(i)->GetName() == inStr)
-				{
-					//throw error
-					Good = false;
-					break;
-				}
+                    std::cout << "Wrong syntax!" << std::endl;
+                    Good = false;
+                    break;
+                }
 
-			}
+                if (Good == false) break;
 
-			if (Good == false) break;
+                // Searching if type exists
+                for (size_t i = 0; i < TVec.size(); i++) {
 
-			TVec.push_back(CreateType(inStr));
+                    if (TVec.at(i)->GetName() == v.at(1))
+                    {
+                        std::cout << "Type already existing!" << std::endl;
+                        Good = false;
+                        break;
+                    }
 
-		}
+                }
 
-		inFileType.close();
+                if (Good == false) break;
 
-		if (Good == false) {
+                TVec.push_back(CreateType(v.at(1)));
 
-			return FalseVec;
-		}
+            }
 
-	}
+        }
 
-	/*else {
 
-		cerr << cErrOpenFile << endl;
-	}*/
+    }
+    else {
 
-	return TVec;
+        std::cout << "File couldn't be opened!" << std::endl;
 
+    }
+    // Close the file object.
+    new_file.close();
+
+    if (Good == false) {
+
+        return FalseVec;
+    }
+
+    return TVec;
 }
-
-

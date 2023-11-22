@@ -1,0 +1,55 @@
+\doxysection{Factory\+Java.\+h}
+\hypertarget{_factory_java_8h_source}{}\label{_factory_java_8h_source}\index{Uebung04/FactoryJava.h@{Uebung04/FactoryJava.h}}
+\mbox{\hyperlink{_factory_java_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_factory_8h}{Factory.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ FACTORYIEC\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ FACTORYIEC\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_factory_i_e_c}{FactoryIEC}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_factory}{Factory}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_factory}{Factory}}\&\ \mbox{\hyperlink{class_factory_i_e_c_a2af95155acbaa99d49db00260f95492e}{GetInstance}}()\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mInstance\ ==\ \textcolor{keyword}{nullptr})\ mInstance\ =\ std::unique\_ptr<Factory>\{\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_factory_i_e_c}{FactoryIEC}}\ \};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *mInstance;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_factory_i_e_c_ae9dc98f692b1f184edb76b88264eee8d}{Print}}()\ \{\ std::cout\ <<\ i++\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ \ \ \ \ std::shared\_ptr<Var>\ \mbox{\hyperlink{class_factory_i_e_c_af82a3f67af28ac01f24ed208f2560d15}{CreateVar}}(std::string\ name,\ std::shared\_ptr<Type>\ type);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ std::shared\_ptr<Type>\ \mbox{\hyperlink{class_factory_i_e_c_a3c206a181f49671c9f690a9f2e575963}{CreateType}}(std::string\ name);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_factory_i_e_c_a033e8daa97363514317d592e2712da96}{Delete}}()\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ mInstance.reset();}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ \mbox{\hyperlink{class_factory_i_e_c_a3be83b57876159d7cb66d925e84837f6}{GetVarFileName}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{class_factory_i_e_c_a2cf61e3fc13af110b0781a5dbf627e08}{GetTypeFileName}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ std::vector<std::shared\_ptr<Var>>\ \mbox{\hyperlink{class_factory_i_e_c_a8084579899426754f244820b2fd0a67b}{ReadVars}}(\textcolor{keyword}{const}\ std::vector<std::shared\_ptr<Type>>\&\ types);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ std::vector<std::shared\_ptr<Type>>\ \mbox{\hyperlink{class_factory_i_e_c_a68b615307753b930af5fac8940681aa5}{ReadTypes}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{class_factory_i_e_c_a69874fe014f5cda2d399a440a7ea2dea}{FactoryIEC}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{static}\ std::unique\_ptr<Factory>\ mInstance;\ }
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_factory_i_e_c}{\string~FactoryIEC}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_factory_i_e_c_a69874fe014f5cda2d399a440a7ea2dea}{FactoryIEC}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_factory_i_e_c}{FactoryIEC}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_factory_i_e_c}{FactoryIEC}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_factory_i_e_c}{FactoryIEC}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ varFile\ =\ \textcolor{stringliteral}{"{}IECVars.sym"{}};\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ typeFile\ =\ \textcolor{stringliteral}{"{}IECTypes.sym"{}};\ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

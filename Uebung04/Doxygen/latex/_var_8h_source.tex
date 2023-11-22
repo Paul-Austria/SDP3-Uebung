@@ -1,0 +1,36 @@
+\doxysection{Var.\+h}
+\hypertarget{_var_8h_source}{}\label{_var_8h_source}\index{Uebung04/Var.h@{Uebung04/Var.h}}
+\mbox{\hyperlink{_var_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ VAR\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ VAR\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_type_8h}{Type.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_var}{Var}}\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_var_a7a6b0f2937f429b29a76df6afe80998a}{Var}}(std::string\ \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}},\ std::shared\_ptr<Type>\ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_var_a7a6b0f2937f429b29a76df6afe80998a}{Var}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_var_ad06798695ff3449b20fb41db3193dfa7}{\string~Var}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_var_a043aa64859166beb429016e9fa444513}{ToString}}()\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ std::string\ \mbox{\hyperlink{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca}{GetName}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ std::shared\_ptr<Type>\ \mbox{\hyperlink{class_var_ac4f7ae3057eca083356281eb894d88e6}{GetType}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ std::string\ \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}};\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::shared\_ptr<Type>\ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}};\ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,145 @@
+\doxysection{Var Class Reference}
+\hypertarget{class_var}{}\label{class_var}\index{Var@{Var}}
+
+
+Abstract \doxylink{class_var}{Var} class.  
+
+
+
+
+{\ttfamily \#include $<$Var.\+h$>$}
+
+Inheritance diagram for Var\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_var}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_aca569deb0c42f7addeb44a459681c2d0}{Var}} (std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+\Hypertarget{class_var_a7a6b0f2937f429b29a76df6afe80998a}\label{class_var_a7a6b0f2937f429b29a76df6afe80998a} 
+{\bfseries Var} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+\Hypertarget{class_var_ad06798695ff3449b20fb41db3193dfa7}\label{class_var_ad06798695ff3449b20fb41db3193dfa7} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Var} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_var_a043aa64859166beb429016e9fa444513}{To\+String}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method to convert the \doxylink{class_var}{Var} to a string. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_ac4f7ae3057eca083356281eb894d88e6}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract \doxylink{class_var}{Var} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_var_aca569deb0c42f7addeb44a459681c2d0}\label{class_var_aca569deb0c42f7addeb44a459681c2d0} 
+\index{Var@{Var}!Var@{Var}}
+\index{Var@{Var}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}}
+{\footnotesize\ttfamily Var\+::\+Var (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_var}{Var}. 
+
+Constructor for the \doxylink{class_var}{Var} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the \doxylink{class_var}{Var}. \\
+\hline
+{\em type} & A shared pointer to the \doxylink{class_type}{Type} of the \doxylink{class_var}{Var}.\\
+\hline
+{\em name} & The name of the variable. \\
+\hline
+{\em type} & A shared pointer to the type of the variable. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca}\label{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca} 
+\index{Var@{Var}!GetName@{GetName}}
+\index{GetName@{GetName}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Var\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the name of the \doxylink{class_var}{Var}. 
+
+Gets the name of the variable.
+
+\begin{DoxyReturn}{Returns}
+The name of the \doxylink{class_var}{Var}.
+
+The name of the variable. 
+\end{DoxyReturn}
+\Hypertarget{class_var_ac4f7ae3057eca083356281eb894d88e6}\label{class_var_ac4f7ae3057eca083356281eb894d88e6} 
+\index{Var@{Var}!GetType@{GetType}}
+\index{GetType@{GetType}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ Var\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the type of the \doxylink{class_var}{Var}. 
+
+Gets the type of the variable.
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the \doxylink{class_type}{Type} of the \doxylink{class_var}{Var}.
+
+A shared pointer to the type of the variable. 
+\end{DoxyReturn}
+\Hypertarget{class_var_a043aa64859166beb429016e9fa444513}\label{class_var_a043aa64859166beb429016e9fa444513} 
+\index{Var@{Var}!ToString@{ToString}}
+\index{ToString@{ToString}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily virtual std\+::string Var\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract method to convert the \doxylink{class_var}{Var} to a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the \doxylink{class_var}{Var}. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_i_e_c_var_ac92c8b6a9405b461d0877b8e74c378ed}{IECVar}}, and \mbox{\hyperlink{class_java_var_af1bfcf7754e56fbe2f5e872ca334487d}{Java\+Var}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_var_ad112053ba9381eb7b8b26b3c5702410a}\label{class_var_ad112053ba9381eb7b8b26b3c5702410a} 
+\index{Var@{Var}!name@{name}}
+\index{name@{name}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Var\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the \doxylink{class_var}{Var}. \Hypertarget{class_var_acc0a7d4c456b313157e1a9842d58ff28}\label{class_var_acc0a7d4c456b313157e1a9842d58ff28} 
+\index{Var@{Var}!type@{type}}
+\index{type@{type}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_type}{Type}}$>$ Var\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+A shared pointer to the \doxylink{class_type}{Type} of the \doxylink{class_var}{Var}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung04/\mbox{\hyperlink{_var_8h}{Var.\+h}}\item 
+Uebung04/\mbox{\hyperlink{_var_8cpp}{Var.\+cpp}}\end{DoxyCompactItemize}

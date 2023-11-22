@@ -1,0 +1,98 @@
+\doxysection{IECVar Class Reference}
+\hypertarget{class_i_e_c_var}{}\label{class_i_e_c_var}\index{IECVar@{IECVar}}
+
+
+\doxylink{class_i_e_c_var}{IECVar} class that inherits from the abstract \doxylink{class_var}{Var} class.  
+
+
+
+
+{\ttfamily \#include $<$IECVar.\+h$>$}
+
+Inheritance diagram for IECVar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_e_c_var}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_e_c_var_aeb1bf868f13c10aa10a9e8dfeae6aa1a}{IECVar}} (std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_i_e_c_var}{IECVar}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_i_e_c_var_ac92c8b6a9405b461d0877b8e74c378ed}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{class_i_e_c_var}{IECVar} to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_var}{Var}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_aca569deb0c42f7addeb44a459681c2d0}{Var}} (std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}})
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+{\bfseries Var} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Var} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_var_a76e830f23d7e6a60eeb7b8df0c8cbaca}{Get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the name of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_ac4f7ae3057eca083356281eb894d88e6}{Get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the \doxylink{class_var}{Var}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_var}{Var}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_var_ad112053ba9381eb7b8b26b3c5702410a}{name}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$ \mbox{\hyperlink{class_var_acc0a7d4c456b313157e1a9842d58ff28}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_i_e_c_var}{IECVar} class that inherits from the abstract \doxylink{class_var}{Var} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_e_c_var_aeb1bf868f13c10aa10a9e8dfeae6aa1a}\label{class_i_e_c_var_aeb1bf868f13c10aa10a9e8dfeae6aa1a} 
+\index{IECVar@{IECVar}!IECVar@{IECVar}}
+\index{IECVar@{IECVar}!IECVar@{IECVar}}
+\doxysubsubsection{\texorpdfstring{IECVar()}{IECVar()}}
+{\footnotesize\ttfamily IECVar\+::\+IECVar (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_type}{Type}} $>$}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_i_e_c_var}{IECVar}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the \doxylink{class_i_e_c_var}{IECVar}. \\
+\hline
+{\em type} & The type of the \doxylink{class_i_e_c_var}{IECVar}.\\
+\hline
+{\em name} & The name of the IEC variable. \\
+\hline
+{\em type} & A shared pointer to the type of the variable. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_e_c_var_ac92c8b6a9405b461d0877b8e74c378ed}\label{class_i_e_c_var_ac92c8b6a9405b461d0877b8e74c378ed} 
+\index{IECVar@{IECVar}!ToString@{ToString}}
+\index{ToString@{ToString}!IECVar@{IECVar}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily std\+::string IECVar\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Converts the \doxylink{class_i_e_c_var}{IECVar} to a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the \doxylink{class_i_e_c_var}{IECVar}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_var_a043aa64859166beb429016e9fa444513}{Var}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uebung04/\mbox{\hyperlink{_i_e_c_var_8h}{IECVar.\+h}}\item 
+Uebung04/\mbox{\hyperlink{_i_e_c_var_8cpp}{IECVar.\+cpp}}\end{DoxyCompactItemize}
