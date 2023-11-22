@@ -14,46 +14,26 @@
 /** @brief The singleton instance of the FactoryIEC class. */
 std::unique_ptr<Factory> FactoryIEC::mInstance{ nullptr };
 
-/** @brief Creates a variable with the given name and type.
-* @param name The name of the variable.
-* @param type The type of the variable.
-* @return A shared pointer to the created variable.
-*/
+
 std::shared_ptr<Var> FactoryIEC::CreateVar(std::string name, std::shared_ptr<Type> type)
 {
 	auto var = std::shared_ptr<Var>(std::make_shared<IECVar>(name, type));
 	return var;
 }
 
-/** @brief Creates a type with the given name.
-* @param name The name of the type.
-* @return A shared pointer to the created type.
-*/
 std::shared_ptr<Type> FactoryIEC::CreateType(std::string name)
 {
 	return std::shared_ptr<Type>(std::make_shared<IECType>(name));
 }
-
-/** @brief Gets the file name for variables.
-* @return The file name for variables.
-*/
 std::string FactoryIEC::GetVarFileName()
 {
 	return varFile;
 }
 
-/** @brief Gets the file name for types.
-* @return The file name for types.
-*/
 std::string FactoryIEC::GetTypeFileName()
 {
 	return typeFile;
 }
-
-/** @brief Reads variables from a file based on the provided types.
-* @param types The types used to create variables.
-* @return A vector of shared pointers to the created variables.
-*/
 std::vector<std::shared_ptr<Var>> FactoryIEC::ReadVars(const std::vector<std::shared_ptr<Type>>& types)
 {
 
@@ -166,9 +146,6 @@ std::vector<std::shared_ptr<Var>> FactoryIEC::ReadVars(const std::vector<std::sh
 
 }
 
-/** @brief Reads types from a file.
-* @return A vector of shared pointers to the created types.
-*/
 std::vector<std::shared_ptr<Type>> FactoryIEC::ReadTypes()
 {
 
