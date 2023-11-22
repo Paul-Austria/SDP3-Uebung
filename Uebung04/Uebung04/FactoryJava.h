@@ -6,8 +6,8 @@
 #include "Factory.h"
 #include <iostream>
 
-#ifndef FACTORYJAVA_H
-#define FACTORYjAVA_H
+#ifndef FACTORYIEC_H
+#define FACTORYIEC_H
 
 /** @brief FactoryIEC class that extends the abstract Factory class for creating variables and types based on IEC standards. */
 class FactoryJava : public Factory {

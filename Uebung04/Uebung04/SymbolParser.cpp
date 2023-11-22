@@ -7,9 +7,6 @@
 #include "SymbolParser.h"
 #include <iostream>
 
-/** @brief Adds a new type to the SymbolParser.
-* @param typeName The name of the type to be added.
-*/
 void SymbolParser::AddType(const std::string& typeName)
 {
 	if (FindType(typeName) != nullptr)
@@ -23,10 +20,6 @@ void SymbolParser::AddType(const std::string& typeName)
 	return;
 }
 
-/** @brief Checks if a variable with the given name already exists.
-* @param name The name of the variable to check.
-* @return True if the variable already exists, false otherwise.
-*/
 bool SymbolParser::VariableAlreadyExists(const std::string& name)
 {
 	for (auto v : vars) {
@@ -35,10 +28,6 @@ bool SymbolParser::VariableAlreadyExists(const std::string& name)
 	return false;
 }
 
-/** @brief Finds and returns a type by its name.
-* @param typeName The name of the type to find.
-* @return A shared pointer to the found type, or nullptr if the type is not found.
-*/
 std::shared_ptr<Type> SymbolParser::FindType(const std::string& typeName)
 {
 	for (auto t : types)
@@ -51,9 +40,6 @@ std::shared_ptr<Type> SymbolParser::FindType(const std::string& typeName)
 
 #include <iostream>
 
-/** @brief Saves the types and variables to files.
-* @details Saves the types and variables to files specified by the current factory's type and variable file names.
-*/
 void SymbolParser::Save()
 {
 	std::ofstream outFileType{ this->currentFact->GetTypeFileName() };
@@ -89,9 +75,6 @@ void SymbolParser::Save()
 	outFileVar.close();
 }
 
-/** @brief Reads types and variables from files.
-* @details Reads types and variables from files specified by the current factory's type and variable file names.
-*/
 void SymbolParser::ReadFromFile() {
 
 	types = this->currentFact->ReadTypes();
@@ -99,11 +82,6 @@ void SymbolParser::ReadFromFile() {
 	vars = this->currentFact->ReadVars(types);
 
 }
-
-/** @brief Adds a new variable to the SymbolParser.
-* @param variableName The name of the variable to be added.
-* @param typeName The name of the type associated with the variable.
-*/
 void SymbolParser::AddVariable(const std::string& variableName, const std::string& typeName)
 {
 	if (VariableAlreadyExists(variableName))
@@ -120,11 +98,6 @@ void SymbolParser::AddVariable(const std::string& variableName, const std::strin
 	vars.push_back(this->currentFact->CreateVar(variableName, this->FindType(typeName)));
 
 }
-
-/** @brief Sets the current factory for the SymbolParser.
-* @details Sets the current factory for the SymbolParser and manages the transition between factories.
-* @param factory The factory to be set as the current factory.
-*/
 void SymbolParser::SetFactory(Factory& factory)
 {
 	// save old Factory (only if not the first pass);

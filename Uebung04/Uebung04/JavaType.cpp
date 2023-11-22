@@ -13,9 +13,6 @@ JavaType::JavaType(std::string name) : Type(name)
 {
 }
 
-/** @brief Converts the JavaType to a string.
-* @return A string representation of the JavaType.
-*/
 std::string JavaType::ToString()
 {
     std::ostringstream ost;

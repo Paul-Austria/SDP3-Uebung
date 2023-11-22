@@ -11,46 +11,27 @@
 /** @brief The singleton instance of the FactoryJava class. */
 std::unique_ptr<Factory> FactoryJava::mInstance{ nullptr };
 
-/** @brief Creates a variable with the given name and type for Java.
-* @param name The name of the variable.
-* @param type The type of the variable.
-* @return A shared pointer to the created variable.
-*/
 std::shared_ptr<Var> FactoryJava::CreateVar(std::string name, std::shared_ptr<Type> type)
 {
     auto var = std::shared_ptr<Var>(std::make_shared<JavaVar>(name, type));
     return var;
 }
 
-/** @brief Creates a type with the given name for Java.
-* @param name The name of the type.
-* @return A shared pointer to the created type.
-*/
 std::shared_ptr<Type> FactoryJava::CreateType(std::string name)
 {
     return std::shared_ptr<Type>(std::make_shared<JavaType>(name));
 }
 
-/** @brief Gets the file name for variables for Java.
-* @return The file name for variables.
-*/
 std::string FactoryJava::GetVarFileName()
 {
     return varFile;
 }
 
-/** @brief Gets the file name for types for Java.
-* @return The file name for types.
-*/
 std::string FactoryJava::GetTypeFileName()
 {
     return typeFile;
 }
 
-/** @brief Reads variables from a file based on the provided types for Java.
-* @param types The types used to create variables.
-* @return A vector of shared pointers to the created variables.
-*/
 std::vector<std::shared_ptr<Var>> FactoryJava::ReadVars(const std::vector<std::shared_ptr<Type>>& types)
 {
     std::fstream new_file;
