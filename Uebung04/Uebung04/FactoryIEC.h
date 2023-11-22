@@ -8,8 +8,8 @@
 #ifndef FACTORYJAVA_H
 #define FACTORYJAVA_H
 
-/** @brief FactoryJava class that extends the abstract Factory class for creating variables and types in Java. */
-class FactoryJava : public Factory {
+/** @brief FactoryIEC class that extends the abstract Factory class for creating variables and types in Java. */
+class FactoryIEC : public Factory {
 
 public:
 
@@ -17,7 +17,7 @@ public:
     * @return The singleton instance of FactoryJava.
     */
     static Factory& GetInstance() {
-        if (mInstance == nullptr) mInstance = std::unique_ptr<Factory>{ new FactoryJava };
+        if (mInstance == nullptr) mInstance = std::unique_ptr<Factory>{ new FactoryIEC };
         return *mInstance;
     }
 
@@ -67,17 +67,17 @@ public:
 protected:
 
     /** @brief Default constructor for FactoryJava. */
-    FactoryJava() = default;
+    FactoryIEC() = default;
 
 private:
     int i = 0;
     static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryJava. */
-    ~FactoryJava() = default;
-    FactoryJava(const FactoryJava&) = delete;
-    FactoryJava& operator=(const FactoryJava&) = delete;
+    ~FactoryIEC() = default;
+    FactoryIEC(const FactoryIEC&) = delete;
+    FactoryIEC& operator=(const FactoryIEC&) = delete;
 
-    std::string varFile = "JavaVars.sym"; /**< The file name for variables. */
-    std::string typeFile = "JavaTypes.sym"; /**< The file name for types. */
+    std::string varFile = "IECVars.sym"; /**< The file name for variables. */
+    std::string typeFile = "IECTypes.sym"; /**< The file name for types. */
 };
 
 #endif

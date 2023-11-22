@@ -10,14 +10,14 @@
 #define FACTORYIEC_H
 
 /** @brief FactoryIEC class that extends the abstract Factory class for creating variables and types based on IEC standards. */
-class FactoryIEC : public Factory {
+class FactoryJava : public Factory {
 public:
 
     /** @brief Gets the singleton instance of FactoryIEC.
     * @return The singleton instance of FactoryIEC.
     */
     static Factory& GetInstance() {
-        if (mInstance == nullptr) mInstance = std::unique_ptr<Factory>{ new FactoryIEC };
+        if (mInstance == nullptr) mInstance = std::unique_ptr<Factory>{ new FactoryJava };
         return *mInstance;
     }
 
@@ -65,17 +65,17 @@ public:
 protected:
 
     /** @brief Default constructor for FactoryIEC. */
-    FactoryIEC() = default;
+    FactoryJava() = default;
 
 private:
     int i = 0;
     static std::unique_ptr<Factory> mInstance; /**< The singleton instance of FactoryIEC. */
-    ~FactoryIEC() = default;
-    FactoryIEC(const FactoryIEC&) = delete;
-    FactoryIEC& operator=(const FactoryIEC&) = delete;
+    ~FactoryJava() = default;
+    FactoryJava(const FactoryJava&) = delete;
+    FactoryJava& operator=(const FactoryJava&) = delete;
 
-    const std::string varFile = "IECVars.sym"; /**< The file name for variables. */
-    const std::string typeFile = "IECTypes.sym"; /**< The file name for types. */
+    const std::string varFile = "JavaVars.sym"; /**< The file name for variables. */
+    const std::string typeFile = "JavaTypes.sym"; /**< The file name for types. */
 };
 
 #endif
