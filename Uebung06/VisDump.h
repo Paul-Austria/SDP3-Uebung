@@ -1,6 +1,14 @@
 #ifndef VISDUMP_H
 #define VISDUMP_H
 
+/**
+	@class	VisDump
+	@brief  first Visitor Dump.
+
+	@author Harald Kiss / Paul Engelhardt
+	@date 02.12.2023
+*/
+
 #include "Visitor.h"
 //Visitor Dump
 

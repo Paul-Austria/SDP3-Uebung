@@ -5,14 +5,23 @@
 #include "Folder.h"
 #include "Link.h"
 
+/**
+	@class	Visitor
+	@brief  The Visitor Interface.
+
+	@author Harald Kiss / Paul Engelhardt
+	@date 02.12.2023
+*/
+
 //Interface
 
 class Visitor {
 
 public:
-	virtual void Visit(File& File) = 0;
-	virtual void Visit(Folder& Folder) = 0;
-	virtual void Visit(Link& Link) = 0;
+	virtual void Visit(File& file) = 0;
+	virtual void Visit(Folder& folder) = 0;
+	virtual void Visit(Link& link) = 0;
+	virtual ~Visitor() = default;
 
 protected:
 

@@ -6,11 +6,23 @@
 #include "SystemElem.h"
 #include <memory>
 
-class Folder : public SystemElem {
+/**
+	@class	Link
+	@brief  The second Composite of Component SystemElem.
+
+	@author Harald Kiss / Paul Engelhardt
+	@date 02.12.2023
+*/
+
+class SystemElem;
+
+class Folder : public SystemElem, public std::enable_shared_from_this<Folder> {
 
 public:
-	bool CheckIfNameExists(std::string Name) override;
-	std::string ToString() override;
+	Folder() = default;
+
+	bool CheckIfNameExists(std::string Name);
+	std::string ToString();
 
 protected:
 	
@@ -18,6 +30,8 @@ protected:
 
 private:
 
+
+public:
 
 };
 

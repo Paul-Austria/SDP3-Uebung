@@ -6,7 +6,13 @@
 #include "File.h"
 #include <memory>
 
-//Basisklasse
+/**
+	@class	VisDump
+	@brief  second Visitor FilterFiles.
+
+	@author Harald Kiss / Paul Engelhardt
+	@date 02.12.2023
+*/
 
 class VisFilterFiles : public Visitor {
 

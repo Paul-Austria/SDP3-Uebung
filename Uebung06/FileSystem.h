@@ -5,6 +5,14 @@
 #include "Visitor.h"
 #include "SystemElem.h"
 
+/**
+	@class	FileSystem
+	@brief  Client.
+
+	@author Harald Kiss / Paul Engelhardt
+	@date 02.12.2023
+*/
+
 class FileSystem {
 
 public:
